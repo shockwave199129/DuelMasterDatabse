@@ -1,6 +1,6 @@
 docker_command.txt
 venv/
-mysql/
+mysql/*
 app/log/*
 app/__pycache__
 app/Database/__pycache__
