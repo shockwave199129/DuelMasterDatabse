@@ -1,0 +1,13 @@
+fastapi
+fastapi_utils
+uvicorn
+sqlalchemy<2.0
+mysqlclient
+beautifulsoup4
+simplejson
+requests
+alembic
+sqlalchemy-utils>=0.36.8
+datetime
+apscheduler
+traceback2

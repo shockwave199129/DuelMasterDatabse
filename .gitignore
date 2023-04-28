@@ -1,0 +1,7 @@
+docker_command.txt
+venv/
+mysql/
+app/log/*
+app/__pycache__
+app/Database/__pycache__
+app/alembic/__pycache__
