@@ -3,14 +3,14 @@
 version: '3.8'
 
 services:
-  dm_web:
+  dm_api:
     build: .
     command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
     volumes:
       - ./app:/code/app
     ports:
       - 8000:8000
-    container_name: DM_web
+    container_name: DM_api
     restart: always
     tty: true
     environment:
@@ -30,3 +30,21 @@ services:
     environment:
       - MYSQL_DATABASE=duel_masters
       - MYSQL_ROOT_PASSWORD=12345
+
+  dm_web:
+    build:
+      context: ./web
+    ports:
+      - "3000:3000"
+    container_name: dm_web
+    restart: always
+    tty: true
+    stdin_open: true
+    volumes:
+       - ./web:/usr/src/app/dm_web
+       - /usr/src/app/dm_web/node_modules
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    command: npm start
+    depends_on:
+      - dm_api

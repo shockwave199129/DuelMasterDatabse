@@ -2,14 +2,6 @@ from sqlalchemy import Column, Integer, String, ForeignKey, DateTime
 from sqlalchemy.orm import relationship
 from .db import Base, engine
 
-
-class Category(Base):
-    __tablename__ = "categories"
-
-    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
-    categories = Column(String)
-    link = Column(String, unique=True)
-
 class Card(Base):
     __tablename__ = "cardDataBase"
     
@@ -26,13 +18,20 @@ class Card(Base):
     mananumber = Column(Integer, default=0)
     link = Column(String)
 
+class Category(Base):
+    __tablename__ = "categories"
+
+    id = Column(Integer, primary_key=True, index=True, autoincrement=True)
+    categories = Column(String)
+    link = Column(String, ForeignKey(Card.link))
+
 class DMSets(Base):
     __tablename__ = "sets"
 
     id = Column(Integer, primary_key=True, index=True)
     set = Column(String)
     set_link = Column(String)
-    card_link = Column(String)
+    card_link = Column(String, ForeignKey(Card.link))
 
 class CrawlerTask(Base):
     __tablename__ = "crawler_task"
