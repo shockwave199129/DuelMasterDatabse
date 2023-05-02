@@ -1,6 +1,7 @@
 import uvicorn
 from typing import Union, Optional
-from fastapi import FastAPI, Depends, BackgroundTasks
+from fastapi import FastAPI, Depends, BackgroundTasks, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi_utils.tasks import repeat_every
 from .Database.db import Base, engine, Session
 from .Database.models import Card, Category, DMSets
@@ -12,6 +13,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from threading import Thread
 from sqlalchemy import distinct
+from sqlalchemy.sql import func
 import json
 
 
@@ -26,6 +28,20 @@ class CivilizationEnum(str, Enum):
 
 app = FastAPI()
 #background_task = BackgroundTasks()
+
+origins = [
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:3001",
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # run crawler
@@ -140,12 +156,15 @@ async def get_search_card(db: Session = Depends(get_db),
     text: Optional[str] = None,
     cardtype: Optional[str] = None,
     category: Optional[str] = None,
-    ocg_set: Optional[str] = None
+    ocg_set: Optional[str] = None,
+    sort_by: Optional[str] = None,
+    sort_order: Optional[str] = "asc"
     ):
 
-    query = db.query(Card, Category.categories, DMSets.set)\
+    query = db.query(Card, Category.categories, func.group_concat(DMSets.set, ',').label('sets'))\
             .join(Category, Card.link == Category.link)\
-            .join(DMSets, DMSets.card_link == Card.link)
+            .join(DMSets, DMSets.card_link == Card.link)\
+            .group_by(Card.link,Card.id,Category.categories)
 
     if name:
         query = query.filter(Card.name.like(f"%{name}%"))
@@ -164,10 +183,34 @@ async def get_search_card(db: Session = Depends(get_db),
     if ocg_set:
         query = query.filter(DMSets.set.like(f"%{ocg_set}%"))
 
+    # Apply sorting if specified
+    if sort_by:
+        sort_column = getattr(Card, sort_by, None)
+        if sort_column:
+            sort_order_attr = getattr(sort_column, sort_order, None)
+            if sort_order_attr:
+                sort_func = sort_column.asc() if sort_order == "asc" else sort_column.desc()
+                query = query.order_by(sort_func)
+            else:
+                raise HTTPException(status_code=400, detail=f"Invalid sort order: {sort_order}")
+        else:
+            raise HTTPException(status_code=400, detail=f"Invalid sort column: {sort_by}")
+
     # Convert the result to a list of dictionaries
     result = [row._asdict() for row in query.all()]
     return result
 
+@app.get("/card-details/{card_id}", tags=["for web"])
+async def get_one_card_details(card_id: int,
+    db: Session = Depends(get_db)):
+
+    query = db.query(Card, Category.categories, DMSets.set)\
+            .join(Category, Card.link == Category.link)\
+            .join(DMSets, DMSets.card_link == Card.link)
+    
+    query = query.filter(Card.id == card_id)
+
+    return query.first()
 
 if __name__ == "__main__":
     Base.metadata.create_all(bind=engine)
