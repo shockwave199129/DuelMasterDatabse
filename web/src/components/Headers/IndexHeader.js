@@ -47,7 +47,7 @@ function IndexHeader() {
             </div>
           </Container>
         </div>
-        <div
+        {/* <div
           className="moving-clouds p-3"
           style={{
             backgroundImage: "url(" + require("../../assets/img/clouds.png") + ")"
@@ -56,7 +56,7 @@ function IndexHeader() {
           <h2 className="category category-absolute text-center">
             Designed and coded by{" "}
           </h2>
-        </div>
+        </div> */}
       </div>
     </>
   );
