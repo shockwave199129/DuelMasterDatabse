@@ -89,7 +89,6 @@ function SearchPage() {
             $(".sidebar").removeClass("active");
             $(".sidebar-item").removeClass("active");
         }
-
     };
 
     const handleCardDeatailClick = () => {
@@ -127,13 +126,13 @@ function SearchPage() {
             });
             let csvFileName = 'DM_serach';
             for (const [key, value] of Object.entries(searchParams)) {
-                if(value != '' && key != 'sort_by' && key != 'sort_order') {
-                    csvFileName = csvFileName+'&'+key+'='+value
+                if (value != '' && key != 'sort_by' && key != 'sort_order') {
+                    csvFileName = csvFileName + '&' + key + '=' + value
                 }
-              }
+            }
             const csvData = json2csv.parse(newArray);
             const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8' });
-            saveAs(blob, csvFileName+'.csv');
+            saveAs(blob, csvFileName + '.csv');
         }
     };
 
@@ -149,7 +148,10 @@ function SearchPage() {
 
                 <IndexNavbar />
                 <IndexHeader />
-                <reactstrap.Container onKeyDown={handleKeyDown}>
+                <reactstrap.Container onKeyDown={handleKeyDown} style={{
+                    "position":"relative",
+                    "top":"-20vh"
+                }}>
                     <div>
                         <reactstrap.Card outline>
                             <reactstrap.CardBody>

@@ -6,7 +6,7 @@
     background-color: ghostwhite;
     right: 0;
     overflow-y: auto;
-    transform: translateX(100%);
+    transform: translateX(105%);
     -webkit-transition: all .5s .2s ease-in-out;
     -moz-transition: all .5s .2s ease-in-out;
     -ms-transition: all .5s .2s ease-in-out;

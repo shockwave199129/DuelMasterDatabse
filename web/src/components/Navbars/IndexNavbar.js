@@ -44,13 +44,13 @@ function IndexNavbar() {
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
-        document.documentElement.scrollTop > 299 ||
-        document.body.scrollTop > 299
+        document.documentElement.scrollTop > 149 ||
+        document.body.scrollTop > 149
       ) {
         setNavbarColor("");
       } else if (
-        document.documentElement.scrollTop < 300 ||
-        document.body.scrollTop < 300
+        document.documentElement.scrollTop < 150 ||
+        document.body.scrollTop < 150
       ) {
         setNavbarColor("navbar-transparent");
       }
@@ -94,34 +94,34 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="https://duelmasters.fandom.com/wiki/Duel_Masters_Wiki"
-                target="_blank"
-                title="Offical DM wiki"
+                href="/search"
+                target=""
+                title="Card Database Search"
               >
-                <i className="fa fa-wikipedia-w" />
-                <p className="d-lg-none">Twitter</p>
+                <i className="fa fa-search" />
+                <p className="d-lg-none">Search</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="#"
-                target="_blank"
-                title="Like us on Facebook"
+                target=""
+                title="Deck Build"
               >
-                <i className="fa fa-facebook-square" />
-                <p className="d-lg-none">Facebook</p>
+                <i className="fa fa-cubes" />
+                <p className="d-lg-none">Deck Build</p>
               </NavLink>
             </NavItem>
             <NavItem>
               <NavLink
                 data-placement="bottom"
                 href="#"
-                target="_blank"
-                title="Follow us on Instagram"
+                target=""
+                title="Account"
               >
-                <i className="fa fa-instagram" />
-                <p className="d-lg-none">Instagram</p>
+                <i className="fa fa-user-circle" />
+                <p className="d-lg-none">Account</p>
               </NavLink>
             </NavItem>
             <NavItem>
@@ -129,10 +129,10 @@ function IndexNavbar() {
                 data-placement="bottom"
                 href="https://github.com/shockwave199129/DuelMasterDatabse"
                 target="_blank"
-                title="Star on GitHub"
+                title="Info"
               >
-                <i className="fa fa-github" />
-                <p className="d-lg-none">GitHub</p>
+                <i className="fa fa-info-circle" />
+                <p className="d-lg-none">Info</p>
               </NavLink>
             </NavItem>
             {/* <NavItem>
