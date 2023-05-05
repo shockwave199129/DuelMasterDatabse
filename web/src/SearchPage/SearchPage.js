@@ -6,6 +6,10 @@ import IndexNavbar from "../components/Navbars/IndexNavbar.js";
 import IndexHeader from "../components/Headers/IndexHeader.js";
 import DemoFooter from "../components/Footers/DemoFooter.js";
 import * as reactstrap from "reactstrap";
+import json2csv from 'json2csv';
+import { saveAs } from 'file-saver';
+import './style.css';
+import $ from 'jquery';
 
 function SearchPage() {
     const [civilizations, setCivilizations] = useState([]);
@@ -27,6 +31,8 @@ function SearchPage() {
         sort_order: 'asc',
     });
     const [searchResults, setSearchResults] = useState([]);
+    const [cardDetails, setCardDetails] = useState({});
+    const [currentDisplayCard, setCurrentDisplayCard] = useState();
 
     useEffect(() => {
         async function fetchData() {
@@ -67,8 +73,68 @@ function SearchPage() {
     const handleFormSubmit = async (event) => {
         event.preventDefault();
         const response = await axios.get('http://localhost:8000/card-search', { params: searchParams });
-        console.log(response.data)
         setSearchResults(response.data);
+    };
+
+    const handleCardClick = async (cardId) => {
+        const cardResponse = await axios.get(`http://localhost:8000/card-details/${cardId}`);
+        setCardDetails(cardResponse.data);
+        setCurrentDisplayCard(cardId);
+        console.log($(".sidebar").hasClass("active"))
+
+        if ($(".sidebar").hasClass("active") == false) {
+            $(".sidebar").addClass("active");
+            $(".sidebar-item").addClass("active");
+        } else if (cardId == currentDisplayCard) {
+            $(".sidebar").removeClass("active");
+            $(".sidebar-item").removeClass("active");
+        }
+
+    };
+
+    const handleCardDeatailClick = () => {
+        if ($(".sidebar").hasClass("active")) {
+            $(".sidebar").removeClass("active");
+            $(".sidebar-item").removeClass("active");
+        }
+    }
+
+    const handleKeyDown = (event) => {
+        if (event.keyCode === 27) {
+            handleCardDeatailClick()
+        }
+    }
+
+    const handleDownloadCsv = () => {
+        if (Object.keys(searchResults).length > 0) {
+            const newArray = searchResults.map(obj => {
+                return {
+                    id: obj.Card.id,
+                    civilization: obj.Card.civilization,
+                    manacost: obj.Card.manacost,
+                    power: obj.Card.power,
+                    subtype: obj.Card.subtype,
+                    link: obj.Card.link,
+                    cardtype: obj.Card.cardtype,
+                    name: obj.Card.name,
+                    image: obj.Card.image,
+                    race: obj.Card.race,
+                    englishtext: obj.Card.englishtext,
+                    mananumber: obj.Card.mananumber,
+                    categories: obj.categories,
+                    sets: obj.sets
+                };
+            });
+            let csvFileName = 'DM_serach';
+            for (const [key, value] of Object.entries(searchParams)) {
+                if(value != '' && key != 'sort_by' && key != 'sort_order') {
+                    csvFileName = csvFileName+'&'+key+'='+value
+                }
+              }
+            const csvData = json2csv.parse(newArray);
+            const blob = new Blob([csvData], { type: 'text/csv;charset=utf-8' });
+            saveAs(blob, csvFileName+'.csv');
+        }
     };
 
     if (Object.keys(civilizations).length > 0 &&
@@ -83,7 +149,7 @@ function SearchPage() {
 
                 <IndexNavbar />
                 <IndexHeader />
-                <reactstrap.Container>
+                <reactstrap.Container onKeyDown={handleKeyDown}>
                     <div>
                         <reactstrap.Card outline>
                             <reactstrap.CardBody>
@@ -282,12 +348,27 @@ function SearchPage() {
                                 Search Results:
                             </reactstrap.CardTitle>
                             <reactstrap.CardBody>
+                                {Object.keys(searchResults).length > 0 && (
+                                    <reactstrap.Col className='d-flex justify-content-end'>
+                                        <reactstrap.Button onClick={(event) => {
+                                            event.preventDefault();
+                                            handleDownloadCsv();
+                                        }}>
+                                            <i className='fa fa-download'></i>
+                                            Download as CSV
+                                        </reactstrap.Button>
+                                    </reactstrap.Col>
+                                )}
                                 <reactstrap.ListGroup>
                                     {Object.values(searchResults).map((card) => (
                                         <reactstrap.ListGroupItem
-                                            href={`/details/${card.Card.id}`}
+                                            href={`#card-${card.Card.id}`}
                                             tag="a"
                                             key={card.Card.id}
+                                            onClick={(event) => {
+                                                event.preventDefault();
+                                                handleCardClick(card.Card.id);
+                                            }}
                                         >
                                             {card.Card.name} ({card.Card.civilization})
                                         </reactstrap.ListGroupItem>
@@ -297,6 +378,86 @@ function SearchPage() {
                         </reactstrap.Card>
                     </div>
                 </reactstrap.Container>
+
+                <reactstrap.Col md={6} xd={12} className='sidebar' onKeyDown={handleKeyDown}>
+                    <div className='d-flex justify-content-start'>
+                        <i
+                            className='fa fa-times'
+                            style={{ "fontSize": "25px", "paddingLeft": "20px", "cursor": "pointer" }}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                handleCardDeatailClick();
+                            }}
+                        ></i>
+                    </div>
+                    <reactstrap.Col md={12} className='sidebar-list'>
+                        <reactstrap.Table bordered bgcolor='aliceblue' className='sidebar-item'>
+                            {Object.keys(cardDetails).length > 0 && (
+                                <tbody>
+                                    <tr>
+                                        <th scope='row' className='d-flex justify-content-center'>
+                                            {cardDetails.Card.name}
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex justify-content-center'>
+                                            <img src={cardDetails.Card.image} alt={cardDetails.Card.name} />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Civilization:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.Card.civilization}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Type:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.Card.cardtype}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Race:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{JSON.parse(cardDetails.Card.race).join('/')}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Cost:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.Card.manacost}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Text:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.Card.englishtext}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Mana:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.Card.mananumber}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Categories:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{JSON.parse(cardDetails.categories).join('/')}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td className='d-flex'>
+                                            <reactstrap.Col md={6} className='text-center fw-bolder'><strong>Sets:</strong></reactstrap.Col>
+                                            <reactstrap.Col md={6}>{cardDetails.set}</reactstrap.Col>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            )}
+                        </reactstrap.Table>
+                    </reactstrap.Col>
+                </reactstrap.Col >
+
                 <DemoFooter />
             </>
         );
