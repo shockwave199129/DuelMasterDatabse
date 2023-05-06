@@ -82,10 +82,10 @@ function SearchPage() {
         setCurrentDisplayCard(cardId);
         console.log($(".sidebar").hasClass("active"))
 
-        if ($(".sidebar").hasClass("active") == false) {
+        if ($(".sidebar").hasClass("active") === false) {
             $(".sidebar").addClass("active");
             $(".sidebar-item").addClass("active");
-        } else if (cardId == currentDisplayCard) {
+        } else if (cardId === currentDisplayCard) {
             $(".sidebar").removeClass("active");
             $(".sidebar-item").removeClass("active");
         }
@@ -126,7 +126,7 @@ function SearchPage() {
             });
             let csvFileName = 'DM_serach';
             for (const [key, value] of Object.entries(searchParams)) {
-                if (value != '' && key != 'sort_by' && key != 'sort_order') {
+                if (value !== '' && key !== 'sort_by' && key !== 'sort_order') {
                     csvFileName = csvFileName + '&' + key + '=' + value
                 }
             }
