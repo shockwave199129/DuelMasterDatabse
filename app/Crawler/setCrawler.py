@@ -80,8 +80,9 @@ def run_set_crawler() -> None:
         set_links = {}
         for li in li_list:
             link = li.find('a')
+            link_text = li.find('b', recursive=False).text if li.find('b', recursive=False) is not None else ''
             if link is not None:
-                set_links[link.text] = BASEURL + link.get('href')
+                set_links[link_text+link.text] = BASEURL + link.get('href')
 
         # Print the links
         for set_name, set_link in set_links.items():
@@ -158,10 +159,14 @@ def run_set_crawler() -> None:
 
         for card in cardLink:
 
-            for attempt in range(5):
-                response = requests.get(''.join((card)))
-                if response.status_code == 200:
-                    break
+            while True:
+                try:
+                    response = requests.get(''.join((card)))
+                    response.raise_for_status()
+                    if response.status_code == 200:
+                        break
+                except (requests.exceptions.ConnectionError, requests.exceptions.Timeout) as e:
+                    logger.info(f"retrying to get connection for link {''.join((card))} task id {str(task_id)}")
 
             card_data = {}
             category_data = {}
@@ -253,7 +258,7 @@ def run_set_crawler() -> None:
                     'englishtext': '/n '.join(field_map['englishtext']),
                     'subtype': '/ '.join(field_map['subtype']),
                     'mananumber': '/ '.join(field_map['mananumber']),
-                    'link': card
+                    'link': ''.join(card)
                 }
 
                 existing_card = db.query(Card).filter_by(
@@ -310,7 +315,7 @@ def run_set_crawler() -> None:
 
                     category_data = {
                         'categories': json.dumps(list(cat_map['categories'] - field_map['race'])),
-                        'link': card
+                        'link': ''.join(card)
                     }
 
                     existing_category = db.query(Category).filter_by(
