@@ -148,238 +148,240 @@ function SearchPage() {
 
                 <IndexNavbar />
                 <IndexHeader />
-                <reactstrap.Container onKeyDown={handleKeyDown} style={{
-                    "position":"relative",
-                    "top":"-20vh"
-                }}>
-                    <div>
-                        <reactstrap.Card outline>
-                            <reactstrap.CardBody>
+                <div style={{"background-color": "#282c34", "color": "white", "align-items": "center"}}>
+                    <reactstrap.Container onKeyDown={handleKeyDown} style={{
+                        "position": "relative",
+                        "top": "-20vh"
+                    }}>
+                        <div>
+                            <reactstrap.Card outline>
+                                <reactstrap.CardBody>
+                                    <reactstrap.CardTitle tag="h2" style={{ "textAlign": "center" }}>
+                                        Search for Cards
+                                    </reactstrap.CardTitle>
+                                    <reactstrap.Form onSubmit={handleFormSubmit}>
+                                        <reactstrap.Row>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='name'>Name:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="text"
+                                                        id="name"
+                                                        name="name"
+                                                        value={searchParams.name}
+                                                        onChange={handleInputChange}
+                                                    />
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='civilization'>Civilization:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="civilization"
+                                                        name="civilization"
+                                                        value={searchParams.civilization}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a civilization --</option>
+                                                        {Object.values(civilizations).map((civilization) => (
+                                                            <option key={civilization} value={civilization}>
+                                                                {civilization}
+                                                            </option>
+                                                        ))}
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                        </reactstrap.Row>
+                                        <reactstrap.Row>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='race'>Race:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="race"
+                                                        name="race"
+                                                        value={searchParams.race}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a race --</option>
+                                                        {Object.values(races).map((race) => (
+                                                            <option key={race} value={race}>
+                                                                {race}
+                                                            </option>
+                                                        ))}
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='cost'>Cost:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="cost"
+                                                        name="cost"
+                                                        value={searchParams.cost}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a cost --</option>
+                                                        {Object.values(manacosts).map((manacost) => (
+                                                            <option key={manacost} value={manacost}>
+                                                                {manacost}
+                                                            </option>
+                                                        ))}
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                        </reactstrap.Row>
+                                        <reactstrap.FormGroup>
+                                            <reactstrap.Label for='text'>Text:</reactstrap.Label>
+                                            <reactstrap.Input
+                                                type="text"
+                                                id="text"
+                                                name="text"
+                                                value={searchParams.text}
+                                                onChange={handleInputChange}
+                                            />
+                                        </reactstrap.FormGroup>
+                                        <reactstrap.Row>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='cardtype'>Card Type:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="cardtype"
+                                                        name="cardtype"
+                                                        value={searchParams.cardtype}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a card type --</option>
+                                                        {Object.values(cardtypes).map((cardtype) => (
+                                                            <option key={cardtype} value={cardtype}>
+                                                                {cardtype}
+                                                            </option>
+                                                        ))}
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='category'>Category:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="category"
+                                                        name="category"
+                                                        value={searchParams.category}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a category --</option>
+                                                        {Object.values(categories).map((category) => (
+                                                            <option key={category} value={category}>
+                                                                {category}
+                                                            </option>
+                                                        ))}
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                        </reactstrap.Row>
+                                        <reactstrap.FormGroup>
+                                            <reactstrap.Label for='ocg_set'>Set:</reactstrap.Label>
+                                            <reactstrap.Input
+                                                type="select"
+                                                id="ocg_set"
+                                                name="ocg_set"
+                                                value={searchParams.ocg_set}
+                                                onChange={handleInputChange}
+                                            >
+                                                <option value="">-- Select a set --</option>
+                                                {Object.values(sets).map((set) => (
+                                                    <option key={set} value={set}>
+                                                        {set}
+                                                    </option>
+                                                ))}
+                                            </reactstrap.Input>
+                                        </reactstrap.FormGroup>
+                                        <reactstrap.Row>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='sort_by'>Sort By:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="sort_by"
+                                                        name="sort_by"
+                                                        value={searchParams.sort_by}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a sort option --</option>
+                                                        <option value="manacost">Mana Cost</option>
+                                                        <option value="name">Name</option>
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                            <reactstrap.Col md={6} xs={12}>
+                                                <reactstrap.FormGroup>
+                                                    <reactstrap.Label for='sort_order'>Sort Order:</reactstrap.Label>
+                                                    <reactstrap.Input
+                                                        type="select"
+                                                        id="sort_order"
+                                                        name="sort_order"
+                                                        value={searchParams.sort_order}
+                                                        onChange={handleInputChange}
+                                                    >
+                                                        <option value="">-- Select a sort order --</option>
+                                                        <option value="asc">Ascending</option>
+                                                        <option value="desc">Descending</option>
+                                                    </reactstrap.Input>
+                                                </reactstrap.FormGroup>
+                                            </reactstrap.Col>
+                                        </reactstrap.Row>
+                                        <reactstrap.Row>
+                                            <reactstrap.Col md={12} className='p-3 text-center'>
+                                                <reactstrap.Button
+                                                    color="primary"
+                                                    tag="input"
+                                                    type="submit"
+                                                    value="Search" />
+                                            </reactstrap.Col>
+                                        </reactstrap.Row>
+                                    </reactstrap.Form>
+                                </reactstrap.CardBody>
+                            </reactstrap.Card>
+                            <reactstrap.Card outline className='mt-5'>
                                 <reactstrap.CardTitle tag="h2" style={{ "textAlign": "center" }}>
-                                    Search for Cards
+                                    Search Results:
                                 </reactstrap.CardTitle>
-                                <reactstrap.Form onSubmit={handleFormSubmit}>
-                                    <reactstrap.Row>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='name'>Name:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="text"
-                                                    id="name"
-                                                    name="name"
-                                                    value={searchParams.name}
-                                                    onChange={handleInputChange}
-                                                />
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='civilization'>Civilization:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="civilization"
-                                                    name="civilization"
-                                                    value={searchParams.civilization}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a civilization --</option>
-                                                    {Object.values(civilizations).map((civilization) => (
-                                                        <option key={civilization} value={civilization}>
-                                                            {civilization}
-                                                        </option>
-                                                    ))}
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                    </reactstrap.Row>
-                                    <reactstrap.Row>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='race'>Race:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="race"
-                                                    name="race"
-                                                    value={searchParams.race}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a race --</option>
-                                                    {Object.values(races).map((race) => (
-                                                        <option key={race} value={race}>
-                                                            {race}
-                                                        </option>
-                                                    ))}
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='cost'>Cost:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="cost"
-                                                    name="cost"
-                                                    value={searchParams.cost}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a cost --</option>
-                                                    {Object.values(manacosts).map((manacost) => (
-                                                        <option key={manacost} value={manacost}>
-                                                            {manacost}
-                                                        </option>
-                                                    ))}
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                    </reactstrap.Row>
-                                    <reactstrap.FormGroup>
-                                        <reactstrap.Label for='text'>Text:</reactstrap.Label>
-                                        <reactstrap.Input
-                                            type="text"
-                                            id="text"
-                                            name="text"
-                                            value={searchParams.text}
-                                            onChange={handleInputChange}
-                                        />
-                                    </reactstrap.FormGroup>
-                                    <reactstrap.Row>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='cardtype'>Card Type:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="cardtype"
-                                                    name="cardtype"
-                                                    value={searchParams.cardtype}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a card type --</option>
-                                                    {Object.values(cardtypes).map((cardtype) => (
-                                                        <option key={cardtype} value={cardtype}>
-                                                            {cardtype}
-                                                        </option>
-                                                    ))}
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='category'>Category:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="category"
-                                                    name="category"
-                                                    value={searchParams.category}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a category --</option>
-                                                    {Object.values(categories).map((category) => (
-                                                        <option key={category} value={category}>
-                                                            {category}
-                                                        </option>
-                                                    ))}
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                    </reactstrap.Row>
-                                    <reactstrap.FormGroup>
-                                        <reactstrap.Label for='ocg_set'>Set:</reactstrap.Label>
-                                        <reactstrap.Input
-                                            type="select"
-                                            id="ocg_set"
-                                            name="ocg_set"
-                                            value={searchParams.ocg_set}
-                                            onChange={handleInputChange}
-                                        >
-                                            <option value="">-- Select a set --</option>
-                                            {Object.values(sets).map((set) => (
-                                                <option key={set} value={set}>
-                                                    {set}
-                                                </option>
-                                            ))}
-                                        </reactstrap.Input>
-                                    </reactstrap.FormGroup>
-                                    <reactstrap.Row>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='sort_by'>Sort By:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="sort_by"
-                                                    name="sort_by"
-                                                    value={searchParams.sort_by}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a sort option --</option>
-                                                    <option value="manacost">Mana Cost</option>
-                                                    <option value="name">Name</option>
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                        <reactstrap.Col md={6} xs={12}>
-                                            <reactstrap.FormGroup>
-                                                <reactstrap.Label for='sort_order'>Sort Order:</reactstrap.Label>
-                                                <reactstrap.Input
-                                                    type="select"
-                                                    id="sort_order"
-                                                    name="sort_order"
-                                                    value={searchParams.sort_order}
-                                                    onChange={handleInputChange}
-                                                >
-                                                    <option value="">-- Select a sort order --</option>
-                                                    <option value="asc">Ascending</option>
-                                                    <option value="desc">Descending</option>
-                                                </reactstrap.Input>
-                                            </reactstrap.FormGroup>
-                                        </reactstrap.Col>
-                                    </reactstrap.Row>
-                                    <reactstrap.Row>
-                                        <reactstrap.Col md={12} className='p-3 text-center'>
-                                            <reactstrap.Button
-                                                color="primary"
-                                                tag="input"
-                                                type="submit"
-                                                value="Search" />
-                                        </reactstrap.Col>
-                                    </reactstrap.Row>
-                                </reactstrap.Form>
-                            </reactstrap.CardBody>
-                        </reactstrap.Card>
-                        <reactstrap.Card outline className='mt-5'>
-                            <reactstrap.CardTitle tag="h2" style={{ "textAlign": "center" }}>
-                                Search Results:
-                            </reactstrap.CardTitle>
-                            <reactstrap.CardBody>
-                                {Object.keys(searchResults).length > 0 && (
-                                    <reactstrap.Col className='d-flex justify-content-end'>
-                                        <reactstrap.Button onClick={(event) => {
-                                            event.preventDefault();
-                                            handleDownloadCsv();
-                                        }}>
-                                            <i className='fa fa-download'></i>
-                                            Download as CSV
-                                        </reactstrap.Button>
-                                    </reactstrap.Col>
-                                )}
-                                <reactstrap.ListGroup>
-                                    {Object.values(searchResults).map((card) => (
-                                        <reactstrap.ListGroupItem
-                                            href={`#card-${card.Card.id}`}
-                                            tag="a"
-                                            key={card.Card.id}
-                                            onClick={(event) => {
+                                <reactstrap.CardBody>
+                                    {Object.keys(searchResults).length > 0 && (
+                                        <reactstrap.Col className='d-flex justify-content-end'>
+                                            <reactstrap.Button onClick={(event) => {
                                                 event.preventDefault();
-                                                handleCardClick(card.Card.id);
-                                            }}
-                                        >
-                                            {card.Card.name} ({card.Card.civilization})
-                                        </reactstrap.ListGroupItem>
-                                    ))}
-                                </reactstrap.ListGroup>
-                            </reactstrap.CardBody>
-                        </reactstrap.Card>
-                    </div>
-                </reactstrap.Container>
+                                                handleDownloadCsv();
+                                            }}>
+                                                <i className='fa fa-download'></i>
+                                                Download as CSV
+                                            </reactstrap.Button>
+                                        </reactstrap.Col>
+                                    )}
+                                    <reactstrap.ListGroup>
+                                        {Object.values(searchResults).map((card) => (
+                                            <reactstrap.ListGroupItem
+                                                href={`#card-${card.Card.id}`}
+                                                tag="a"
+                                                key={card.Card.id}
+                                                onClick={(event) => {
+                                                    event.preventDefault();
+                                                    handleCardClick(card.Card.id);
+                                                }}
+                                            >
+                                                {card.Card.name} ({card.Card.civilization})
+                                            </reactstrap.ListGroupItem>
+                                        ))}
+                                    </reactstrap.ListGroup>
+                                </reactstrap.CardBody>
+                            </reactstrap.Card>
+                        </div>
+                    </reactstrap.Container>
+                </div>
 
                 <reactstrap.Col md={6} xd={12} className='sidebar' onKeyDown={handleKeyDown}>
                     <div className='d-flex justify-content-start'>
