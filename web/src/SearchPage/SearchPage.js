@@ -418,7 +418,7 @@ function SearchPage() {
                                     </tr>
                                     <tr>
                                         <td className='d-flex justify-content-center'>
-                                            <img src={cardDetails.Card.image} alt={cardDetails.Card.name} />
+                                            <img src={cardImageData} alt={cardDetails.Card.name} />
                                         </td>
                                     </tr>
                                     <tr>

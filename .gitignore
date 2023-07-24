@@ -3,3 +3,4 @@ venv/
 app/__pycache__
 app/Database/__pycache__
 app/alembic/__pycache__
+mysql

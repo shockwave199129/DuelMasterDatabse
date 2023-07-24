@@ -14,7 +14,7 @@ services:
     restart: always
     tty: true
     environment:
-      - DATABASE_URL=mysql://root:12345@DM_mysql:3307/duel_masters
+      - DATABASE_URL=mysql://root:12345@DM_mysql:3306/duel_masters
     depends_on:
       - dm_db
   dm_db:
@@ -23,7 +23,7 @@ services:
       - ./mysql/dbdata/:/var/lib/mysql/
       - ./mysql/my.cnf:/etc/mysql/my.cnf
     ports:
-      - "3307:3306"
+      - "3306:3306"
     container_name: DM_mysql
     restart: always
     tty: true

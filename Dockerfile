@@ -28,8 +28,7 @@ COPY ./app /code/app
 COPY ./entrypoint.sh /code/entrypoint.sh
 RUN chmod +x /code/entrypoint.sh
 
-#
-ENTRYPOINT ["/code/entrypoint.sh"]
+ENTRYPOINT ["/bin/sh", "/code/entrypoint.sh"]
 
 # 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+#CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
