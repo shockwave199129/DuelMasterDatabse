@@ -33,6 +33,7 @@ function SearchPage() {
     const [searchResults, setSearchResults] = useState([]);
     const [cardDetails, setCardDetails] = useState({});
     const [currentDisplayCard, setCurrentDisplayCard] = useState();
+    const [cardImageData, setCardImageData] = useState();
 
     useEffect(() => {
         async function fetchData() {
@@ -80,7 +81,19 @@ function SearchPage() {
         const cardResponse = await axios.get(`http://localhost:8000/card-details/${cardId}`);
         setCardDetails(cardResponse.data);
         setCurrentDisplayCard(cardId);
-        console.log($(".sidebar").hasClass("active"))
+
+        $.ajax({
+            url: cardResponse.data.Card.image,
+            type: 'GET',
+            timeout: 0,
+            headers: {
+                "Accept": "image/png"
+            },
+            success: function (result) {
+                setCardImageData(result);
+                console.log(result);
+            }
+        })
 
         if ($(".sidebar").hasClass("active") === false) {
             $(".sidebar").addClass("active");
@@ -148,7 +161,7 @@ function SearchPage() {
 
                 <IndexNavbar />
                 <IndexHeader />
-                <div style={{"background-color": "#282c34", "color": "white", "align-items": "center"}}>
+                <div style={{ "background-color": "#282c34", "color": "white", "align-items": "center" }}>
                     <reactstrap.Container onKeyDown={handleKeyDown} style={{
                         "position": "relative",
                         "top": "-20vh"

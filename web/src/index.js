@@ -8,7 +8,8 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import SearchPage from './SearchPage/SearchPage';
-//import DetailsPage from './SearchPage/DetailsPage';
+import DeckList from './DeckPage/DeckList';
+import CreateDeck from './DeckPage/CreateDeck';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,14 @@ const router = createBrowserRouter([
     path: "/search",
     element: <SearchPage />,
   },
+  {
+    path: "/decklist",
+    element: <DeckList/>
+  },
+  {
+    path: "/createdeck",
+    element: <CreateDeck/>
+  }
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

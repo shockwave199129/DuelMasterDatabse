@@ -30,6 +30,8 @@ services:
     environment:
       - MYSQL_DATABASE=duel_masters
       - MYSQL_ROOT_PASSWORD=12345
+      - MYSQL_WAIT_TIMEOUT=31536000
+      - MYSQL_INTERACTIVE_TIMEOUT=31536000
 
   dm_web:
     build:

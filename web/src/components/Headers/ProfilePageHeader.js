@@ -44,7 +44,7 @@ function ProfilePageHeader() {
       <div
         style={{
           backgroundImage:
-            "url(" + require("assets/img/fabio-mangione.jpg") + ")"
+            "url(DM-Cover-01.png)"
         }}
         className="page-header page-header-xs"
         data-parallax={true}

@@ -104,7 +104,7 @@ function IndexNavbar() {
             <NavItem>
               <NavLink
                 data-placement="bottom"
-                href="#"
+                href="/decklist"
                 target=""
                 title="Deck Build"
               >
