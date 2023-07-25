@@ -66,3 +66,12 @@ def get_categories_enum(db = Session()):
     dict_ = {i.upper(): i for i in cat_enum_values}
 
     return Enum('CategoryEnum',dict_)
+
+class CivilizationEnum(str, Enum):
+    LIGHT = "Light"
+    WATER = "Water"
+    DARKNESS = "Darkness"
+    FIRE = "Fire"
+    NATURE = "Nature"
+    ZERO = "Zero"
+    COLORLESS = "Colorless"

@@ -3,20 +3,6 @@
 version: '3.8'
 
 services:
-  dm_api:
-    build: .
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
-    volumes:
-      - ./app:/code/app
-    ports:
-      - 8000:8000
-    container_name: DM_api
-    restart: always
-    tty: true
-    environment:
-      - DATABASE_URL=mysql://root:12345@DM_mysql:3306/duel_masters
-    depends_on:
-      - dm_db
   dm_db:
     image: mysql:8.0
     volumes:
@@ -32,6 +18,22 @@ services:
       - MYSQL_ROOT_PASSWORD=12345
       - MYSQL_WAIT_TIMEOUT=31536000
       - MYSQL_INTERACTIVE_TIMEOUT=31536000
+    
+  dm_api:
+    build: .
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    volumes:
+      - ./app:/code/app
+    ports:
+      - 8000:8000
+    container_name: DM_api
+    restart: always
+    tty: true
+    environment:
+      - DATABASE_URL=mysql://root:12345@DM_mysql:3306/duel_masters
+    depends_on:
+      - dm_db
+
 
   dm_web:
     build:

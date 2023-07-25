@@ -24,7 +24,13 @@ def run_set_crawler() -> None:
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
-    file_handler = logging.FileHandler('log/crawler_log_file.log')
+    log_directory = 'log'
+    if not os.path.exists(log_directory):
+        os.makedirs(log_directory)
+
+    log_file_path = os.path.join(log_directory, 'crawler_log_file.log')
+
+    file_handler = logging.FileHandler(log_file_path)
     formatter = logging.Formatter(
         '%(levelname)s - %(asctime)s - %(name)s - %(message)s')
     file_handler.setFormatter(formatter)

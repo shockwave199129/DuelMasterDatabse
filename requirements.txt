@@ -1,6 +1,12 @@
 fastapi
 fastapi_utils
 uvicorn
+python-multipart
+pydantic
+pydantic[email]
+Crypto
+python-jose
+passlib
 sqlalchemy<2.0
 mysqlclient
 beautifulsoup4
