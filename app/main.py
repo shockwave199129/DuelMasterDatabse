@@ -1,32 +1,14 @@
 import uvicorn
-from typing import Union, Optional
-from fastapi import FastAPI, Depends, BackgroundTasks, HTTPException
+from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi_utils.tasks import repeat_every
-from .Database.db import Base, engine, Session
-from .Database.models import Card, Category, DMSets
-from .enumType import get_race_enum, get_manacost_enum, get_cardtype_enum, get_categories_enum
-from .Crawler.setCrawler import run_set_crawler
-from enum import Enum
-import logging
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 from threading import Thread
 
 
-import json
-
+from .Database.db import Base, engine
+from .Crawler.setCrawler import run_set_crawler
 from .Routes import cardSearch, webSearch, userLogin
-
-
-class CivilizationEnum(str, Enum):
-    LIGHT = "Light"
-    WATER = "Water"
-    DARKNESS = "Darkness"
-    FIRE = "Fire"
-    NATURE = "Nature"
-    ZERO = "Zero"
-    COLORLESS = "Colorless"
 
 app = FastAPI()
 #background_task = BackgroundTasks()

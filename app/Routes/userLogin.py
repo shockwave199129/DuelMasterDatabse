@@ -1,9 +1,8 @@
-from fastapi import APIRouter, Body, Depends, HTTPException
-from fastapi.security import OAuth2PasswordRequestForm
-from typing import Any, List
+from fastapi import APIRouter, Depends, HTTPException
+from typing import Any
 from datetime import timedelta
 
-from ..Database.db import Base, engine, Session
+from ..Database.db import Session
 from ..Database.models import User
 from .cardSearch import get_db
 from ..Database import schemas

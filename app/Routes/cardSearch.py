@@ -1,7 +1,7 @@
-from fastapi import APIRouter, Body, Depends, HTTPException
-from typing import Union, Optional
+from fastapi import APIRouter, Depends
+from typing import Optional
 
-from ..Database.db import Base, engine, Session
+from ..Database.db import Session
 from ..Database.models import Card, Category
 from ..enumType import get_race_enum, get_manacost_enum, get_cardtype_enum, get_categories_enum, CivilizationEnum
 
