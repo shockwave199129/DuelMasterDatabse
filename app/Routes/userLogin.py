@@ -61,3 +61,16 @@ def login_access_token(
         ),
         "token_type": "bearer",
     }
+
+@router.get("/user-details", response_model= schemas.UserResponse)
+def get_user_details(
+        current_user: dict = Depends(security.authenticate_token),
+        db: Session = Depends(get_db)
+        ) -> Any:
+    """
+    get loging user details
+    """
+    user_id = current_user.get("sub")
+    user = db.query(User).filter(User.id == user_id).first()
+    return user.__dict__
+

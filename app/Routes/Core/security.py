@@ -1,7 +1,9 @@
+from fastapi import Depends, HTTPException, status
+from fastapi.security import APIKeyHeader
 from datetime import datetime, timedelta
 from typing import Any, Union
 
-from jose import jwt
+from jose import jwt, JWTError
 from passlib.context import CryptContext
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -26,6 +28,19 @@ def create_access_token(
     encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
     return encoded_jwt
 
+
+api_key_header = APIKeyHeader(name="Authorization", auto_error=True)
+
+def authenticate_token(authorization: str = Depends(api_key_header)):
+    try:
+        payload = jwt.decode(authorization, SECRET_KEY, algorithms=[ALGORITHM])
+        return payload
+    except JWTError:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Invalid or expired token",
+            headers={"WWW-Authenticate": "Bearer"},
+        )
 
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     return pwd_context.verify(plain_password, hashed_password)
