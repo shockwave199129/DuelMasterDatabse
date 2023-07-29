@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from typing import Optional
 from sqlalchemy import distinct
 from sqlalchemy.sql import func
+from sqlalchemy.orm import attributes
 import requests
 import base64
 
@@ -113,9 +114,9 @@ async def get_search_card(db: Session = Depends(get_db),
     # Convert the result to a list of dictionaries
     result = []
     for dt in query.all():
-        imgData = requests.get(dt.Card.image)
         dt_dict = dt._asdict()
-        dt_dict['image_data'] = base64.b64encode(imgData.content).decode('utf-8')
+        #imgData = requests.get(dt.Card.image)
+        #dt_dict['image_data'] = base64.b64encode(imgData.content).decode('utf-8')
         result.append(dt_dict)
     return result
 
@@ -128,5 +129,7 @@ async def get_one_card_details(card_id: int,
             .join(DMSets, DMSets.card_link == Card.link)
     
     query = query.filter(Card.id == card_id)
-
-    return query.first()
+    result = query.first()._asdict()
+    cardData = {column.name: getattr(result['Card'], column.name) for column in result['Card'].__table__.columns}
+    result['image_data'] = base64.b64encode(requests.get(cardData['image']).content).decode('utf-8')
+    return result

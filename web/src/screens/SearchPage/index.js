@@ -38,6 +38,7 @@ export default function SearchPage() {
 
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [detailsCradId, setDetailsCardId] = useState({});
+    const [cardDetail, setCardDetail] = useState({});
 
     useEffect(() => {
         Swal.fire({
@@ -148,19 +149,55 @@ export default function SearchPage() {
         setDataTableData(tableData)
         Swal.close();
     };
+    const cardResponse = async (cardId) => {
+        try {
+            let data = await Api().get('card-details/' + cardId);
+            setCardDetail(data.data)
+            return Promise.resolve();
+        } catch (error) {
+            console.error(error);
+            return Promise.reject(error);
+        }
+    }
 
     function showCardDeatils(row) {
         if (isModalOpen) {
             if (detailsCradId.id != row.id) {
-                setDetailsCardId(row);
+                Swal.fire({
+                    title: "Geting...",
+                    text: "Please wait while we geting card data",
+                    showConfirmButton: false,
+                    allowOutsideClick: false
+                });
+                cardResponse(row.id).then(
+                    () => {
+                        console.log(cardDetail)
+                        setDetailsCardId(row)
+                        Swal.close();
+                    }).catch((error) => {
+                        console.error(error);
+                        Swal.close();
+                    })
             } else {
                 setIsModalOpen(false);
             }
         } else {
-            setDetailsCardId(row);
-            setIsModalOpen(true);
+            Swal.fire({
+                title: "Geting...",
+                text: "Please wait while we geting card data",
+                showConfirmButton: false,
+                allowOutsideClick: false
+            });
+            cardResponse(row.id).then(
+                () => {
+                    setDetailsCardId(row)
+                    setIsModalOpen(true)
+                    Swal.close();
+                }).catch((error) => {
+                    console.error(error);
+                    Swal.close();
+                })
         }
-        console.log(row)
     }
 
     const handleCardDeatailClick = () => {
@@ -177,7 +214,7 @@ export default function SearchPage() {
     return (
         <>
             <TopNav />
-            <section className="inner-page" onKeyDown={handleKeyDown}>
+            <section className="inner-page" onKeyDown={e => handleKeyDown(e)}>
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -362,7 +399,7 @@ export default function SearchPage() {
                                 </tr>
                                 <tr>
                                     <td className="d-flex justify-content-center">
-                                        <img src={`data:image/png;base64,${detailsCradId.image_data}`} alt={detailsCradId.name} />
+                                        <img src={`data:image/png;base64,${cardDetail.image_data}`} alt={detailsCradId.name} />
                                     </td>
                                 </tr>
                                 <tr>
