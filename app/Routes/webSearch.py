@@ -35,6 +35,15 @@ async def get_category_list():
     race_dict = {c.name: c.value for c in get_categories_enum().__members__.values()}
     return race_dict
 
+@router.get("/get-power")
+async def get_power_list(db: Session = Depends(get_db)):
+    pow_enum_values = []
+    temp_data = set()
+    powers = db.query(distinct(Card.power)).all()
+    dict_ = [item[0] for item in powers]
+    return dict_
+
+
 @router.get("/get-set")
 async def get_sets_list(db: Session = Depends(get_db)):
     cat_enum_values = []
@@ -53,6 +62,7 @@ async def get_search_card(db: Session = Depends(get_db),
     civilization: Optional[str] = None,
     race: Optional[str] = None,
     cost: Optional[str] = None,
+    power: Optional[str] = None,
     text: Optional[str] = None,
     cardtype: Optional[str] = None,
     category: Optional[str] = None,
@@ -74,6 +84,8 @@ async def get_search_card(db: Session = Depends(get_db),
         query = query.filter(Card.race.like(f"%\"{race}\"%"))
     if cost:
         query = query.filter(Card.manacost.like(f"%{cost}%"))
+    if power:
+        query = query.filter(Card.power.like(f"%{power}%"))
     if text:
         query = query.filter(Card.englishtext.like(f"%{text}%"))
     if cardtype:
