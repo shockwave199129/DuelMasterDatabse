@@ -2,10 +2,12 @@
 import TopNav from "@/shared/topNav";
 import Footers from "@/shared/footer";
 import Api from "@/shared/api";
+import './style.css'
 
 import { useEffect, useState } from "react";
 import DataTable from "react-data-table-component";
 import Swal from "sweetalert2";
+import $ from 'jquery';
 
 export default function SearchPage() {
 
@@ -33,6 +35,9 @@ export default function SearchPage() {
 
     var [dataTableColumns, setDataTableColumns] = useState([]);
     var [dataTableData, setDataTableData] = useState([]);
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [detailsCradId, setDetailsCardId] = useState({});
 
     useEffect(() => {
         Swal.fire({
@@ -89,6 +94,12 @@ export default function SearchPage() {
 
     const handleFormSubmit = async (event) => {
         event.preventDefault();
+        Swal.fire({
+            title: "Searching...",
+            text: "Please wait while we search data",
+            showConfirmButton: false,
+            allowOutsideClick: false
+        });
         const response = await Api().get('card-search', searchParams);
         setSearchResults(response.data);
 
@@ -131,19 +142,42 @@ export default function SearchPage() {
         Object.values(response.data).map(value => {
             let tmp = value.Card
             tmp['set'] = value.sets
+            tmp['image_data'] = value.image_data
             tableData.push(tmp)
         })
         setDataTableData(tableData)
+        Swal.close();
     };
 
     function showCardDeatils(row) {
+        if (isModalOpen) {
+            if (detailsCradId.id != row.id) {
+                setDetailsCardId(row);
+            } else {
+                setIsModalOpen(false);
+            }
+        } else {
+            setDetailsCardId(row);
+            setIsModalOpen(true);
+        }
         console.log(row)
+    }
+
+    const handleCardDeatailClick = () => {
+        setIsModalOpen(false);
+        //setDetailsCardId({});
+    }
+
+    const handleKeyDown = (event) => {
+        if (event.keyCode === 27) {
+            handleCardDeatailClick()
+        }
     }
 
     return (
         <>
             <TopNav />
-            <section className="inner-page">
+            <section className="inner-page" onKeyDown={handleKeyDown}>
                 <div className="container">
                     <div className="card">
                         <div className="card-body">
@@ -153,11 +187,11 @@ export default function SearchPage() {
                             <form onSubmit={handleFormSubmit}>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-6 p-2 col-12 form-group">
+                                    <div className="col-md-6 p-2 col-12 ">
                                         <label>Name:</label>
                                         <input type="text" className="form-control" id="name" name="name" defaultValue={searchParams.name} onChange={handleInputChange}></input>
                                     </div>
-                                    <div className="col-md-6 p-2 col-12 form-group">
+                                    <div className="col-md-6 p-2 col-12 ">
                                         <label>Civilization:</label>
                                         <select className="form-control"
                                             id="civilization"
@@ -175,7 +209,7 @@ export default function SearchPage() {
                                 </div>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-5 p-2 col-12 form-group">
+                                    <div className="col-md-5 p-2 col-12 ">
                                         <label>Race:</label>
                                         <select className="form-control"
                                             id="race"
@@ -190,7 +224,7 @@ export default function SearchPage() {
                                             ))}
                                         </select>
                                     </div>
-                                    <div className="col-md-3 p-2 col-12 form-group">
+                                    <div className="col-md-3 p-2 col-12 ">
                                         <label>Cost:</label>
                                         <select className="form-control"
                                             id="cost"
@@ -205,7 +239,7 @@ export default function SearchPage() {
                                             ))}
                                         </select>
                                     </div>
-                                    <div className="col-md-4 p-2 col-12 form-group">
+                                    <div className="col-md-4 p-2 col-12 ">
                                         <label>Power:</label>
                                         <select className="form-control"
                                             id="power"
@@ -223,14 +257,14 @@ export default function SearchPage() {
                                 </div>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-12 p-2 col-12 form-group">
+                                    <div className="col-md-12 p-2 col-12 ">
                                         <label>Text:</label>
                                         <input type="text" className="form-control" id="text" name="text" defaultValue={searchParams.text} onChange={handleInputChange}></input>
                                     </div>
                                 </div>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-6 p-2 col-12 form-group">
+                                    <div className="col-md-6 p-2 col-12 ">
                                         <label>Card Type:</label>
                                         <select className="form-control"
                                             id="cardtype"
@@ -245,7 +279,7 @@ export default function SearchPage() {
                                             ))}
                                         </select>
                                     </div>
-                                    <div className="col-md-6 p-2 col-12 form-group">
+                                    <div className="col-md-6 p-2 col-12 ">
                                         <label>Category:</label>
                                         <select className="form-control"
                                             id="category"
@@ -263,7 +297,7 @@ export default function SearchPage() {
                                 </div>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-12 p-2 col-12 form-group">
+                                    <div className="col-md-12 p-2 col-12 ">
                                         <label>Set:</label>
                                         <select className="form-control"
                                             id="ocg_set"
@@ -281,7 +315,7 @@ export default function SearchPage() {
                                 </div>
 
                                 <div className="d-flex flex-wrap">
-                                    <div className="col-md-12 p-2 col-12 form-group text-center">
+                                    <div className="col-md-12 p-2 col-12  text-center">
                                         <input type="submit" value="Search" className="btn btn-primary" />
                                     </div>
                                 </div>
@@ -305,6 +339,86 @@ export default function SearchPage() {
                     />
                 </div>
             </section>
+
+            <div className={`col-md-5 col-11 sidebar border ${isModalOpen ? 'active' : ''}`}>
+                <div className=' col-12 d-flex justify-content-end'>
+                    <i
+                        className='bi bi-x-square-fill'
+                        style={{ "fontSize": "25px", "padding": "0px 20px", "cursor": "pointer" }}
+                        onClick={(event) => {
+                            event.preventDefault();
+                            handleCardDeatailClick();
+                        }}
+                    ></i>
+                </div>
+                <div className="sidebar-list col-12">
+                    {Object.keys(detailsCradId).length > 0 &&
+                        <table className={`table table-bordered table-sm sidebar-item ${isModalOpen ? 'active' : ''}`}>
+                            <tbody>
+                                <tr>
+                                    <th className="d-flex justify-content-center">
+                                        {detailsCradId.name}
+                                    </th>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex justify-content-center">
+                                        <img src={`data:image/png;base64,${detailsCradId.image_data}`} alt={detailsCradId.name} />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Civilization:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.civilization}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Type:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.cardtype}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Race:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.race}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Cost:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.manacost}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Text:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.englishtext}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Power:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.power}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex">
+                                        <div className="col-6 text-center fw-bolder"><strong>Mana:</strong></div>
+                                        <div className="col-6 text-center fw-bolder">{detailsCradId.mananumber}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td className="d-flex flex-wrap">
+                                        <div className="col-12 text-center fw-bolder"><strong>Sets</strong></div>
+                                        <div className="col-12 text-center fw-bolder">{detailsCradId.set}</div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    }
+                </div>
+            </div>
+            <Footers />
         </>
     )
 

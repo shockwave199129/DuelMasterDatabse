@@ -2,6 +2,8 @@ from fastapi import APIRouter, Depends, HTTPException
 from typing import Optional
 from sqlalchemy import distinct
 from sqlalchemy.sql import func
+import requests
+import base64
 
 from ..Database.db import Session
 from ..Database.models import Card, Category, DMSets
@@ -109,7 +111,12 @@ async def get_search_card(db: Session = Depends(get_db),
             raise HTTPException(status_code=400, detail=f"Invalid sort column: {sort_by}")
 
     # Convert the result to a list of dictionaries
-    result = [row._asdict() for row in query.all()]
+    result = []
+    for dt in query.all():
+        imgData = requests.get(dt.Card.image)
+        dt_dict = dt._asdict()
+        dt_dict['image_data'] = base64.b64encode(imgData.content).decode('utf-8')
+        result.append(dt_dict)
     return result
 
 @router.get("/card-details/{card_id}")

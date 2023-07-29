@@ -23,6 +23,7 @@ export default function RootLayout({ children }) {
         <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet" />
         <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
         <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"/>
 
 
         <link href="assets/css/style.css" rel="stylesheet" />
