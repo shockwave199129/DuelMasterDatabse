@@ -1,7 +1,7 @@
 export default function validate(values) {
     let errors = {};
     if (!values.username || values.username.trim().length == 0) {
-        errors.email = 'Email address is required';
+        errors.username = 'Email address is required';
     }
     if (!values.email || values.email.trim().length == 0) {
         errors.email = 'Email address is required';
