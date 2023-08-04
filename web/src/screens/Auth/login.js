@@ -1,8 +1,12 @@
 "use client"
 import useForm from "@/form/useForm"
 import validate from "@/form/LoginFormValidationRules"
+import Api from "@/shared/api";
 
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { useRouter } from 'next/navigation';
+import Cookies from "universal-cookie";
+import Swal from "sweetalert2";
 
 export default function Login(porps) {
 
@@ -17,8 +21,25 @@ export default function Login(porps) {
         'remember': true
     })
 
-    function submitLoginForm(values) {
-        console.log(values)
+    const { push } = useRouter();
+
+    const cookies = new Cookies();
+
+    async function submitLoginForm(values) {
+        const loginData = await Api().validatePost('login', values);
+        if (loginData) {
+            const currentDate = new Date();
+            const futureDate = new Date();
+            futureDate.setDate(currentDate.getDate() + 8);
+
+            cookies.set('dm_a_token', loginData.access_token, { expires: futureDate })
+            Swal.fire({
+                text: 'Login done',
+                confirmButtonText: 'OK',
+            }).then(() => {
+                push('/');
+            });
+        }
     }
 
     const [showPass, setShowPass] = useState(false)

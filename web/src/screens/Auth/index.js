@@ -1,5 +1,7 @@
 "use client"
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
+import Cookies from "universal-cookie";
 
 import Login from "./login";
 import Register from "./register";
@@ -9,7 +11,13 @@ import Footers from "@/shared/footer";
 export default function LoginAndRegister() {
 
     const [formView, setformView] = useState('login');
+    const { push } = useRouter();
+    const cookies = new Cookies();
 
+    var loginToken = cookies.get('dm_a_token');
+    if(typeof loginToken != 'undefined') {
+        push('/')
+    }
 
     return (
         <>

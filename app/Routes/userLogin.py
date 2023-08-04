@@ -24,7 +24,7 @@ def create_user(
     if user:
         raise HTTPException(
             status_code=400,
-            detail="The user with this username already exists in the system.",
+            detail="The user with this email already exists in the system.",
         )
     db_obj = User(
         email=user_in.email,
@@ -47,11 +47,11 @@ def login_access_token(
     """
     user = db.query(User).filter(User.email == user_login.email).first()
     if not user:
-        raise HTTPException(status_code=400, detail="Incorrect email")
+        raise HTTPException(status_code=422, detail="Incorrect email")
     if not user.is_active:
-        raise HTTPException(status_code=400, detail="Inactive user")
+        raise HTTPException(status_code=422, detail="Inactive user")
     if not security.verify_password(user_login.password, user.hashed_password):
-        raise HTTPException(status_code=400, detail="Incorrect password")
+        raise HTTPException(status_code=422, detail="Incorrect password")
 
     access_token_expires = timedelta(
         minutes=security.ACCESS_TOKEN_EXPIRE_MINUTES)

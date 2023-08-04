@@ -3,6 +3,8 @@ import useForm from "@/form/useForm"
 import validate from "@/form/RegisterFormValidationRules"
 import { useEffect, useState } from "react"
 
+import Api from "@/shared/api";
+
 export default function Register(porps) {
     const {
         handleChange,
@@ -10,14 +12,23 @@ export default function Register(porps) {
         values,
         errors,
     } = useForm(submitLoginForm, validate, {
-        'username': "",
+        'user_name': "",
         'email': '',
         'password': '',
         'confime_password': ''
     })
 
-    function submitLoginForm(values) {
-        console.log(values)
+    async function submitLoginForm(values) {
+        debugger
+        const registerData = await Api().validatePost('register', values);
+        if (registerData) {
+            Swal.fire({
+                text: 'Register done',
+                confirmButtonText: 'OK',
+            }).then(() => {
+                porps.tabfunc('login')
+            });
+        }
     }
 
     const [showPass, setShowPass] = useState(false)
@@ -29,10 +40,10 @@ export default function Register(porps) {
 
                     <div className="form-outline mb-2">
                         <label className="form-label" htmlFor="loginName">Username</label>
-                        <input type="text" name="username" onChange={e => { handleChange(e) }}
-                            defaultValue={values.username} className="form-control" />
-                        {errors.username && (
-                            <p className="small text-danger mb-1">{errors.username}</p>
+                        <input type="text" name="user_name" onChange={e => { handleChange(e) }}
+                            defaultValue={values.user_name} className="form-control" />
+                        {errors.user_name && (
+                            <p className="small text-danger mb-1">{errors.user_name}</p>
                         )}
                     </div>
 
@@ -74,7 +85,7 @@ export default function Register(porps) {
                             </div> */}
                         </div>
                     </div>
-                    <button type="submit" className="btn btn-primary btn-block mb-2">Sign in</button>
+                    <button type="submit" className="btn btn-primary btn-block mb-2">Register</button>
 
                     <div className="text-center">
                         <p>Already have account? <a href="" onClick={e => { e.preventDefault(), porps.tabfunc('login') }}>Login</a></p>

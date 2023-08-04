@@ -1,10 +1,17 @@
 "use client"
 import { usePathname, useRouter } from "next/navigation"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import Cookies from "universal-cookie";
+
+import Api from "@/shared/api";
 
 export default function TopNav() {
-    const { push } = useRouter();
+    const { push, refresh } = useRouter();
     const pathName = usePathname();
+    const cookies = new Cookies();
+
+    const [loginUser, setLoginUser] = useState('User');
+    const [isUserPresent, setIsUserPresent] = useState(false);
 
     useEffect(() => {
         if (window.scrollY > 100) {
@@ -33,7 +40,42 @@ export default function TopNav() {
                 this.nextElementSibling.classList.toggle('dropdown-active')
             }
         }))
+
+        var loginToken = cookies.get('dm_a_token');
+        var userInfo = cookies.get('dm_users');
+        if (typeof loginToken != 'undefined') {
+            if (typeof userInfo == 'undefined') {
+                saveUserData().then(() => {
+                    userInfo = cookies.get('dm_users');
+                    setLoginUser(userInfo.user_name);
+                })
+            } else {
+                setLoginUser(userInfo.user_name);
+            }
+            setIsUserPresent(true);
+        }
     }, []);
+
+    async function saveUserData() {
+        try {
+            const userData = await Api().get('user-details');
+            const currentDate = new Date();
+            const futureDate = new Date();
+            futureDate.setDate(currentDate.getDate() + 8);
+            cookies.set('dm_users', userData.data, { expires: futureDate })
+            return Promise.resolve();
+        } catch (error) {
+            console.error(error);
+            return Promise.reject(error);
+        }
+    }
+
+    function handelLogout(event) {
+        event.preventDefault();
+        cookies.remove('dm_a_token');
+        cookies.remove('dm_users');
+        location.reload()
+    }
 
     return (
         <>
@@ -47,10 +89,14 @@ export default function TopNav() {
                             <li><a className={`nav-link scrollto ${pathName == '/' ? 'active' : ''}`} href="/">Home</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/search' ? 'active' : ''}`} href="/search">Search</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/decklist' ? 'active' : ''}`} href="/decklist">Deck List</a></li>
-                            <li className={`dropdown${pathName == '/user' ? 'active' : ''}`}><a href="/user"><span>User</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className={`dropdown${pathName == '/user' ? 'active' : ''}`}><a href=""><span>{loginUser}</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
-                                    <li><a href="#">Log In</a></li>
-                                    <li><a href="#">Log Out</a></li>
+                                    {isUserPresent &&
+                                        <li><a href="#" onClick={e =>{handelLogout(e)}}>Log Out</a></li>
+                                    }
+                                    {!isUserPresent &&
+                                        <li><a href="/auth">Log In</a></li>
+                                    }
                                 </ul>
                             </li>
                         </ul>
