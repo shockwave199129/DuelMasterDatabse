@@ -34,10 +34,10 @@ export default function TopNav() {
             document.querySelector('.mobile-nav-toggle').classList.toggle('bi-x')
         })
 
-        document.querySelectorAll('.navbar .dropdown > a').forEach(e => e.addEventListener('click', () => {
+        document.querySelectorAll('.navbar .dropdown > a').forEach(elm => elm.addEventListener('click', (e) => {
             if (document.querySelector('#navbar').classList.contains('navbar-mobile')) {
                 e.preventDefault()
-                this.nextElementSibling.classList.toggle('dropdown-active')
+                elm.nextElementSibling.classList.toggle('dropdown-active')
             }
         }))
 
@@ -89,7 +89,7 @@ export default function TopNav() {
                             <li><a className={`nav-link scrollto ${pathName == '/' ? 'active' : ''}`} href="/">Home</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/search' ? 'active' : ''}`} href="/search">Search</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/decklist' ? 'active' : ''}`} href="/decklist">Deck List</a></li>
-                            <li className={`dropdown${pathName == '/user' ? 'active' : ''}`}><a href=""><span>{loginUser}</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className={`dropdown${pathName == '/user' ? 'active' : ''}`}><a><span>{loginUser}</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
                                     {isUserPresent &&
                                         <li><a href="#" onClick={e =>{handelLogout(e)}}>Log Out</a></li>
