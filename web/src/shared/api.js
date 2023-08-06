@@ -3,7 +3,7 @@ import axios from "axios"
 import Cookies from "universal-cookie";
 import Swal from "sweetalert2";
 
-const BASE_ENDPOINT = "http://192.168.0.5:8000/";
+const BASE_ENDPOINT = "http://localhost:8000/";
 
 const cookies = new Cookies()
 
