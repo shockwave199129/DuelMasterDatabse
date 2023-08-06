@@ -2,6 +2,7 @@
 import useForm from "@/form/useForm"
 import validate from "@/form/RegisterFormValidationRules"
 import { useEffect, useState } from "react"
+import Swal from "sweetalert2";
 
 import Api from "@/shared/api";
 

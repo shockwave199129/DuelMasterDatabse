@@ -7,7 +7,7 @@ export default function Home() {
     <>
       <TopNav />
 
-      <section id="hero" className="d-flex align-items-center" style={{ "backgroundImage": "url(assets/img/DM-Cover-01.png)!important" }}>
+      <section id="hero" className="d-flex align-items-center" style={{ "backgroundImage": "url(assets/img/DM-Cover-01.png)!important", backgroundRepeat:"no-repeat", backgroundSize:"cover" }}>
         <div className="container">
           <div className="row">
             <div className="col-lg-12 d-flex justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
