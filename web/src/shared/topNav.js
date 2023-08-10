@@ -89,7 +89,7 @@ export default function TopNav() {
                             <li><a className={`nav-link scrollto ${pathName == '/' ? 'active' : ''}`} href="/">Home</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/search' ? 'active' : ''}`} href="/search">Search</a></li>
                             <li><a className={`nav-link scrollto ${pathName == '/decklist' ? 'active' : ''}`} href="/decklist">Deck List</a></li>
-                            <li className={`dropdown${pathName == '/user' ? 'active' : ''}`}><a><span>{loginUser}</span> <i className="bi bi-chevron-down"></i></a>
+                            <li className={`nav-link scrollto dropdown ${pathName == '/user' ? 'active' : ''}`}><a><span>{loginUser}</span> <i className="bi bi-chevron-down"></i></a>
                                 <ul>
                                     {isUserPresent &&
                                         <li><a href="#" onClick={e =>{handelLogout(e)}}>Log Out</a></li>

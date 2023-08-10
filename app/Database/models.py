@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean, JSON
 from sqlalchemy.orm import relationship
 from .db import Base, engine
 
@@ -17,6 +17,21 @@ class Card(Base):
     subtype = Column(String)
     mananumber = Column(Integer, default=0)
     link = Column(String)
+
+    def to_dict(self):
+        return {
+            "id": self.id,
+            "image": self.image,
+            "civilization": self.civilization,
+            "cardtype": self.cardtype,
+            "manacost": self.manacost,
+            "race": self.race,
+            "power": self.power,
+            "englishtext": self.englishtext,
+            "subtype": self.subtype,
+            "mananumber": self.mananumber,
+            "link": self.link            
+        }
 
 class Category(Base):
     __tablename__ = "categories"
@@ -51,3 +66,26 @@ class User(Base):
     email = Column(String, unique=True, index=True, nullable=False)
     hashed_password = Column(String, nullable=False)
     is_active = Column(Boolean(), default=True)
+
+class Deck(Base):
+    __tablename__ = "deck"
+
+    id = Column(Integer, primary_key=True, index=True)
+    deck_name = Column(String)
+    deck_info = Column(String)
+    user_id = Column(Integer, ForeignKey(User.id))
+    is_private = Column(Boolean)
+    is_complete = Column(Boolean)
+
+    deck_details = relationship("DeckDetails", backref="deck", lazy="joined")
+    user_details = relationship("User", backref="deck", lazy="joined")
+
+class DeckDetails(Base):
+    __tablename__ = "deck_details"
+
+    id = Column(Integer, primary_key=True, index=True)
+    deck_id = Column(Integer, ForeignKey(Deck.id))
+    deck_card_id = Column(Integer, ForeignKey(Card.id))
+    deck_card_count = Column(Integer)
+
+    deck_card_details = relationship("Card", lazy="joined")

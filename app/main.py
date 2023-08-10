@@ -1,14 +1,14 @@
+from threading import Thread
 import uvicorn
 from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
-from threading import Thread
 
 
 from .Database.db import Base, engine
 from .Crawler.setCrawler import run_set_crawler
-from .Routes import cardSearch, webSearch, userLogin
+from .Routes import cardSearch, webSearch, userLogin, deckBuild
 
 app = FastAPI()
 #background_task = BackgroundTasks()
@@ -40,9 +40,10 @@ async def read_root():
 async def read_item(item_id: int, q: Union[str, None] = None):
     return {"item_id": item_id, "q": q} """
 
+app.include_router(userLogin.router, tags=['User'])
 app.include_router(cardSearch.router, tags=['Swagger Search'])
 app.include_router(webSearch.router, tags=['Web Search'])
-app.include_router(userLogin.router, tags=['User'])
+app.include_router(deckBuild.router, tags=['Decks'])
 
 @app.get("/run-task/", tags=["for backend"])
 async def run_task(background_task: BackgroundTasks):
