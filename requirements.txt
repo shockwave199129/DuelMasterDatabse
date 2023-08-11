@@ -17,3 +17,4 @@ sqlalchemy-utils>=0.36.8
 datetime
 apscheduler
 traceback2
+sockets

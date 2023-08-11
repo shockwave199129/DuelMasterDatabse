@@ -40,6 +40,9 @@ class Category(Base):
     categories = Column(String)
     link = Column(String, ForeignKey(Card.link))
 
+    def to_dict(self):
+        return self.categories
+
 class DMSets(Base):
     __tablename__ = "sets"
 

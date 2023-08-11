@@ -13,7 +13,7 @@ ENV PYTHONPATH "/code"
 COPY ./requirements.txt /code/requirements.txt
 
 #
-RUN apt-get update && apt-get install -y iputils-ping apt-utils
+RUN apt-get update && apt-get install -y iputils-ping apt-utils netcat-openbsd gcc libpq-dev
 
 #
 RUN python3 -m pip install --upgrade pip
@@ -28,7 +28,9 @@ COPY ./app /code/app
 COPY ./entrypoint.sh /code/entrypoint.sh
 RUN chmod +x /code/entrypoint.sh
 
-ENTRYPOINT ["/bin/sh", "/code/entrypoint.sh"]
+EXPOSE 8000
+
+CMD ["/code/entrypoint.sh"]
 
 # 
 #CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]

@@ -4,7 +4,7 @@ from sqlalchemy.orm import sessionmaker
 from sqlalchemy_utils import create_database, database_exists
 
 # configure database settings
-SQLALCHEMY_DATABASE_URL = "mysql://root:12345@DM_mysql:3306/duel_masters"
+SQLALCHEMY_DATABASE_URL = "mysql://root:12345@dm_db:3306/duel_masters"
 engine = create_engine(SQLALCHEMY_DATABASE_URL)
 
 if not database_exists(engine.url):

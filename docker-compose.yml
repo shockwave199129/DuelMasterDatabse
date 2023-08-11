@@ -10,7 +10,7 @@ services:
       - ./mysql/my.cnf:/etc/mysql/my.cnf
     ports:
       - "3306:3306"
-    container_name: DM_mysql
+    container_name: dm_db
     restart: always
     tty: true
     environment:
@@ -21,16 +21,16 @@ services:
     
   dm_api:
     build: .
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
+    command: sh -c "while ! nc -z dm_db 3306; do sleep 1; done && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
     volumes:
       - ./app:/code/app
     ports:
       - 8000:8000
-    container_name: DM_api
+    container_name: dm_api
     restart: always
     tty: true
     environment:
-      - DATABASE_URL=mysql://root:12345@DM_mysql:3306/duel_masters
+      - DATABASE_URL=mysql://root:12345@dm_db:3306/duel_masters
     depends_on:
       - dm_db
 

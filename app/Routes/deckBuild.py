@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 
 from ..Database.db import Session
-from ..Database.models import Deck, DeckDetails
+from ..Database.models import Deck, DeckDetails, Category
 from .cardSearch import get_db
 from ..Database import schemas
 from .Core import security
@@ -68,10 +68,12 @@ def get_deck_details(
     def serialize_deck_details(details):
         serialized_details = []
         for detail in details:
+            card_category = db.query(Category).filter(Category.link == detail.deck_card_details.link).first()
             serialized_detail = {
                 "deck_card_count": detail.deck_card_count,
                 "deck_card_id": detail.deck_card_id,
-                "deck_card_details": detail.deck_card_details.to_dict()
+                "deck_card_details": detail.deck_card_details.to_dict(),
+                "deck_card_category": card_category.to_dict()
             }
             serialized_details.append(serialized_detail)
         return serialized_details
