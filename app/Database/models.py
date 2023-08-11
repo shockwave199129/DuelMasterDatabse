@@ -21,6 +21,7 @@ class Card(Base):
     def to_dict(self):
         return {
             "id": self.id,
+            "name": self.name,
             "image": self.image,
             "civilization": self.civilization,
             "cardtype": self.cardtype,

@@ -4,7 +4,7 @@ import validate from "@/form/LoginFormValidationRules"
 import Api from "@/shared/api";
 
 import { useEffect, useState } from "react";
-import { useRouter } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import Cookies from "universal-cookie";
 import Swal from "sweetalert2";
 
@@ -22,6 +22,7 @@ export default function Login(porps) {
     })
 
     const { push } = useRouter();
+    const {get} = useSearchParams();
 
     const cookies = new Cookies();
 
@@ -37,7 +38,13 @@ export default function Login(porps) {
                 text: 'Login done',
                 confirmButtonText: 'OK',
             }).then(() => {
-                push('/');
+                let redirect_to = get('redirect_to')
+
+                if(typeof redirect_to == 'undefined' ) {
+                    push('/');
+                } else {
+                    push(redirect_to);
+                }                
             });
         }
     }

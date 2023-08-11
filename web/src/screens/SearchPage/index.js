@@ -373,6 +373,15 @@ export default function SearchPage() {
                         striped
                         pointerOnHover
                         title={'Search Result'}
+                        customStyles={{
+                            headCells: {
+                                style: {
+                                    fontWeight: 'bold',
+                                    backgroundColor: '#9e9e9e',
+                                    fontSize: '15px',
+                                },
+                            }
+                        }}
                     />
                 </div>
             </section>

@@ -1,0 +1,124 @@
+"use client"
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
+import DataTable from "react-data-table-component";
+import { Tooltip } from 'react-tooltip'
+
+import 'react-tooltip/dist/react-tooltip.css'
+import './modal.css';
+
+export default function DeckDeatail(props) {
+
+    var { push } = new useRouter()
+    var [dataTableColumns, setDataTableColumns] = useState([]);
+    var [dataTableData, setDataTableData] = useState([]);
+
+    useEffect(() => {
+        var deckCardInfo = []
+        if ('deck_details' in props.DeckData) {
+            deckCardInfo = props.DeckData.deck_details
+        }
+        var tableData = []
+        Object.values(deckCardInfo).map(value => {
+            let tmp = {}
+            tmp['count'] = value.deck_card_count
+            tmp['name'] = value.deck_card_details.name
+            tmp['civilization'] = value.deck_card_details.civilization
+            tmp['cardtype'] = value.deck_card_details.cardtype
+            tmp['manacost'] = value.deck_card_details.manacost
+            tmp['text'] = value.deck_card_details.englishtext
+            tableData.push(tmp)
+        })
+
+        setDataTableData(tableData)
+        setDataTableColumns([
+            {
+                name: 'Name',
+                selector: row => row.name,
+                wrap: true,
+                cell: (row) => <span data-tooltip-id='card-tooltip' data-tooltip-content={row.text}>{row.name}</span>,
+            },
+            {
+                name: 'Civilization',
+                selector: row => row.civilization,
+                allowOverflow: false,
+                wrap: true,
+                maxWidth: '200px',
+            },
+            {
+                name: 'Type',
+                selector: row => row.cardtype,
+                allowOverflow: false,
+                wrap: true,
+                maxWidth: '200px',
+            },
+            {
+                name: 'Cost',
+                selector: row => row.manacost,
+                allowOverflow: false,
+                wrap: true,
+                maxWidth: '100px',
+            },
+            {
+                name: 'Count',
+                selector: row => row.count,
+                allowOverflow: false,
+                wrap: true,
+                maxWidth: '100px',
+            },
+        ])
+    }, [])
+
+    function handleCardDeatailClick() {
+        props.eventHandeler(false)
+    }
+
+    return (
+        <>
+            <div className="modal">
+                <article className="modal-container border">
+                    <header class="modal-container-header">
+                        <div className="col-11 d-flex align-items-center">
+                            <h3 class="modal-container-title">{props.DeckData.deck_name}</h3>
+                            <span className="small ms-2">{props.DeckData.deck_info}</span>
+                        </div>
+                        <i
+                            className='bi bi-x-square-fill'
+                            style={{ "fontSize": "25px", "padding": "0px 20px", "cursor": "pointer" }}
+                            onClick={(event) => {
+                                event.preventDefault();
+                                handleCardDeatailClick();
+                            }}
+                        ></i>
+                    </header>
+                    <section class="modal-container-body">
+                        <Tooltip id="card-tooltip" className="col-10 col-md-4" style={{ zIndex: "99999" }} />
+                        <DataTable
+                            columns={dataTableColumns}
+                            data={dataTableData}
+                            responsive
+                            striped
+                            pointerOnHover
+                            className="border"
+                            customStyles={{
+                                headCells: {
+                                    style: {
+                                        fontWeight: 'bold',
+                                        backgroundColor: '#9e9e9e',
+                                        fontSize: '15px',
+                                    },
+                                },
+                                rows: {
+                                    style: {
+                                        border: '1px solid black',
+                                        borderCollapse: 'collapse'
+                                    }
+                                }
+                            }}
+                        />
+                    </section>
+                </article>
+            </div>
+        </>
+    )
+}
