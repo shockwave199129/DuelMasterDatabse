@@ -50,6 +50,17 @@
     }
 }
 
+.modal-container-subtitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 32px;
+    gap: 5px;
+    line-height: 1;
+    font-weight: 400;
+    font-size: 15px;
+}
+
 .modal-container-body {
     padding: 24px 32px 51px;
     overflow-y: auto;

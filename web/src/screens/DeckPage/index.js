@@ -31,8 +31,8 @@ export default function Decklist() {
         });
         async function fetchDeckData() {
             try {
-                const decksDetailResponse = await Api().get('deck-details/' + row.id);
-                setDeckDeatails(decksDetailResponse.data);
+                const decksDetailResponse = await Api().validateGet('deck-details/' + row.id);
+                setDeckDeatails(decksDetailResponse);
                 return Promise.resolve();
             } catch (error) {
                 console.error(error);
@@ -80,9 +80,9 @@ export default function Decklist() {
             });
             async function fetchData() {
                 try {
-                    const decksResponse = await Api().get('decks');
-                    setDecks(decksResponse.data);
-                    setDataTableData(decksResponse.data)
+                    const decksResponse = await Api().validateGet('decks');
+                    setDecks(decksResponse);
+                    setDataTableData(decksResponse)
                     return Promise.resolve();
                 } catch (error) {
                     console.error(error);

@@ -73,13 +73,17 @@ export default function DeckDeatail(props) {
         props.eventHandeler(false)
     }
 
+    function toDeckEditPage() {
+        push('createdeck/' + props.DeckData.id)
+    }
+
     return (
         <>
             <div className="modal">
                 <article className="modal-container border">
-                    <header class="modal-container-header">
+                    <header className="modal-container-header">
                         <div className="col-11 d-flex align-items-center">
-                            <h3 class="modal-container-title">{props.DeckData.deck_name}</h3>
+                            <h3 className="modal-container-title">{props.DeckData.deck_name}</h3>
                             <span className="small ms-2">{props.DeckData.deck_info}</span>
                         </div>
                         <i
@@ -91,7 +95,12 @@ export default function DeckDeatail(props) {
                             }}
                         ></i>
                     </header>
-                    <section class="modal-container-body">
+                    <div className="modal-container-subtitle">
+                        <span className="badge bg-primary" style={{ fontWeight: "400" }}>{props.DeckData.user_info}</span>
+                        {props.DeckData.is_private && <i className="bi bi-lock-fill" style={{ color: "burlywood" }}></i>}
+                        {props.DeckData.is_editable && <button type="button" onClick={toDeckEditPage} className="badge btn-primary btn me-4">Edit</button>}
+                    </div>
+                    <section className="modal-container-body">
                         <Tooltip id="card-tooltip" className="col-10 col-md-4" style={{ zIndex: "99999" }} />
                         <DataTable
                             columns={dataTableColumns}
@@ -117,6 +126,7 @@ export default function DeckDeatail(props) {
                             }}
                         />
                     </section>
+                    <section className="modal-container-footer"></section>
                 </article>
             </div>
         </>

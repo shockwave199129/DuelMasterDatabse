@@ -67,6 +67,32 @@ export default function Api() {
                 });
                 return false;
             }
+        },
+
+        validateGet: async function (endpoint, data = {}) {
+            try {
+                let auth = cookies.get('dm_a_token');
+
+                let headers = {
+                    'Content-Type': 'application/json',
+                    'Authorization': auth
+                }
+
+                let config = {
+                    headers: headers,
+                    params: data
+                }
+
+                const response = await axios.get(BASE_ENDPOINT + endpoint, config);
+                return response.data;
+            } catch (error) {
+                Swal.fire({
+                    title: error.response.data.detail,
+                    text: error.message,
+                    timer: 5000,
+                });
+                return false;
+            }
         }
     };
 };

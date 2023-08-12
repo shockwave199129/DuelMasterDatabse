@@ -20,7 +20,6 @@ export default function Register(porps) {
     })
 
     async function submitLoginForm(values) {
-        debugger
         const registerData = await Api().validatePost('register', values);
         if (registerData) {
             Swal.fire({
