@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean, JSON
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Boolean, Text
 from sqlalchemy.orm import relationship
 from .db import Base, engine
 
@@ -91,5 +91,23 @@ class DeckDetails(Base):
     deck_id = Column(Integer, ForeignKey(Deck.id))
     deck_card_id = Column(Integer, ForeignKey(Card.id))
     deck_card_count = Column(Integer)
+    zone = Column(Integer)
 
     deck_card_details = relationship("Card", lazy="joined")
+
+class Zones(Base):
+    __tablename__ = "duel_master_zone"
+
+    id = Column(Integer, primary_key=True, index=True)
+    zone_name = Column(String)
+    card_type_like = Column(Text)
+    type_regex = Column(String)
+
+
+class DmRules(Base):
+    __tablename__ = 'duel_master_rule'
+
+    id = Column(Integer, primary_key=True, index=True)
+    head = Column(Text)
+    section = Column(Text)
+    content = Column(Text)

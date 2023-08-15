@@ -3,7 +3,7 @@ from fastapi import APIRouter, Depends, HTTPException
 from fastapi.responses import JSONResponse
 
 from ..Database.db import Session
-from ..Database.models import Deck, DeckDetails, Category
+from ..Database.models import Deck, DeckDetails, Category, Zones
 from .cardSearch import get_db
 from ..Database import schemas
 from .Core import security
@@ -107,7 +107,8 @@ def create_deck(
     deck_details = [
         DeckDetails(
             deck_card_id=entry.deck_card_id,
-            deck_card_count=entry.deck_card_count
+            deck_card_count=entry.deck_card_count,
+            zone=entry.zone
         )
         for entry in deck.deck_data
     ]
@@ -182,6 +183,7 @@ def update_deck(
             deck_detail = DeckDetails(
                 deck_card_id=new_id,
                 deck_card_count=new_detail.deck_card_count,
+                zone= new_detail.zone
             )
             deck.deck_details.append(deck_detail)
 
@@ -189,3 +191,10 @@ def update_deck(
     db.commit()
 
     return {'Deck update successfully'}
+
+
+@router.get("/zones")
+def get_zones(db: Session = Depends(get_db))->Any:
+    zones = db.query(Zones).all()
+
+    return zones

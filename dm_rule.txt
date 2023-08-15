@@ -1,0 +1,1968 @@
+0. Introduction
+
+000. PURPOSE OF THIS DOCUMENT
+000.1. This document summarizes the detailed rules of Duel Masters. everything
+Not all players need to be familiar with this, but if you want to know more details,
+It is useful when you solve the question that appeared during the actual game.
+
+1. Game Basics
+
+100. What the Game Needs
+100.1. Duel Masters is a two-player game.
+100.2. Decks are generally built according to the rules of the Hall of Fame Regulations. The deck must be exactly 40 cards, no more or less.
+100.2a A deck may have no more than four cards with the same name, unless the text says otherwise.
+can only be put in.
+100.3 He can use 8 additional cards for the hyperdimensional zone apart from the deck.
+100.3a In hyperdimensional zones, unless the text says so, cards with the same name are 4
+You can only put up to 1 sheet.
+100.4. You may choose to use the Super GR Zone. When using, separate from the deck for super GR zone
+As it is, he has 12 additional cards to play with.
+100.4a In Super GR, he can only have up to 2 cards with the same name, unless the text says so.
+can only be put in.
+100.5 Only one set of cards can be in the battle zone at the start of the game.
+Examples of cards that can be in the battle zone at the start of the game:
+《Forbidden ～The Sealed X～》
+《FORBIDDEN STAR～Last Day in the World～》
+"Origin of Destruction Zero"
+"Forbidden New Year"
+101. Absolute Law of Duel Masters
+101.1. Card effects beat rules
+When card text directly contradicts the rules, the card description takes precedence. (The card is
+Ignore only rules that apply to your specific situation. )
+101.2. "Can't" effects beat "can" effects
+An effect that is "can" and an effect that is "cannot" exist at the same time
+, the "impossible" effect takes precedence. In addition, effects that cannot be "ignored"
+If there is an effect that says "can", the effect that says "can't" is ignored and loses its effect. however,
+Cards beat rules, so "can" effects beat "can't" rules. (Speed Atta
+Creatures with ker win the summoning sickness rule and can attack. )
+101.3. Do all you can
+Even if some of the instructions on the card are unfeasible, do all you can and
+is ignored.
+101.3a If the triggering of an effect has a condition such as “if you
+It doesn't matter what happened as a result of that action.
+101.4.The processing of effects always takes precedence over his S Trigger and always starts with the effects of the turn player.
+If multiple effects exist at the same time, the S-Trigger effect always takes precedence. Also,
+If a turn player effect and a non-turn player effect exist at the same time, the turn player effect
+Process the fruit first. After the processing of one effect is completely finished, it moves on to the processing of the other effects.
+101.4a If multiple effects occur at the same time, the effect of the S Trigger is first applied to the turn player
+processing in order of the green player. Then, of the remaining effects, from the turn player
+Resolve the card's effects in any order. Even if another effect occurs while processing one effect,
+It will be put on standby once, and priority will be given to the processing of effects that are currently being resolved. After that, the remaining effect
+We will process the fruits in the same order as we like. After all effects of the turn player have finished
+Then process the non-turn player's effects.
+101.4b S-Buck and his G-Strike, Sabaki Z, process with the same timing as S-Trigger.
+Again, if multiple effects occur at the same time, the order of turn player non-turn player
+to process.
+101.4c In the process of resolving the non-turn player's effects, the turn player's effects occur.
+If so, the turn player's effect is processed first after the effect being processed is resolved.
+101.4d No other effects other than replacement effects may interrupt the processing of an effect. However,
+If the effect's instruction says to use another spell or other effect, resolve it as part of the process.
+101.4e A battle caused by the effect of an ability or spell is not affected by the ability or spell until the end of the battle.
+part of the fruit.
+101.4f Abilities that trigger when you battle are instant even if they are put into a battle caused by the effect of an ability or spell.
+effective in
+101.5. A replacement effect can only be used once per event.
+Only one replacement effect can be applied in the same event. Events are events that occur during the game.
+It refers to all possible events. If an event has already been replaced, replace more
+I can not do it.
+101.5a When a replacement effect changes a part of a sentence
+No more sentences will be replaced. Even within the same ability, it is expressed as "in that case," etc.
+If it is a sentence delimited by another period, it is regarded as a separate event and that part is replaced
+It is not treated as existing. The original effect is treated as a single effect, including the replaced part.
+I understand
+101.5b When multiple replacement effects exist simultaneously, the turn player's
+Prioritize replacement effects. If the same player has multiple replacement effects, which replacement effect
+You can choose to apply
+
+102. Players
+102.1. A player is a person participating in the game. What is a turn player
+A player whose turn is currently in progress, a player who is not a non-turn player.
+called layers.
+102.2. An opponent is the other player other than yourself.
+
+103. How to start the game
+103.1. Before the game begins, each player prepares a deck and cards for the game.
+At this time, the double-faced card may be removed.
+103.2. After that, pass the deck to your opponent, check that it is a 40-card deck, shuffle and cut
+I will ask you to A player's deck is hereafter referred to as the deck.
+103.3. Now move on to the game start procedure. At this time, if there is an instruction to do something at the start of the game,
+follow them. After that, each player deploys his 5 cards from the top of the deck face down as a shield
+Then, draw 5 cards to make your hand.
+103.4. Next, decide who goes first. Rock-paper-scissors are played, and the winner goes first.
+(You cannot choose to attack second.)
+103.5. The first player's turn begins. (The player who goes first has no first draw.
+yeah)
+
+104. Victory Conditions
+104.1. The game ends immediately if any player wins or loses. .
+104.2. The conditions for winning the game are as follows.
+104.2a If you attack an opponent with a creature and don't redirect the attack, the opponent's shield
+but he wins the game immediately if he has 0 cards.
+104.2b When an opponent's deck reaches his 0-card state, the game is instantly won. (In the middle of the effect
+If there are no cards in the deck even for a moment, the deck is considered to be 0 for him. )
+104.2c You may win or lose due to card effects. win by these
+You win if you meet the conditions and defeat conditions at the same time.
+
+105. Phase
+105.1. Duel Masters cards have phases. Untuck the card in portrait orientation
+The tapped state and the sideways state are called the tapped state.
+105.2. Untapping indicates that the state is ready for use. Normally tapped cards
+Untap all at the beginning of the turn.
+105.3. The tap state indicates that it has been used. Creature attacks or mana zone
+Tap the card when paying a cost from a player.
+105.4. Card phases cannot be changed at will.
+105.4a You can only tap creatures and tamaseeds in the battle zone and cards in your mana zone.
+You can You cannot change the phase of cards in other zones.
+105.5. There is an upside-down phase in the field. Cards in this state
+It will not return to the normal position due to the effect of the pop.
+105.6. Making a tapped card more tapped, or making an untapped card
+It cannot be further untapped. (Tap the creature you are tapping.
+It is possible to select it with its ability or effect, but this does not mean that it is in that state.)
+106. Civilization
+106.1. There are five civilizations in Duel Masters: Light, Water, Darkness, Fire, and Nature.
+exists.
+106.2 A card usually has one or more of his five civilizations above. card
+The civilization you have refers to things like mana symbol colors, card type background colors and frame colors.
+106.2a Mono-civilization cards have only one of the five civilizations.
+106.2b A multi-civilization card has two or more of the five civilizations and is called a multi-colored card.
+106.2c Cards without civilization are called colorless cards.
+106.2d Each civilization has its own color. Light is yellow, water is blue, darkness is black (or purple), fire is red,
+Nature is green. Also, colorless cards are represented in white.
+106.3. If a player chooses a civilization as directed by a card, he or she must choose one of the five civilizations listed above.
+yeah. You cannot choose colorless.
+106.4. Some effects add civilizations to cards.
+
+107. Mana
+107.1. Mana is the basic resource of Duel Masters. Players use mana
+Pay the cost to summon a creature or cast a spell.
+107.2. Mana can be obtained by tapping a card placed in the mana zone to obtain the value written on the mana symbol.
+number of times (usually 1). Mana is one of the civilizations that the tapped card has
+hold.
+
+108. Numbers
+108.1. Duel Masters games generally use only whole numbers.
+108.1a When choosing a number for an effect, you cannot choose a negative number.
+108.1b Creatures can have negative power due to negative modifiers. just
+and treat it as 0 when referring to the creature's power. For example, if the power
+-6000, even if you choose a creature in the battle zone with the Hell Scrapper,
+Reacher's power total cannot be chosen so that he is 11000.
+108.1c In Duel Masters, ∞ is a number that cannot be chosen higher than ∞.
+be treated as If a creature with ∞ power receives a power modifier, the power remains ∞.
+However, it will be destroyed when its power is reduced to minus ∞.
+108.2. When numbers are incremented or decremented in a game of Duel Masters, addition, subtraction, multiplication, division
+order.
+
+109. Cards
+109.1. If the text on a card is written differently in different versions, as a general rule the card is currently released.
+The most recent card notation listed is correct.
+109.2. Whenever a rule or text refers to a card, it refers to a Duel Masters card.
+Masu.
+109.2a When choosing a card for an ability or effect, only the card itself is chosen. multiple sheets
+Even if it is an evolution creature or a shield plus a shield that consists of cards of
+Only cards that have been affected are directly affected.
+109.2b Some cards in a multi-card creature will leave the battle zone.
+Depending on the state at that time, it may or may not leave the battle zone as a creature.
+I will. If it is an evolution creature, the top card leaves the battle zone as a creature.
+However, the underlying card simply leaves the battle zone as a card. Linked gods
+Leaves the battle zone as a reacher and psychic-linked creatures for psychic
+Leaves the battle zone as Kuk Cell.
+109.2c Effects and abilities of creatures made up of multiple cards are included
+Applies to all cards that appear as -. Dragheart and cross gear are creatures
+Auras, magic tools, etc. that are not included in the constituent cards of the creature and are overlapping the creature
+Included in the configuration card of the char.
+Example: If you give a linked god some ability, all linked gods
+Abilities apply.
+Example: Removing 《Unshura Dejiru Centipede》 attached to 《Will of the White Emperor, Mine》 with the effect of choosing a card.
+You can select 《Unshura Dejiru Centipede》 and remove it.
+
+110. Abilities and Effects
+110.1. An ability is a characteristic of a card that allows the card to affect the game.
+It is. A card's abilities are defined by its rules text. Abilities are determined by rules and effects.
+It can also be given to a card. (Inflicted by effects that say "have" or "get")
+Abilities produce effects.
+110.2. Abilities can affect themselves, other cards, or players.
+may also be given.
+110.2a Abilities are not only beneficial, they are also detrimental.
+Example: The sentence "This creature can't attack" is an ability.
+110.2b The conditions for using a card are its abilities.
+110.2c A single card may have multiple abilities. Each paragraph starting with ■ in the text on the card
+Represents a separate ability. Cards can also be empowered by spells or other effects.
+Masu. If one card has multiple of the same ability, they work independently. to this
+Thus, it may or may not produce more effects than just one ability.
+110.2d Abilities produce one or more single-shot or continuous effects. in continuous effect
+also includes replacement effects.
+110.2e When an ability produces an effect that affects a card, it
+will only affect cards within the range affected by . In the same turn, after that effect, range and
+Cards that have been moved to a zone that has become unaffected by this effect.
+110.3. Abilities are divided into four main categories.
+110.3a Spell Abilities
+Instructions that are processed between casting a spell and resolving it. Spell rules text is spell ability
+Power.
+110.3b Triggered Abilities
+It usually has a trigger condition that starts with "~ time", "~ case", "~ time", etc. The effect once induced is
+Until it is processed, it will be in a standby state and wait for resolution. Triggered abilities by spells or other effects
+Triggered abilities that are granted are called delayed triggered abilities.
+110.3c Activated Abilities
+An activated ability triggers at a certain timing, and if the required conditions are met, you choose to activate it.
+It is the ability to do something. In principle, it cannot be started at any timing.
+yeah.
+110.3d Static abilities
+Creatures, cross gears, weapons, fortresses, heartbeats and fields, auras, rituals,
+While Nebula is in the battle zone, or a creature with Castle or Shield Go is in Shield Zone.
+It creates a continuous effect that works all the time while it's on.
+110.4. Spell abilities are basically spell abilities while cards are in the battle zone or
+Only works while in the shield zone. However, there are some exceptions listed below.
+110.4a A characteristic-defining ability defines a characteristic (cost, civilization, power, etc.) for the card itself.
+ability to Abilities that increase or decrease the value of traits, such as power attackers and sympathies, fall into this category.
+I don't agree. This ability works everywhere, even outside the game.
+Example: 《Rainbow Speed The Verde》, 《Super God Dragon Variant Bades》
+110.4b Abilities that say which zone works only work in that zone.
+Example: Mana Explosion, Burning Dron Go
+110.4c Abilities that don't say which zone they work only work in the battle zone. Ta
+However, the card itself is in the shield zone regarding the ability to acquire "S Trigger".
+also works when
+110.4d A card's ability to allow play without a zone designation and without paying a mana cost.
+Power works in any zone the card can be used in.
+Example: Ninja Strike can be summoned from the mana zone,
+can be used from
+110.4e Abilities of a card itself that restrict or modify the use of that card
+It works while the card is in the zone (usually your hand) that it is about to be used.
+Example: Sympathy
+110.4f State-defining effects cause a card to change its state when put into a zone. These
+Like the replacement effect, it interrupts and processes the effect, but it is not treated as a replacement effect, and multiple effects can be used at the same time.
+If present, they all apply. A replacement effect actually puts a card in that zone.
+If not placed, state definition effects do nothing.
+Examples: 《Eternal Ryusei Kaiser》, 《Binding Shadow Bind Shadow》, 《The Extrasensory Holy
+Dog”, 《Immortal Spirit Perfect Galaxy》
+110.4g A triggered ability with a trigger condition that can only be triggered while in a zone other than the battle zone
+works while in the inducible zone of
+Example: 《Black God Dragon Ghoul Generation Raid》
+110.5. The source of an effect is the card with the ability that generated it. Trigger effects that are on standby
+A source is a card with a triggered ability.
+110.5a Once triggered, an effect becomes a standby effect independent of its source. the
+After that, even if the card with the ability that is the source of that effect moves to another zone, the effect will disappear.
+There is no However, some effects don't do something directly, rather the effect
+Note that it does something to the source of the . Source already existed at the time of checking
+Even if it's not in the zone, the source will take care of it.
+Example: The total power of your opponent's creatures is less than or equal to the power of the creature from which the effect originated.
+, if the source creature is no longer in the battle zone,
+Refers to the power just before the card leaves the battle zone.
+110.6. Effects that define a card's characteristics are separate from abilities that are granted by effects. by the effect
+If a card's trait is defined as , it doesn't get an ability.
+Example: Civilization is a trait, so the effect of adding civilization does not grant an ability.
+110.7. Some abilities have effects even if they have more than one of the same ability.
+Examples: Slayer, Power Attacker, Sympathy, etc.
+
+111. Timing
+111.1. When any action is taken, the turn player's action always takes precedence.
+111.2. Processing may be performed automatically by the rules of the game or by the player.
+will be
+111.2a Triggered abilities can be triggered even while the card is in use or while the effect is resolving.
+trigger at any time. The effect will be put on standby the moment it is triggered.
+111.2b Static abilities affect the game continuously.
+111.2c Turn-based actions occur automatically when a particular step begins or ends.
+live.
+Example: untap, draw, etc.
+111.2d State-based actions occur automatically when certain conditions are met. This is the resolution of the ability
+Even if it is inside, it will be processed with priority.
+Examples: Achievement of victory/defeat conditions, destruction of creatures with power 0 or less, etc.
+
+112. Cost
+112.1. Cards have a mana cost to use them.
+112.2. Mana cost indicates the amount of mana that must be paid to use a card. So
+This includes any civilization payments the card has.
+112.2a When paying a mana cost, tap to fill all the same civilizations indicated by the mana cost.
+pop up.
+When using a card, first fill the mana zone with all civilizations included in the mana cost.
+Tap one card per civilization. In addition, written on the mana symbol of the card in the mana zone
+Pay for the shortfall by tapping cards in the mana zone so that the sum of the numbers obtained is the same as the cost.
+pay.
+Example: To pay the cost of a multicolored card with a mana cost of 7 with Fire, Darkness, and Nature civilizations, Manazo
+1 card with fire civilization, 1 card with dark civilization, and 1 card with nature civilization
+Tap one at a time, then tap the missing pieces to bring the total mana value to 7.
+Even if you tap a multicolored card that has all fire, darkness and nature in one card, it will fill all civilizations.
+Instead, it is treated as a civilization of either Fire, Darkness, or Nature.
+112.2b Effects may increase or decrease the actual mana cost a player pays. mana
+Prioritize paying civilizations if the cost is less than the number of civilizations needed due to cost reduction effects
+To do. At this time, excess mana disappears at the end of payment.
+Example: 《Star Dragon Perfect Earth》 with 《Cocco Lupia》 and cost 3 is Civilization
+You can tap 5 cards in your mana zone to pay for .
+112.2c Extra tap cards in the mana zone if civilizations and costs have been properly paid
+you can't.
+112.2d Mana costs paid for O drives are treated as additional costs.
+112.3. There are some abilities that allow you to use a card without paying its mana cost.
+Also, abilities that are used at specific timings require a use declaration.
+112.3a S Trigger, when a shield is added to the hand by a break etc., puts that card into the opponent's hand.
+By showing it in your hand and declaring it, you can immediately use it without paying the cost. Multiple S. birds
+If a card with gar is added to your hand from your shield, show your opponent the card you are using.
+make a declaration. Those cards are put on standby once in your hand, and then processed as normal.
+will be In the case of spells, his S Trigger ability is until the spell's effect is resolved, but creatures
+Summoning is his S-Trigger ability. Effects triggered by entering the battle zone
+are treated as separate events. This expands the cross gear generation and field
+The same is true for things.
+
+112.3b S. Buck, while in a zone where cards with this ability can be used (usually his hand),
+When the specified card is added to the hand from the shield, discard that card and declare by doing,
+You can use it immediately without paying the cost. A card with an S-back and a designated card
+If it is added to the hand at the same time from the shield, the card of his S. Buck must not be in the hand.
+Therefore, S.Buck's ability cannot be used. S・Buck's ability is similar to his S・Trigger,
+In the case of spells, until the effect of the spell is resolved, her S-Buck ability will be, but the creature can be summoned.
+This is the S-back ability. The effect triggered by entering the battle zone is a separate event.
+treated as This is the same for cross gear generation and field development.
+righteousness.
+112.3c Ninja Strike is a non-target attack after the turn player's creatures attack.
+The non-turn player's action timing, or if the non-turn player's creature blocks
+At the processing timing of the turn player after the
+Ability to summon without paying the cost of the creature. A tag that declares the use of an ability
+Even if the number of mana zones specified by timing is not met, the mana zone
+You can summon without paying the cost if the number of cards is filled.
+112.3d Sabaki Z, while in a zone where cards with this ability can be used (usually the hand),
+When a card with this crest is added to your hand from your shield, you can discard that card and declare it.
+, you can use it immediately without paying the cost. Card with Sabaki Z and Crest of Judgment
+Even if the card you have is added to your hand from the shield at the same time, you will have the Crest of Judgment added to your hand.
+By discarding one card, you can use the ability of Sabaki Z. Sabaki Z's ability is also S・T
+Similar to Rigger, in the case of spells, Sabaki Z's ability is until the spell's effect is resolved, but Creech
+Sabaki Z's ability is to summon jars.
+112.3e G.Zero can summon a creature or spell without paying its cost under the specified conditions.
+It is the ability to chant.
+112.3f Attack Chance may be cast without paying the spell's cost under the specified conditions.
+It's a good ability.
+112.3g Even if you use an effect that says, "You may use it without paying the cost,"
+Since the act of calling, chanting, or generating itself has been executed,
+So abilities that trigger will trigger.
+112.4. Cards placed in hyperdimensional zones and hyper GR also have mana costs, but have no special effects.
+As long as you can't pay mana to use these cards.
+
+113. Shield
+113.1. Shields are placed face down in the shield zone. Each player's game start sequence
+Rudo's number is his five.
+113.2 Normally, his shield consists of one card, but effects such as Shield Plus can make multiple
+cards may be piled up. When counting shields, stack cards
+he counts as one shield. When counting the number of cards in the shield zone, count
+Count the number of each card in your shield zone, including each card that is .
+113.2a When rearranging shields by effect, each shield to which cards are redistributed is
+is remembered. For example, if her 3rd shield from the right is from his 3 cards before sorting.
+If so, redistribute that shield so that he has 3 cards. castle and shield four
+Cards that refer to shields, such as shields, must refer to shields that have been redistributed where they originally were.
+I will.
+113.3. Some effects may increase or decrease the number of shields.
+113.4. A shield can be fortified by a castle.
+113.5. Shields are broken by creature attacks and abilities.
+
+114. Drawing Cards
+114.1. When a player draws a card, he or she puts the top card of his deck into his hand.
+It means to put This is done during each player's draw step as a turn-based action.
+will be It can also be done as an effect of a spell or ability.
+114.2.He can only draw one card at a time. Instruct to draw multiple cards
+If so, that player repeats drawing a card that number of times.
+114.2a If an effect causes multiple players to draw cards, first the turn player draws the specified number of cards.
+Draw a card, then the non-turn player draws a card.
+114.3. If an effect moves a card from a player's deck to that player's hand without using the word "draw".
+When moving a card, that player does not draw that card. This is
+It means that it cannot be the target of abilities that trigger on drawing a card or effects that replace drawing a card.
+Taste
+114.4. There are effects that replace drawing cards.
+114.4a If an effect replaces him in one of multiple card draws, the replacement effect replaces the next one.
+Fully processed before drawing.
+Example: "Emissary from Sunday, Maetel", "When you draw 1 card, 2 instead of 1
+You may draw and discard a card from your hand. ” is the effect of drawing multiple cards.
+occurs for If you use 《Emergency Typhoon》 in this situation,
+Applying the effect of Maetel, the messenger from Sunday, he draws two cards and discards one, then the next
+Similarly, apply the effect of 《Emissary from Sunday, Maetel》 to draw 2 cards and discard 1 card.
+Masu. After that, perform the process of discarding one of his cards as instructed by 《Emergency Typhoon》.
+Masu.
+114.4b After a card is drawn, there are effects that do something additional to that card.
+If drawing a card is replaced and no card is drawn as a result, no further action is taken.
+I can't break it.
+114.5 Resolve any effects that trigger when you draw a card. Then add
+please.
+114.6 Players may use turn-based actions, spells, and abilities during the draw step even when there are no cards in their deck.
+You can try to draw a card with a force effect. However, if there is no card to draw in the deck,
+usually do nothing.
+114.6a Attempting to draw a card when there are no cards in the deck does not satisfy the trigger condition. For example,
+Abilities that say "When you draw a card" will not trigger. Also, since you haven't actually drawn a card,
+Cards drawn on a turn cannot be counted as "cards drawn on a turn" and draw cards to pay costs.
+You can't even try. However, if there is an effect that replaces drawing a card,
+It can also be applied if you try to draw a card when there are no cards in the deck.
+
+115. Battle
+115.1. Comparing the power of creatures is called a battle.
+115.1a Battles are caused by creature attacks, abilities and effects.
+115.2. When a battle starts, the abilities triggered by it trigger first. The induced effect is
+processing in order from the green player.
+115.3. Compare the power of both creatures.
+115.3a Either creature was destroyed, removed from combat, etc. at this point.
+If so, no battle will take place. Compare powers only when both creatures are in the battle zone.
+I will eat.
+115.3b The creature with the higher power wins the battle and the creature with the lower power wins the battle.
+lose to If both have the same power, both lose the battle. Ku who lost the battle
+The reacher is destroyed and placed in the graveyard. This is situational processing.
+115.3c Creatures with the ability to win battles win battles regardless of their power,
+Creature loses the battle. If both sides have the ability to win the battle, battle each other.
+No creature wins the game and loses the battle.
+115.3d After that, abilities triggered by the result of the battle trigger. The effect that triggered
+Process from layer to layer.
+
+116. Seal
+116.1. Seals are placed face down on cards in the battle zone.
+  116.1a To seal, place the top card of the owner's deck face down on the card.
+move it up.
+  116.1b It is possible to place multiple seals on a card at the same time.
+116.2. Sealed creatures are ignored.
+  116.2a Ignored creatures are treated as not in the battle zone. It can be an attack or a
+Can't be locked, can't perform any abilities, can't be picked, can't tap
+does not pop up.
+116.3. Seals exist in the battle zone.
+  116.3a If an effect chooses a card in the battle zone, you may choose Seal.
+116.4. The seal is removed when the command enters the battle zone.
+  116.4a When a command is put into the battle zone, it belongs to the same civilization as the command.
+Place one seal from the card with a seal on it into the graveyard. which card to seal
+It is optional to remove it, but you cannot choose not to remove it.
+  116.4b Even if a creature with a seal is ignored, its civilization is considered when removing the seal.
+Masu. This is a situational action.
+
+117. Hyperdimensional Zone
+117.1. Psychic and Dragheart placed in a zone other than the battle zone, rule plus
+is placed in the hyperdimensional zone.
+117.2. A single weapon in the battle zone is placed in the hyperdimensional zone.
+
+118. Super GR Zone
+118.1. GR creatures placed in zones other than the battle zone are placed under super GR.
+118.2. Only GR creatures can exist in Super GR. When a normal card is placed in Super GR
+is placed in the graveyard.
+2. How to read cards
+
+200. General
+200.1. Cards contain information that is necessary during the game and information that does not make sense during the game.
+200.2. Some parts of cards are also characteristics (things that are referenced in the game and make sense). Characteristic
+refers to civilization, cost, card name, race, card type, and power.
+200.3 Characteristics may be ignored.
+200.3a A card placed below a card by evolution or otherwise has its characteristics ignored during the normal game.
+I'm here. However, when specifying cards, traits are referenced. When specifying something other than a card
+is not referenced.
+Example: A water creature evolved over a creature with light and water civilization is a water creature
+Yes, power and race are unaffected by the cards below. However, "Ravage of the Tech-Team Go! "of
+When affected, the lower card also refers to the cost and
+If it is positive, it will take effect.
+Example: 《Manjitsuki, Ga Luzark, Swastika》’s Gate of No Moon, Zetsu wa Ma
+Since it refers to guides, 《Swastika de suzaku swastika》
+Cards under are not visible.
+200.3b Seal properties cannot be determined. Seal the card finger
+If a card has a cost of 0 and has no other characteristics,
+and treat it as
+200.3C When card-designating a double-faced card,
+Browse to the face you are on.
+
+201. Cost
+201.1. Cost is a characteristic of a card. It is usually indicated by the number printed in the upper left corner of the card.
+Masu.
+201.1a A card's mana cost number is the amount of mana you must pay to use that card.
+represents
+201.1b Psychics and Draghearts have a mana cost, but unless they have special effects,
+It cannot be summoned by paying mana from the zone.
+201.2. When referring to a card's cost, refer to its numerical value.
+201.2a Even if an effect changes the cost of using a card,
+When referring to the cost of the card, refer to the cost originally written on the card.
+Example: Even if you have a 《Cocco Lupia》, if you have a 《Bolshack NEX》 in the battle zone,
+The cost is 6, and it can be destroyed by the effect of 《Hyperdimension Musha Hall》, which destroys items with a cost of 4 or less.
+Not destroyed.
+Like 201.2b Twinpact he has cards with two costs. A card with two costs
+If a card's cost is referenced by an effect or ability, the player using that effect or ability
+You only see the cost of whichever you prefer.
+Example: The player who cast 《7777777》 casts a face-up twin impact card from the top of the opponent's deck.
+If you choose a card, choose the cost referred to by the player who cast 《7777777》.
+In 201.2c Gachinko Judge, like Twinpact, if he shows a card with two costs,
+Determines the cost seen by the player who reveals the ability, not the player who uses it.
+This is an exception to 201.2b.
+202. Card Name
+202.1. A card name is a characteristic of a card. It is usually written in the top center of the card.
+202.2 If an effect causes a player to "name a card," that player actually
+You must choose a card name that exists. Existence of variations with the same card name part
+If the card does, it must be declared with it. (However, in actual gameplay
+It can be called by any name that both players can recognize. )
+202.3. There are cards that refer to part of the card name. In that case, the specified name is the card name
+refers to everything contained in
+Example: Bolshak NEX refers to all cards with the word "rupiah" in their name.
+vinegar. Words that are separated in the middle, such as "Purple Earrings", are regarded as matching words.
+not.
+202.3a When referring to a card name, refer to an exact match, including ruby.
+202.4. There are cards that add other card names in addition to the original card names. on the spot
+If so, the card will have two card names at the same time.
+202.5. When a god is linked, that god may change the card names of all linked cards to
+hold.
+Example: “Linked 《Dragon King Heavy》 and 《Dragon King Metal》” and “Linked 《Dragon King Metal》” in the battle zone.
+"Heavy" and "Death, God of Destruction" at the same time, both of these linked gods
+It's called Heavy. If you use Tomb of Angels and Demons in this situation, both
+Since it is a creature with "Dragon God Heavy" in its name, it will be destroyed.
+
+203. Race
+203.1. Race is an attribute of a card. It is usually printed just below the card name.
+203.2. Some effects refer to races or parts thereof. In that case, the specified name
+Refers to everything contained in the family.
+Example: An effect that specifies "Dragon" refers to all cards with "Dragon" in their Type.
+203.3. Some effects add races.
+203.4. When choosing a race for an effect, you cannot choose a part of a race or a race that does not exist.
+Example: "Cyber" is a race that does not exist by itself and cannot be selected.
+
+204. Card Type
+204.1. A card type is a characteristic that a card has. It is usually printed just below the illustration.
+204.2. Card types include "Creature", "Spell", "Cross Gear", "Castle", "Cell",
+"Weapon", "Fortress", "Beat", "Field", "Core", "Aura", "Ceremony",
+There are "nebula", "artifact", "land", "rule plus" and "tama seed".
+204.3. Cards may have special types. They are written just before the card type.
+vinegar. Special types include "Evolution", "Psychic", "Psychic Super", "Exile",
+There are "Drag Heart", "Forbidden", "D2", "NEO", "GR", "Star Evolution", etc.
+vinegar.
+204.3a "Creatures" are "Evolution", "Psychic", "Psychic Super", and "Exa
+Ill", "Dragheart", "Forbidden", "NEO", "GR", "Star Evolution", etc.
+You can take it to the ip.
+204.3b A Heartbeat can have Forbidden as a supertype.
+204.3c “Field” can have special types such as “D2” and “Final Forbidden”.
+
+205. Text Box
+205.1. The text box is on the bottom half of the card. This is often the card's
+It has rules text that defines the ability.
+205.1a For keyword abilities, the keyword may precede the text. the text
+When referencing, the keyword part is skipped and not referenced.
+Example: When you have your own 《Black Bean Dancing / White Rice Dancing》 in the battle zone, your opponent's Justda
+When a creature with Ivar enters the battle zone, that creature is put into the mana zone.
+Masu.
+205.2. Text boxes may contain text that has no meaning in the game.
+205.2a Reminder text is parenthesized text that summarizes the rules that apply to the card. through
+It is usually written on the same line as the corresponding ability, but if it's an annotation for the whole card instead of an ability, it's separate
+It may also be written on the line that was written.
+205.2b Flavor text makes no sense in-game.
+205.3. Symbols behind text boxes have no special meaning in the game.
+
+206. Power
+206.1. Power is a characteristic of a card. The number usually printed on the lower left corner of the creature card
+Letters represent power. Power can be modified or changed to a value by an effect.
+and
+206.2. Some creature cards may have a "+" or "-" after their power.
+Masu. This indicates that the creature's power fluctuates depending on its own abilities.
+206.2a These creatures are subject to the "+" and "-" modifiers outside of the battle zone.
+is treated as having the power of the previous number.
+206.3. Some cards have effects that fix a creature's power. this effect is applied
+No other effect can change this number for as long as the individual creature's state
+The power remains fixed as is changed.
+Example: In a situation where the power of all creatures in the battle zone is fixed at 500, he
+of creatures linked, rather than combining their powers, the linked creature's
+Power is fixed at 500.
+206.4. Some cards have effects that double a creature's power. This effect is also
+after applying a power increase or decrease.
+Example: You have a creature with 3000 power that simultaneously has +2000 power and a double power effect.
+, first 3000+2000 gives 5000, then doubles again to have 10000 power.
+
+207. Mana Symbol
+207.1. With the exception of Psychic and Dragheart, and some Forbidden cards, the mana symbol and number
+letters are written. The mana symbol represents the civilization of the card, and the number on the mana symbol is Manazo.
+It represents the amount of mana you can tap to produce while in the green.
+207.2. Effects may change the number on mana symbols.
+207.3. Mana symbols on colorless cards do not represent civilizations.
+
+208. Other Information Groups
+208.1. In addition, cards contain information that does not make sense during a normal game.
+208.1a Illustrations, illustrator names, rarity symbols, expansion symbols,
+kissing code, block symbol, rights notation, collector number, frame, frame, tab
+, icons, etc. usually do not directly affect the game, but they have some effect.
+may be referenced by
+Examples: Soul Icon, H.C. Icon, Victory Icon, etc.
+3. Card type
+
+300. General
+300.1. Card types include "Creature", "Spell", "Cross Gear", "Castle", "Cell",
+"Weapon", "Fortress", "Beat", "Field", "Core", "Aura", "Ceremony",
+There are "nebula", "artifact", "land", "rule plus" and "tama seed".
+
+301. Creature
+301.1. The turn player summons creatures from his hand during his main step.
+I can.
+301.2. Creatures enter the battle zone when summoned.
+301.3. Power is a characteristic that only creatures have.
+301.3a A creature's power represents its strength in battle.
+301.3b To determine a creature's power, calculate from the value printed in the lower left corner of the card.
+to apply various continuous effects.
+301.4. Creatures can attack.
+301.5. Creatures cannot be played unless that card has been in the battle zone continuously since the beginning of their turn.
+cannot attack. This rule is called "summoning sickness".
+
+302. Spell
+302.1. The turn player may cast spells from their hand during their main step.
+302.2. Once a spell is cast, perform the actions in the rules text in the order written, then
+It will be placed in the graveyard later.
+302.3. Spells never exist in the battle zone by themselves. If illegal, put it in the graveyard.
+Masu.
+
+303. Cross Gear
+303.1. The turn player generates a cross gear from his hand during his main step.
+You can
+303.2. Cross gears go into the battle zone after being generated.
+303.3. Cross gears can cross creatures. on a noncreature card
+cannot be crossed.
+303.3a A creature with a cross gear is called a “crossed creature”.
+will be revealed. A cross gear will "cross" a creature.
+303.3b To cross a cross gear to a creature, pay its mana cost again. child
+is an activated ability that can normally only be used during the main step.
+303.3c Cross gear may be crossed to creatures by spells or other abilities.
+303.3d A cross gear's phase does not depend on the state of the creature it crosses.
+303.4. A cross gear that has already been crossed by a creature cannot be crossed by another creature.
+Loss can be redone.
+303.4a A cross gear cannot be crossed back to the creature that crossed it.
+plug.
+303.5. A crossed gear remains in the battle zone even if the crossed creature leaves the battle zone.
+remain.
+
+304. Castle
+304.1 The turn player may fortify a castle from his hand on his main step.
+vinegar.
+304.2. A castle enters the shield zone andIt is fortified by attaching it to the root.
+304.2a A shield attached to a castle is said to be “fortified” and the castle is
+Do is said to be "fortified".
+304.3. If a fortified shield leaves the shield zone, the shield's S.T.
+Put the castle into the graveyard after the gar ability resolves.
+
+305. Weapon
+305.1. Currently, the only existing weapon is the Dragheart Weapon.
+You can only put it into the battle zone with the effect that puts it into the battle zone.
+305.2. Weapons can be equipped on creatures.
+305.2a A weapon's phase does not depend on the equipped creature's state.
+305.3. Weapons cannot exist in the battle zone by themselves.
+
+306. Fortress
+306.1. Currently the only fortress that exists is Dragheart Fortress, and Dragheart is
+It can only be put into the battle zone with the effect of putting it into Luzone.
+306.2. A fortress can exist alone in the battle zone.
+306.3. A Fortress' normal position (untapped) is sideways.
+
+307. Heartbeat
+307.1. Heartbeat is one side of the double-faced card "Forbidden" that can be put into the deck.
+307.2. Some heartbeats are placed in designated positions at the beginning of the game.
+
+308. Field
+308.1. The turn player may expand the field from his hand during his main step.
+can.
+308.2. A field goes into the battle zone after being deployed.
+308.3. The upright position (untapped state) of the field is sideways. "D switch" is already used
+treats upside down as untapped.
+308.4. Some fields are placed in designated positions at the start of the game.
+
+309. Core
+309.1. Currently there are only Forbidden Cores, the final Forbidden Field is flipped over, and 1 creature
+can only be placed in the battle zone by combining them as
+309.2. Cores cannot be put into the battle zone by themselves.
+309.3. The normal position (untapped state) of the core is vertical. There are also upside down ones.
+309.4. The core moves to the location specified as a card.
+309.5. Cores can be put into the mana zone on either side. both produce mana
+I can't do anything. It is possible to tap as a card of that civilization.
+309.6. Cores may be stacked under creatures.
+309.7. Cores cannot exist alone in the battle zone, and are immediately put into the graveyard when alone.
+will be killed.
+
+310. Aura
+310.1. The turn player can use Auras from their hand during their main step.
+310.2. After using an aura, attach it to a GR creature, or perform a GR summon to create a GR creature.
+Put it into the battle zone and attach it to it.
+310.2a After using an aura, the target GR creature must leave the battle zone before attaching it.
+If left, the aura will not enter the battle zone and will remain in the zone it was in when it was used.
+Example: Using an aura from your hand, GR summoned "Yattare Robo" is "Grim Fang, Paranoma".
+If it is destroyed by the static ability of RU, the Aura will not enter the battle zone and will remain in your hand.
+310.3. The normal position (untapped state) of an aura is sideways.
+310.4. The number written on the bottom left of the aura is not power. Auras are attached to creatures.
+Increases the attached creature's power by that amount while attached.
+310.5. Auras cannot exist alone in the battle zone. If it is illegal, it will be put into the graveyard.
+310.6. When attaching an aura to a GR creature that already has an aura attached,
+add on top of
+310.7. Suppose a GR creature with an aura evolves and ceases to be a GR creature.
+However, the aura remains attached to the creature in the battle zone, and the aura's powers and abilities remain the same.
+creatures.
+310.7a At this time, the evolution creature is placed directly below the aura, with the aura on top and the evolution creature on top.
+It overlaps in the order of char and GR creature.
+310.8. If a creature with an aura moves from the battle zone to another zone,
+The aura that was in it also moves to the destination zone.
+310.8a Auras are unaffected by effects that move creatures and are
+placed in the state
+Example: If a creature with an aura is chosen by 《Soul Piercing Kirusei no Shosai Z》,
+The aura is placed in the owner's shield zone as a new shield face down.
+Example: If a creature with an aura is chosen with the ability of "Natura Scorpion",
+The attached aura is put into the owner's mana zone untapped.
+310.8b A creature with an aura is put under another card in the battle zone.
+Aura attached to a card is also placed under that card. At this time, auras and creatures
+are placed under the cards in any order the owner likes.
+
+311. Orbit, Nebula
+311.1. Currently the only ritual that exists is the Reiryu no Gi, and the only currently existing nebula is the Reiryu Nebula.
+311.2. There are some Reiryu no Gi and Reiryu Nebula that are placed in designated positions at the start of the game.
+311.3. Reiryu no Gi and Reiryu Nebula cannot be put into the battle zone by themselves.
+
+312. Artifact
+312.1 The turn player may use his Artifact from his hand for his main step.
+Masu.
+311.2. Once an artifact is used, it goes into the battle zone.
+
+313. Land
+313.1. Lands cannot be put into the battle zone in the normal way and cannot be used.
+313.2. Some lands have effects while they are in the mana zone.
+313.3. A land cannot be in the battle zone and was somehow put into the battle zone.
+If so, it is immediately put into the graveyard.
+
+314. Rule Plus
+314.1. Rule Plus is placed in the hyperdimensional zone at the beginning of the game.
+314.2. Rule Plus cannot be put into the battle zone in the normal way.
+314.3. Rule Plus takes effect when the game is started by placing it in the hyperdimensional zone.
+Add additional rules to the system.
+314.3a The number of cards in the game may change due to rule-plus effects in the game.
+If you change the number of cards, prepare enough cards to meet the number of cards used after the change before starting the game.
+you must.
+Example: If you want to start the game with one 《13th Plan》 in the hyperdimensional zone,
+Just he should have a deck of 45 cards ready.
+314.4. Rule Plus cannot exist in the battle zone, and cannot be in the battle zone in any way.
+, it will immediately return to the Hyperdimensional Zone via the Graveyard.
+
+315. Tamashed
+315.1. The turn player may use a tama seed from his hand during his main step.
+Masu.
+315.2. Once you use a tama seed, it goes into the battle zone.
+
+316. Element
+316.1. Elements can be put into the battle zone face up, such as creatures and tamaseeds.
+A general term for card types that can be used.
+316.2. Card types that cannot be put into the battle zone by themselves, such as spells, castles, and cores, are considered element cards.
+not included in
+316.3. Effects that specify elements are not effects that specify cards. Therefore, multiple
+If you specify an element consisting of 1 card, all the cards that make up that element
+is affected.
+Example: If you choose an evolution creature with the effect "choose an element and destroy it",
+Destroy the Reacher", just like when you select it with the effect, put the evolution source card into the Graveyard as well.
+will be
+
+4. Zone
+
+400. General
+400.1. Zones are places where cards can exist during a game. Usually, "Draw", "Hand", "Battle"
+Zone, Graveyard, Mana Zone, Shield Zone, Hyperdimensional Zone, and Super GR Zone.
+zone exists. The battle zone is shared between players, but other zones are playable.
+It exists per year and is not shared.
+400.2. All zones are divided into public and private zones.
+400.2a A public zone is a zone where all players can see the cards that are not face down.
+is n. The battle zone, mana zone, graveyard, and hyperdimensional zone are public zones.
+400.2b A closed zone means that not all players can see the face of the cards.
+It means zone. The shield, deck, hand and super GR zone are closed zones. in that zone
+Even if a card's faces are all revealed, the zone itself remains private.
+400.2c If an effect causes each player to choose a card from a hidden zone, that card is chosen.
+It is still face down at the moment. However, it must be clearly indicated which card was chosen.
+Don't.
+400.2d If you use an ability that refers to a card in a hidden zone and it doesn't refer to it, your opponent
+No need to show the private zone to check.
+Example: When you use the ability of 《“Sure Victory” Kaiser “Blade Demon”》 to summon 5 hunters,
+You do not have to show your hand if there are no hunters.
+400.2e Cards added to a hidden zone remain hidden unless otherwise specified.
+Masu.
+400.3. Depending on the card type, there are zones that cannot be entered.
+400.4. The order of cards in the shield zone and deck is in order unless specified by an effect or rule.
+It cannot be replaced. Cards in other zones can be changed as the player wishes.
+You can sort. However, whether you are tapping or not, the card attached to it is
+Something must remain clear to all players.
+400.5. When a card is moved from one zone to another, the new addition to that zone
+and does not continue the previous zone state.
+400.5a A card that has been moved from a public zone to a private zone can no longer be viewed.
+400.5b If you move a tapped card in your mana zone into the battle zone, it becomes untapped.
+Go out to the battle zone in a pu state.
+400.6. Effects that cause a player to do something to a zone ("Add cards from your hand to your
+and shuffle”) exist. The action works on all cards in that zone.
+but the zone itself is not affected.
+400.7. When multiple cards move to any zone other than the battle zone, they all move at the same time.
+move in time.
+400.8. When an effect is processed that spans multiple zones, if the target moves to a zone not designated by the effect
+If so, no further processing is done.
+
+401. Deck
+401.1. At the beginning of the game, each player's deck becomes a deck.
+401.2. Each deck must be a single, face-down pile. Players
+Do not peek at the code or change its order.
+401.2a When an effect searches the deck for a card, you are instructed to shuffle it afterwards.
+Do not change the order of the cards until
+401.3. A player may, at any time,You can count the number of cards you have.
+401.4. When an effect puts multiple cards on top or bottom of the same deck at the same time, there are no specific instructions.
+Unless otherwise specified, the owner of those cards can decide the order in which they are placed. In what order
+You don't have to reveal whether you put it on the bill.
+401.5. Some effects tell a player to reveal the top card of their deck. Release
+The card that was played is turned face down when the effect has finished processing.
+401.6 If an effect causes a player to put a card "his Nth from the top" of the deck, then in that deck he has N
+If there are no cards left, that player puts that card on the bottom of their deck.
+401.7. When cards are added together to the deck due to some effect, they are not considered to be added to the top or bottom of the deck.
+I don't.
+
+402. Hand
+402.1. The hand is where the player keeps the cards they draw. Other effects can cause cards to
+It may be moved from a zone other than the deck to the hand. At the start of the game, each player
+- draws his five cards.
+402.2. Each player has no maximum hand size.
+402.3. Players may arrange their hand in any convenient way and look at it at any time.
+You can't see other players' hands, but you can count them at any time.
+403. Battle Zone
+403.1. The battle zone is the main location of the game. creature, cross gear, weapon,
+Fortresses, heartbeats, fields, auras, rituals, and nebulae are placed in the battle zone, but mana and
+No relds, castles, or spells are placed.
+403.2. Players arrange the creatures in the battle zone so that each
+It must be clear which creature the gear or weapon belongs to.
+403.3. Players may rearrange their cards in the battle zone at any time.
+I can.
+403.4. You cannot change the order of cards stacked under another card. This is an example of a 403.3
+outside.
+403.4a When a card is placed below a card in the battle zone, it is placed at the bottom of the constituent cards.
+Masu. When multiple cards are placed under a card at once, the player decides in what order they are placed.
+start.
+
+404. Cemetery
+404.1. The graveyard is where you put your discard pile. Cards discarded from hand or destroyed
+Spells that have finished their reasoning are placed in the graveyard.
+404.2. Players can look at cards in their graveyard at any time.
+404.3. Players can rearrange the cards in their graveyard at any time.
+
+405. Mana Zone
+405.1. The mana zone is where you put the cards that generate the mana you need to use them. Ma
+All cards placed in Nazone are placed upside down. However, tap the multicolored card and place it.
+will be
+405.2. Players can look at cards in their mana zone at any time.
+405.3. A player may rearrange the cards in his mana zone at any time.
+Masu.
+
+406. Shield Zone
+406.1 In the shield zone, he has 5 shields at the start of the game. Fortify Shield
+The castle is placed in the shield zone.
+406.2. Each shield must be one pile of face-down cards. player
+- cannot see the contents of each shield.
+406.3. Players may not rearrange cards in their shield zone.
+
+
+407. Hyperdimensional Zone
+407.1. Cards with psychic and dragheart supertypes are placed in the hyperdimensional zone.
+The maximum number of hyperdimensional zones at the start of the game is 8. It does not matter if it is 0.
+407.2. Players can see cards in hyperdimensional zones at any time.
+407.3. A player may rearrange the cards in his hyperdimensional zone at any time.
+to come.
+
+408. Super GR Zone
+408.1. Cards with the special type GR are placed in the super GR zone. Super GR at the start of the game
+He has 12 cards, not too much or too little.
+408.2. Super GR must be a face down deck of cards. The player sees the contents of the super GR
+I can't.
+408.3. Players cannot rearrange cards in the Super GR zone.
+
+409. Pending State
+409.1. When cards are used or effects put them into the battle zone, those cards are actually
+on hold until you move the zone to A card placed on hold does not
+you have not left the application.
+409.1a When you use a card that goes into the battle zone, such as a creature, or if an effect puts it into the battle zone
+When attempting to play, those cards are put on hold until you actually move the zone
+409.1b Spells are suspended from the time they are cast until the effect has finished resolving. solution is over
+After that, the spell you were casting is put into your graveyard.
+409.1c While a card is suspended, it belongs to the zone in which it was originally placed.
+However, it does not count against the number of cards in that zone.
+Example: In a situation where you have 《Crimson Dragon Ogristoval》, the remaining 1 《Energy Rye》 in your hand
+If you cast Crimson Dragon, before resolving the card-drawing effect, the power of Crimson Dragon Ogristoval
+- becomes 0 and is destroyed.
+Example 2: When discarding a card from your hand due to the effect of 《Emergency Typhoon》 cast from your hand.
+If you do, you cannot discard the 《Emergency Typhoon》 you cast.
+Example 3: You have 4 cards in your mana zone, and your opponent's 《Beast Army, Yadock》 is in the battle zone.
+When summoning "Rainbow Speed The Verde" from the mana zone, "Rainbow Speed The Verde"
+Since the number of cards in the mana zone becomes 3 due to the pending status of "De", "Beast Army, Yado"
+The replacement effect of "Hook" is applied.
+409.1d After the suspended card is no longer on hold, it shall
+You lose the effect that was previously given.
+Example: A card with the effect "You may use it from your Graveyard this turn."
+If the card is put into the graveyard again as a result of using it from the graveyard, it cannot be used again.
+you can't.
+Example 2: "Snake's Boss Goemonkey! 》 effected creature from the mana zone.
+When summoned, the creature stayed in the mana zone due to the replacement effect of "Beast Army, Yadock".
+, the creature cannot be summoned from the mana zone again.
+409.1e A single effect may use multiple cards at the same time. In that case, the effect
+After all the cards used in are put on hold, they are processed one by one.
+Example: When casting 3 spells with the ability of 《Type Dragon Emperor Style, Kiriko 3》, all 3 of them are on hold.
+After that, solve one card at a time.
+Example 2: The card to be used when 7 of his cards are put into the graveyard by the ability of "Dream Transformation Dueland".
+After all the cards are on hold, use them one by one.
+409.1f A single effect may put multiple cards into the battle zone at the same time. on the spot
+If so, all cards put into the battle zone are put on hold, and then put into the battle zone one by one.
+However, if multiple seals enter the battle zone at the same time, after all of them are put on hold,
+Attach to creatures in the battle zone at the same time.
+Example: When putting two creatures into the battle zone with the effect of "Heaven's Gate", the two
+are put on hold and then put into the battle zone one by one.
+Example 2: Seal all creatures in the battle zone with the effect of "Dokindam Apocalypse"
+If attached, they are attached at the same time.
+409.2. A card placed on hold as a result of playing a card or resolving an effect
+If you do not move the card to another session, the card will no longer be on hold. The status of the card is
+It does not change from before entering the stationary state.
+409.2a If a suspended card is put back into its original zone,
+card is not placed on the counter. Abilities that trigger when a card is placed do not trigger,
+Also, the phase of that card does not change.
+Example: When casting a spell from the graveyard with the "when played" ability of "Wave", the spell cast is resolved.
+As a result, it will be placed in the graveyard again, but the ability that triggers when the card is placed in the graveyard due to this
+Force does not provoke.
+Example 2: When summoning "Dance of Yin and Yang" that is tapped in the mana zone, "Beast Troop Ya
+If Doc's replacement effect is applied, Dance of Yin and Yang remains tapped even after the replacement effect is applied.
+placed in the mana zone.
+409.2b A replacement effect that applies when a spell is put into a graveyard is a
+Applies even if placed. This is an exception for 409.2.
+Example: Casting Kenzan Charger from the Graveyard with the "When Played" ability of "Wave".
+When "Kenzan Charger" is placed in the graveyard again, it may be
+placed in the mana zone instead.
+5. Turn structure
+
+500. General
+500.1. The turn is "start of turn", "draw", "charge mana", "main", "attack", "turn".
+The end of He consists of 6 steps. Each step, even if nothing happens
+Exists on every turn. Each step may have further substeps. They are,
+They are processed in order.
+500.2. Each step has no effects in progress and the turn player has nothing to do.
+It will end when Each sub-step during an attack will be
+sub-step.
+500.2a Once you move to the next step, there is no going back to the previous step.
+500.3. When a step or sub-step ends, the step or
+The effect that was scheduled to follow disappears. It is also scheduled to last "until" a step or substep
+The effect disappears at the beginning of that step or substep. The effect that follows "Attacking" is
+It disappears at the end of the attack, not at the end of the attack step. "turn
+The effects lasting until the end of the turn are completely gone, so even if you enter the End of Turn step,
+It won't go away any time soon.
+500.4. When a step or sub-step begins, the "beginning" of that step or sub-step
+Triggered effects that spawn are put on standby.
+500.5. Effects can cause a player to take an extra turn. In that case,
+Adds a turn immediately after the current turn. During one turn, one player can have multiple additional targets.
+If he gains a turn, he is added by 1 for that extra turn.
+500.5a During one turn, if each player gets an extra turn, that extra turn
+Do it from layers.
+500.6. Skip the draw step on the first turn of the first player.
+
+501. Turn Start Step
+501.1. The turn player decides which of his cards to untap, and
+untap them at the same time. This is a turn-based action. All of a player's cards are usually
+Untap, but effects can prevent the card from untapping.
+501.1a Players untap creatures with the Silent skill.choose not to
+It doesn't matter. This replaces Untap with the Silent Skill ability.
+However, the Silent Skill effect itself is independent of the activation conditions. Effectiveness of Silent Skill
+The effect is put on hold the moment it is activated and is resolved after the other cards untap.
+501.2. All "beginning of turn" triggers trigger. The effect that triggered
+Declare to be resolved from the layer and process in order.
+501.2a Cards with abilities that trigger "at the beginning of turn" have their abilities trigger during this step.
+If it moves into the zone, the ability won't trigger until the next turn start step.
+
+502. Draw Step
+502.1 The turn player draws a card for her. This is a turn-based action.
+
+503. Mana Charge Step
+503.1 The turn player puts one card from his hand upside down into his mana zone (char
+(pages). This may or may not be done.
+503.2 Normally, a player can charge only one of his mana during his mana charge step.
+You can Continuous effects can increase or decrease this number.
+
+504. Main Step
+504.1. Normally, the turn player can use cards only during the main step.
+504.2. By paying the mana cost of a cross gear in the battle zone again, make a creature
+Cross gear can be crossed.
+
+505. Attack Step
+505.1. The attack step consists of "designate attacking creature", "designate blocking creature", "designate bat
+He consists of 5 sub-steps: Le, Direct Attack, and End Attack.
+505.2. During the attack step, the turn player's creatures and non-turn players
+You can attack the player's tapped creatures.
+505.3. Only creatures can attack or block.
+505.4 Creatures attack and block her one by one. Attack with multiple creatures simultaneously
+or blocked by multiple creatures at the same time.
+505.5. The turn player may declare an attack any number of times as long as there are creatures available to attack.
+You can
+505.6. Once an attacking or blocking creature leaves the battle zone, it can no longer
+It is treated as not in "attack". Removed from "that attack" by some effect
+sometimes. Creatures removed from "the attack" are attacking creatures and
+unblocked creatures, whether blocked or blocked.
+It is no longer a jar.
+505.6a Once a creature is designated as an attacker or blocker,
+Even if an ability that forbids the creature from attacking or blocking subsequently activates
+does not remove the creature from the current attack or block. Ta
+However, if some effect causes the attacking creature or the creature being attacked to be "that attack"
+If it is removed from the attack, the attack ends immediately and moves to the end of attack step. At this time,
+Pending resolution effects are resolved at this time, but any non-turn player's (as defined in 506.3d)
+It is not possible to add new abilities that can be declared to be used in .
+505.6b If you touch a creature that has already been designated as an attacking or blocking creature,
+You can't remove it from an attack by tapping or untapping it.
+
+506. Attacker Designation Step
+506.1. The turn player designates attacking creatures.
+506.1a First, the turn player chooses which creatures will attack. (This selection is
+Optional) The creature you choose must be legally ready to attack. untapped state
+must be in the battle zone continuously from the start of the turn, or
+The inability to attack by an effect must be disabled. to attack
+A creature that requires some condition can be used as an attacking creature without meeting that condition.
+cannot be specified as
+506.1b The turn player may force his creature to
+or attack with that creature if some condition is met)
+If so, you must have that creature attack during that turn. forced working clitoris
+The order in which the characters participate in the attack is arbitrary.
+506.1c The turn player taps the chosen creature.
+From 506.1d onwards, the chosen creature becomes an attacking creature. Removed from "that attack"
+It remains an attacking creature until it is killed or until the end of attack step.
+506.1e The turn player may decide whether the creature is a player or a tapped creature.
+Specifies whether to attack fliers.
+506.2. Skip other substeps if no attacking creature is designated.
+505.2a If a substep is skipped, declarations from it are not allowed. Waiting effects are
+can be used.
+506.3. Next, abilities that trigger when attacking creatures are designated trigger, and their effects wait.
+state.
+506.3a A creature that triggers on attacking or being attacked by a creature
+abilities trigger only when a creature is declared an attacking creature. creature
+After the creature participates in the attack, the creature's characteristics change to match the ability's trigger conditions.
+It does not trigger even if it changes.
+506.3b Some triggered abilities require a use declaration. When using, first turn
+Declare anything the player side will use. A triggered ability that requires a use declaration is Ninji
+Refers to abilities that trigger in hidden zones, such as Ja Strike and Revolution Change. (reference
+603.2e)
+506.3c Then resolve the turn player's pending effects in any order.
+506.3d Declare the non-turn player's side of the triggered ability that requires a declaration of use. attack
+Even if the conditions were not met at the time the reacher was specified, the conditions will be met at this point.
+If it satisfies the requirements, it can be used.
+506.3e Then resolve the non-turn player's pending effects in any order. this past
+If an effect on the turn player's side is triggered at the
+Prioritize the effects of the year, then return to the non-turn player side.
+
+507. Blocker Designation Step
+507.1. The non-turn player chooses creatures that use abilities that change attack targets.
+507.1a If you want to use an ability that changes the target of an attack, such as a blocker or guardsman,
+Players choose one or more creatures that can use that ability. When selecting multiple
+select at the same time. The creature you choose must be in a state where you can legally use that ability.
+yeah. Creatures that require a condition to use an ability that redirects attacks must
+It cannot be selected if the conditions are not met.
+Example: A tapped creature with a blocker is chosen as the creature to use the ability.
+you can't
+Example: If your opponent's creatures are attacking the player, creatures with guardsmen
+cannot be chosen as the creature to use the ability. Cry with other blockers
+The same is true even if there is a teacher.
+Example: If a creature with an "unblockable" ability is attacking, it has a blocker
+You can't choose creatures.
+Example: A creature with an untapped blocker is being attacked.
+A creature with a blocker can't be chosen as a creature to use a blocker.
+507.1b A non-turn player may have an effect that forces his creatures to block.
+, you must choose that creature as the creature to use the blocker ability.
+Don't. If there are effects that force multiple creatures to block, select all of them.
+you need to
+Example: In a situation where you have two creatures that can use blocker abilities,
+If Flower of , attacks, you must choose both of them as creatures to use the ability.
+there is.
+507.2. Resolve the abilities of the chosen creature. Select multiple creatures to use the ability
+If so, resolve those abilities one by one in any order the non-turn player likes, resulting in
+Then, the attack target is changed according to the last ability that resolves.
+507.2a. Finally, a blocker ability redirects the attack to the creature that used that ability.
+If so, the chosen creature is designated as a blocker. "That attack
+It is a blocking creature until it is removed from the attack or until the end of attack step.
+continue.
+Example: If you use the blocker ability of two creatures, only the last one to resolve the effect
+becomes a block creature.
+507.2b. Finally, a non-blocker ability (such as a guard) that uses that ability
+If the attack target is changed to a reacher, the chosen creature is not a blocking creature.
+I don't.
+507.2c. An attacking creature that is blocked by a blocking
+It will be A creature with no blocking creatures has "unblockable".
+It becomes a “cleaner”. removed from "that attack" or
+stays that way until the The creature that blocked it from "that attack"
+A blocked creature remains blocked even if it is removed.
+507.3. Abilities triggered by designated blocking creatures trigger, and all effects wait.
+machine state.
+507.3a. Triggered abilities with a trigger condition of "When this creature blocks"
+Triggers when a creature with power is designated as a blocker.
+507.3b. Abilities that trigger when a creature with a particular characteristic blocks
+is designated as a blocking creature or blocked by an effect
+If a point doesn't have that property, it won't trigger. A creature with a specific trait is blocked
+Abilities that trigger when the creature is
+does not trigger unless it has the by creatures with certain characteristics
+An ability that triggers when blocked by
+If you don't have that characteristic at the time you get it, it won't trigger. These abilities can then be used by creatures
+Even if the characteristics of the character change and meet the conditions, it will not be triggered at that time.
+Example: "Whenever this creature is blocked by a light creature, that creature
+- is destroyed at the end of the attack. ", this creature
+is blocked by a dark creature, even if that creature turns into light
+Abilities do not trigger.
+507.3c. "CreatureAn ability that says "when attacked and wasn't blocked" will cause that creature to
+Triggers if no blocking creature is specified. block after being blocked
+It doesn't trigger if the creature is removed from "that attack."
+507.3d. Some triggered abilities require a use declaration. When using, first turn
+Declare anything the player side will use. (Reference 603.2e)
+507.3e. Then resolve the turn player's stand-by effects in any order.
+507.3f. Declare the use of triggered abilities that require a use declaration on the non-turn player's side.
+507.3g. Then resolve the non-turn player's stand-by effects in any order. this past
+If an effect on the turn player's side is triggered at the
+Prioritize the effects of the year, then return to the non-turn player side.
+507.4. If a creature enters the battle zone blocking, it counts as a "blocking creature."
+Char", but doesn't count as "blocking" for triggering events and effects.
+
+508. Battle Step
+508.1. If you are attacking a creature or the creature's attack target is changed at this stage, the
+torr occurs.
+
+509. Direct Attack Step
+509.1. If the target of the attacking creature is not changed, it is a direct attack. child
+If the non-turn player does not have a shield at , that player loses the game. child
+This is a state-based action.
+509.2. Determines the number of times a creature's direct attack shields are broken.
+509.2a Creatures with no text break one shield.
+509.2b The creature has the ability to break multiple shields, such as W breaker
+If so, break the number of shields specified by the ability.
+509.2c If a creature has multiple breaker abilities at the same time, which ability the player uses
+Select At this time, the creature with T breaker and W breaker at the same time
+You can specify a W breaker and he can break two, but without specifying either he can only break one.
+You cannot choose to break.
+509.3. Choose the specified number of shields to break. "Before the break" or "Before the break"
+Abilities that trigger before the break, such as "to", trigger at this point.
+Examples: "Dragon W. Breaker", "Master W. Breaker", "MAX the Joni"
+ー》’s “before each break” ability
+509.4. Resolve the pending effect in 509.3. All those effects have finished resolving
+Then resolve any new abilities triggered by it.
+509.4a Of the newly triggered abilities, first remove the turn player's standby effects in any order.
+to process.
+509.4b Continue to resolve the non-turn player's pending effects in any order. this process
+If an effect on the turn player's side is triggered by
+Prioritize Yar effects, then return to the non-turn player.
+509.4c Even if an attacking creature leaves the battle zone by resolving an effect,
+The creature breaks the opponent's already chosen shield.
+509.5. The number of times a creature chooses a shield breaks at the same time. A broken shield is possible
+Breaks newly added shields in some way even if the specified number of strengths is not reached
+cannot be chosen as a shield to
+509.5a S Trigger can be declared when the shield is broken and added to the hand. multiple sheets
+If there is an S trigger for , declare it at the same time. The card you declare must be shown to your opponent.
+I will.
+509.5b G Strike can be declared when the shield is broken and added to the hand. multiple sheets
+If there is a G-Strike, declare it at the same time. The card you declare must be shown to your opponent.
+I will.
+509.5c S. Buck can declare by discarding a card that is added to his hand by breaking the shield into the graveyard.
+Masu. The card you declare must be shown to your opponent. At this time, the card discarded is from the shield to the grave.
+Although it has moved to the ground, it is treated as "a card discarded from your hand".
+509.5d After declaring, add the broken shield to your hand. At this time, I added it to my hand.
+If there is a card with "Crest of Judgment" among the cards, you can discard it and declare Sabaki Z.
+vinegar.
+509.5e Then resolve S Trigger and his S Buck, G Strike, and Sabaki Z in any order.
+Example: Two shields broken at the same time are 《Cyber Brain》 and 《Fairy Re Rye》.
+If it was F, cast Cyber Brain with "S Trigger", draw a card, and then
+You can also select one of your opponent's creatures with "G Strike" and make them unable to attack.
+Then, select one of your opponent's creatures with "G Strike", make it unable to attack, and then use "Sai
+You can also cast Bar Brain.
+509.6. You cannot choose the same shield twice with an ability that breaks multiple shields at the same time.
+I can't If the shield is not broken in some way, the shield remains
+Stay in the zone.
+
+510. Attack end step
+510.1. All abilities that trigger "at the end of an attack" trigger. The triggered effect is a turn play
+It processes from year to year.
+510.2. Next, the effects of "attacking" and "blocking" disappear.
+
+511. End of Turn Step
+511.1. Triggered abilities with the trigger condition "at the end of the turn" trigger. each trigger
+and its use is done in the following steps:
+511.1a All triggered abilities that do not require a use declaration will trigger.
+511.1b The turn player declares the use of triggered abilities that require declaration of use.
+511.1c Process pending effects for the turn player.
+511.1d A triggered type that requires a use declaration once all of the turn player's standby effects are gone.
+The non-turn player declares the use of the ability.
+511.1e Resolve the non-turn player's pending effects in any order. During this process
+If an effect on the turn player's side triggers, the turn player's
+Prioritize the effect and then return to the non-turn player's processing.
+511.2. "During that turn" and "until the end of turn" effects disappear at the same time.
+
+512. Time to move to the next turn
+512.1. When moving to the next turn, all cards that are on hold at that time are put into the graveyard. child
+, new abilities will not trigger.
+6. CARDS USE, ABILITIES AND EFFECTS
+
+600. General
+601. Use of Cards
+601.1. Using a card means summoning a creature, casting a spell, or generating a cross gear.
+Fortify the shield with a castle, expand the field, and use the aura to
+to affect the game.
+601.1a A player declares to use a card, including changing the terms of use. Manacos
+If there are any effects that increase or decrease the weight, decide which ones to apply at this point. change the terms of use
+or the effect that increases or decreases the mana cost, the card itself needs to move the zone.
+If it is required, the effect cannot be used. Also, if the processing required to apply the effect cannot be performed,
+, or if the first application of another effect prevents the processing of the effect, the effect
+It can not be used.
+Example: If he wants to apply G.G.G to 《“Counterattack” Brand》, when he declares the use of the card,
+The number of cards in your hand, including 《“Counterattack” Brand》, must be 1 or less.
+Example 2: You cannot apply Fushigiverse without your own creatures.
+601.1b Cards are put on hold as soon as they are declared to be used. card is prohibited
+declaration itself is not possible. Also, if you can't pay the alternative cost, you can't declare
+you can't.
+601.1c To use a card in your mana zone, tap the pending card to use.
+to pay mana cost and civilization.
+601.1d When paying costs, pay civilization first.
+601.1e A player applies effects that increase or decrease mana cost to determine the mana cost of the card.
+Masu.
+601.1f Players pay mana costs. Is there any action to be taken when using the card?
+Executes that action.
+601.1g After paying the mana cost, the card is used immediately.
+601.1h Players specify what they choose when a card tells them to choose something.
+If an ability instructs you to choose multiple things at the same time, you cannot choose the same thing more than once.
+yeah. If the ability is instructed to choose "every", or if the same ability is effective multiple times
+You can select the same item multiple times.
+
+602. Handling Activated Abilities
+602.1. An activated ability is an ability whose effect can be obtained by performing the conditions for its activation.
+Power. You can't get the effect without executing the condition. These types of abilities include tap abilities,
+Silent Skills, Dynamo, and more.
+602.2. The activation of an ability and the ability's effect itself are independent events. some starting conditions
+The article allows replacement in certain situations, but even in such cases, the activation of the ability is replaced.
+The effect of the ability itself does not replace anything.
+602.3. Players cannot start activating abilities that are prohibited from activation.
+602.3a Abilities that can be used when an attack is possible (e.g. tap abilities) do not cause summoning sickness or other effects.
+It cannot be used if it is in a state where it cannot attack for some reason.
+
+603. Handling Triggered Abilities
+603.1. Triggered abilities have trigger conditions and effects.
+603.2. Triggered abilities automatically trigger whenever their trigger conditions are met. Triggered effects are on standby once.
+state and wait for resolution.
+603.2a At the beginning of a step, all abilities that trigger "beginning" trigger.
+603.2b A triggered ability triggers only once each time its trigger condition is met. But that event
+It can trigger multiple times if the event contains multiple events.
+Example: A creature with an ability that triggers "whenever a creature is destroyed"
+If multiple creatures are destroyed at the same time when there is a
+Triggers the same number as the character.
+603.2c A triggering event using the word “becomes” means that the indicated event has occurred.
+It only triggers when It will not trigger if it was originally in that state, and will continue to be in that state.
+It will not trigger again for as long as Similarly, if a card enters that zone in that state
+does not induce
+Example: An ability that triggers when a creature "becomes tapped" is a creature in the battle zone.
+Triggers only when Reacher goes from untapped to tapped.
+603.2d Abilities trigger only when their trigger event actually happens. permuted
+It will not be triggered by an event that was not there.
+Example: A creature is lured by being placed in a graveyard.An ability that emits puts a creature into the graveyard.
+It won't trigger if you put it in another zone instead.
+603.2e Some triggered abilities require a use declaration. "Ninja Strike"
+All triggered abilities that trigger in closed zones, such as “Revolutionary Change” and “Muzuki Gate”, are declared for use.
+A triggered ability that requires a word. These abilities can be used from public zones such as the graveyard or mana zone.
+A use declaration must be made even if the
+603.2f Declaring the use of triggered abilities is different from declaring the use of cards. Declare Use of Triggered Ability
+means that only the player who owns the card with the triggered ability can see the ability's trigger.
+In a situation where the player can reveal the card (such as when it is in hand), the player can reveal the card and declare it.
+and The triggered ability triggers only after it is declared. This is his 603.2 exception.
+603.3. Once an ability triggers, the effect becomes standby once, and all standby effects at that time
+Among them, the processing is performed in order from the turn player's one.
+603.3a Some triggered abilities say that you use the ability of the icon that follows it.
+When those abilities are triggered, they will be on standby, including what is written on the icon.
+Example: When a creature with Kizuna Plus attacks and puts the underlying card into the graveyard, then
+Even if the creature with the icon is destroyed before the ability resolves, the card is placed in the graveyard when the ability activates.
+The two icon abilities selected when the card is placed are in standby mode.
+603.4. If a triggered ability has a condition, if the condition is met when the ability resolves, the effect
+Resolved. It doesn't matter if the conditions are met at the time of triggering.
+603.5. A trigger condition involving a card moving between zones is called a "zone change trigger". hand
+All cards, battle zones, mana zones, graveyards, decks, etc. that require movement between zones are zoned.
+It's an ability that triggers change.
+603.5a Abilities when put into the battle zone are creatures, cross gears, weapons, and fortresses.
+Triggers when is put into the battle zone. Whenever you put one or more cards into the battle zone,
+Check all abilities that trigger when they enter the battle zone, including the triggered abilities that the card has
+To do.
+603.5b Continuous effects that add or change the characteristics of a card can be
+It is applied immediately and is not placed in the zone with its original characteristics. conditional on characteristics
+A triggered ability checks its characteristics after applying its continuous effect.
+Example: If you have 《Fun Wind Fairy Courtney》 and mana charge a nature card,
+Do is placed in the mana zone as a card with all civilizations. At this time, space
+If a creature has the charge (darkness) ability, that ability will trigger.
+603.5c Some triggered abilities cause the card with that ability to leave the battle zone,
+There are also triggers when moving to bills. Determine if those abilities trigger
+To do so, the game must "look past". Immediately after the event these
+It triggers based on the existence and state of the immediately preceding card. At this time, it is possible to see the past state
+only about the card with the ability itself.
+Example: You have two creatures and the ability "Draw a card when the creature is destroyed."
+When the holding creature is in the battle zone, cast a spell that destroys all creatures.
+If so, the ability triggers only once on the creature itself.
+603.6. Effects may create delayed triggered abilities that do something later.
+603.6a A delayed triggered ability is triggered by the use of a card or other ability, or as a result of the application of a replacement effect.
+generated. in the past, even if its triggering event occurred before it was actually generated.
+There is no retroactive effect.
+Example: An ability that reads, "The first time a creature taps this turn, untap it."
+When you cast a spell that has a
+It only triggers on creatures that were already tapped before casting the spell.
+does not induce
+
+604. Handling Static Abilities
+604.1. Static abilities don't activate or trigger, they always do something.
+604.2. Static abilities have continuous effects. Some of them can be replacement effects. this
+These effects last as long as the card with the static ability is in a particular zone and has that ability.
+vinegar.
+604.3. Some static abilities apply while the card is in a usable zone (usually your hand).
+exists. This includes things like abilities that change a card's mana cost.
+604.4. Some static abilities are exceptionally one-shot effects. These abilities generate effects.
+If the conditions for the ability are met, apply the effect before resolving any other abilities. It also handles the effects
+If it is generated in the middle, it interrupts its processing and applies the effect. Resident after applying effect
+If the conditions for the ability to produce a one-shot effect are still met, apply that effect again.
+Example: 《Legendary Forbidden Dokindam X》 defeat effect, S-MAX evolution return to hand effect
+604.4a When a static ability creates a one-time effect, if it has a continuous effect, it must
+, then apply its one-shot effect.
+604.4b If there are multiple one-shot effects created by static abilities, which player
+The processing changes depending on whether the card is a negative card or not. A single player's cards can produce multiple one-shot effects.
+If so, the player applies the one-shot effects in any order. multiple players
+If any of the cards in the card produce a one-shot effect, apply the turn player's effect first.
+
+605. Resolving Card Uses and Abilities
+605.1. Upon resolution, the turn player removes his or her own effects from the standby effects in any order.
+We will solve it in turn. The order in which the effects were queued does not matter.
+605.2. Resolution is divided into several steps.
+605.2a If a triggered ability has a condition, check to see if it meets that condition when it resolves. Full
+If not, it does nothing. Otherwise, continue solving.
+Example: Temporal Brawler Kill's awaken ability always triggers at the beginning of your turn. open turn
+Even if you don't have a creature with power 6000 or more in the battle zone before the start,
+If there is a creature with power 6000 or more, flip it over to the side with the higher cost.
+is possible.
+605.2b When choosing a card or ability, choose as much as possible within the specified range. If you can't choose
+Its effect does nothing. If the card or ability has other effects, the other effects resolve normally.
+To do. If "all" is listed, it is not selected.
+605.2c Cards and abilities are resolved in the order written. However, replacement effects may change these behaviors.
+changes and may change the meaning of previous instructions. In some cases, the card text
+A later written sentence may modify the meaning of an earlier sentence.
+605.2d If the game requires information, the value is provided only once when the player performs the action.
+will be determined. If an effect requires specific information on a card, use information about the current state of the card.
+is. If the ability says the card does something (such as battle), it is the card that actually does it.
+It's a code, not an effect. When a continuous effect requires a card's information, that card's
+Always check the information of characteristics (civilization, race, name, cost, power).
+Example: A creature with the ability "When in the battle zone, have all civilizations" has the ability "Cree
+Destroy one of her chars. If you do, take a creature with the same civilization from your hand.
+If you choose it with an effect, it checks the information at that time (when it's in the battle zone).
+Masu.
+Example: The command is not a command while the effect "Command cannot attack" is applied.
+If it evolves into a creature that doesn't have one, it can attack.
+605.2e As the final step in resolving a spell, the spell is put into the graveyard. Ability is the final
+disappear in stages.
+605.3. If the card being resolved is not a spell, the card is a creature, cross gear,
+If it's field or aura, it goes into the battle zone. If the card is a castle, put it in the shield zone.
+will be
+
+606. Effects
+606.1. "Effects" are events that occur in the game as a result of using cards or abilities.
+Spell abilities, activated abilities, and triggered abilities, when resolved, create one or more single-shot or continuous effects.
+produce an effect. Static abilities produce one or more continuous effects. rule statement
+The chapter itself is not an effect.
+606.2. If an effect calls for something impossible, do only what is possible.
+Example: If a player has only one card in his hand, the effect "He discards two cards from his hand"
+Discard only the cards that are
+606.3. Some continuous effects have replacement effects.
+
+607. Single Effect
+607.1 A one-shot effect causes something he does only once and ends immediately. An example is shielding
+It can rake, destroy creatures, move cards between zones, and so on.
+607.2. Some one-shot effects have a game effect, rather than when the spell or ability that created the one-shot effect resolves.
+There is something that instructs the player to do something after the game has moved on (usually at a certain point).
+Masu.
+
+608. Continuing Effects
+608.1. Continuous effects change the characteristics of a card for a fixed or indefinite period of time,
+or affect the rules of A continuous effect can be a spell ability, the resolution of an ability, or the
+Generated by static abilities. If there are multiple continuous effects, they are applied simultaneously.
+608.2. Continuous effects are created by resolving spell abilities and abilities.
+608.2a A continuous effect created by the resolution of a spell ability or ability is the card or ability that created it.
+lasts for the period indicated in the , such as "until the end of the turn". If no period is specified,
+Continues until the end of the game.
+608.2b If a spell ability or ability causes a continuous effect that includes a variable, the value of that variable resolves.
+It is determined only at the time and does not change after that.
+608.3. Continuous effects are generated by static abilities of cards.
+608.3a Continuous effects created by static abilities are not "fixed." indicated in the article
+It always applies to everything.
+608.3b This effect always applies while the card that produces it is in the corresponding zone.
+Example: A card with the static ability "All light creatures have +1000 power"
+Created an effect that continuously gives each light creature in Luzone +1000 power.
+To do. A creature gains this modifier when it becomes light, and gains this modifier when it ceases to be light.
+lose alignment.
+608.3c A continuous effect that modifies the characteristics of a card is activated as soon as the card enters the corresponding zone.
+Correct your gender. Entering a zone, even if the card was modified before entering the corresponding zone
+You don't wait for it and then fix it. Effects of this kind do not affect the card's corresponding zone.
+applied at the time of, determines whether the ability triggers when the card enters the corresponding zone.
+applied before specifying
+Example: A creature with the static ability "All light creatures get blockers"
+is in the battle zone, light creatures have a blocker and
+I'm going to Enter the battle zone as a creature without blockers and then block
+You don't get a car. Conversely, since you don't get a blocker before going out,
+It cannot be put into the battle zone with 《Heaven's Gate》.
+
+609. Replacement Effects
+609.1. Some continuous effects can be replacement effects. Replacement effect lasts when event occurs
+applicable. It is not pre-fixed. Effects of this kind are specific to be replaced.
+Waits for an event in , and replaces all or part of its effect with another event. this is the effect
+Acts like a “shield” against anything that affects
+609.1a Effects that use the word “instead” are replacement effects. By the word "instead"
+It shows what events are replaced and how.
+609.2. A replacement effect must exist before the appropriate event occurs. "Time
+You can't "go back" and change what has already happened.
+609.3. Replacement effects are applied only once per event.
+609.4. If an event is replaced, it never happens. permuted i
+Instead of venting, the modified event will occur, triggering any triggered abilities from it. change
+If the event after being executed cannot be executed, it cannot be replaced.
+609.5. When replacing an event with a replacement effect, if that event does not occur, the replacement effect
+Do nothing.
+609.6. Some replacement effects replace drawing a card.
+609.6a When replacing one of the multiple card draws, the next card draw is that replacement.
+This is after finishing all conversion effects.
+609.6b If you have a series of effects that draw a card and then do something to that card, then you draw the card.
+If an extra part is replaced and you don't draw a card as a result, the extra part does nothing.
+609.7. Some replacement effects are not continuous effects. A spell or ability has its own solution.
+Such effects that replace some or all of the timing effects are called self-replacement effects.
+609.8. If multiple replacement effects attempt to modify a single event at the same time, which effect is applied?
+Ruka prioritizes the effect of the turn player, and the same player has multiple replacement effects
+If so, that player chooses which effect is applied.
+609.8a If a spell's effect replaces its own movement, it takes precedence over other replacement effects.
+will be
+Example: Casting Brain Charger from the Graveyard with the ability of Dragon Element Symbol Sr Spellcyclika.
+After that, the replacement effect of "Charger" takes precedence, and "Brain Charger" becomes Manazo.
+placed in the
+Example: 《Brocken Vaughan》 is present, and 《Determination of Life, Earth, and Destruction》 from the mana zone.
+After casting , the replacement effect of "instead of putting it in the graveyard" in the spell ability takes precedence, and "Life and Earth
+and Roaring Decision is placed on the bottom of the deck.
+609.9. Multiple events may occur simultaneously, each modified by a different replacement effect.
+In that case, each player first decides to which events their replacement effects apply.
+Once you have decided which replacement effects to apply to all events, apply them simultaneously.
+609.9a First, the turn player determines which replacement effects apply to which events.
+Masu. If the replacement effect to be applied requires processing such as moving a card or changing its phase, use this
+You must also choose the cards that will be affected by the action at that time. turn player
+After the determination of the application of the replacement effect by
+determines the replacement effect.
+609.9b When choosing a card to be affected by resolving a replacement effect, decide to apply another replacement effect.
+You cannot choose the card you chose when you did it.
+7. Other Rules
+
+700. General
+700.1. Everything that happens in the game is an event. Multiple events may occur during the use of the card or
+May occur during ability resolution. The text of a triggered ability or replacement effect indicates the effect they are looking at.
+Define vents. For some abilities he is an event, for others
+It can be multiple events.
+700.2. Abilities with multiple options are said to have options.
+700.2a An ability with choices chooses the choice when resolving the ability.
+700.2b Some abilities let a player other than the ability's owner choose an option. In that case also
+The player makes an alternative choice when the ability resolves.
+700.2c Some cards and abilities give players choices other than the card's or ability's owner.
+In that case, the player chooses the option at the timing when the card or ability normally chooses the option.
+I will do
+700.3. If a creature is not destroyed or leaves the battle zone, rules and effects
+So it can't be destroyed or leave the battle zone. Such creatures are
+Even if his power drops below 0, he will not be destroyed or leave the battle zone, and his power
+Ignore state-based actions when is less than or equal to 0.
+700.4. If an attacking creature is unblockable, a creature that can legally block it.
+does not exist.
+700.5. Creatures with the ability to "win the battle" are related to the power of the opponent they are battling.
+Win the battle regardless.
+700.5a If creatures with the ability to "win the battle" battle,
+Char wins a battle and no creature loses a battle in that battle.
+
+701. Keyword Processing
+701.1. Most of the actions written in the rules text of the cards are written in plain language,
+Some verbs require definitions. Those "keywords" are game terms, meaning
+are sometimes summarized.
+701.2. Tap and Untap
+701.2a To tap a card is to rotate it 90 degrees from its original position.
+701.2b To untap a card is to put it back in place.
+701.3. Summon
+701.3a To summon a creature is to move it from your current zone (usually your hand) to
+It's about making it ready for the battle zone. Players usually only use Manacos during the main step.
+You can summon creatures by paying
+701.4. Chant
+701.4a To cast a spell is to cast a spell from your current zone (usually your hand) so that the spell's effect occurs.
+Pay the cost and use it. Players usually pay mana costs only on the main step.
+to cast spells.
+701.5. use
+701.5a To use a card is to pay a cost to activate the card. Chestnut
+Summon an archer, cast a spell, generate a cross gear, or use a shield in your castle.
+Fortify, expand fields, use auras, use artifacts, use tamaseeds
+Either use it or not.
+701.6. Destroy
+701.6a To destroy a card is to try to put it from the battle zone into the graveyard.
+701.6b Destroyed cards are put into the graveyard as a result.
+701.7. Discard
+701.7a To discard a card is to put it from your hand into that player's graveyard.
+(When using Strike Back, before adding it to your hand, as an action
+does the same thing as throwing away)
+701.7b Normally, an effect that causes a player to discard a card causes the affected player to discard a card.
+let you choose a card. Some effects require random discards or other play
+You may also request that the player choose.
+701.8. Charge
+701.8a To mana charge is to place a card from your hand upside down into that player's mana zone.
+is to put
+701.9. Show
+701.9a To show a card means to show it to all players for a while.
+and If an effect reveals a card to all players, the effect's
+It remains visible until all the parts to be done are finished. As a condition of using the card,
+If revealed to a layer, the card remains revealed until the card resolves.
+701.9b Revealing a card doesn't change the zone it's in.
+701.10. Search
+701.10a To find a card in a zone is to look at all the cards in that zone
+means finding a card that fits the criteria.
+701.10b Cards that meet some criteria, such as a specific card type, civilization, etc.
+If you have to look for it, you don't have to find it all even if it exists.
+701.10c If an effect involving searching does not state that the found card is shown to all players,
+If so, you don't have to show them to all players.
+701.11. Shuffle
+701.11a To shuffle a deck or pile of face down cards means that any player
+It is to randomize it so that no one knows the order.
+701.11b Have a player search the deck for cards, shuffle them, and place the searched cards in a pile.
+There are effects that place cards in specific places. In that case, those cards are considered to have left the deck.
+are not included in the shuffle. Also, the entire deck except those cards
+cards are shuffled.
+701.12. Block
+701.12a To block is to stop an attacking creature from attacking. have a blocker
+Only creatures can block.
+701.13. Battle.
+701.13a To battle is to compare the power of creatures to determine victory or defeat. power
+A creature with a higher wins the battle, and a creature with the same or a lower loses the battle.
+701.13b A creature that loses a battle is destroyed.
+701.14. Break
+701.14a To break a shield is to add it to that player's hand.
+This can be caused by creature attacks or other effects.
+701.14b The effect of adding (returning) a shield to the hand behaves the same as break, but
+Effects that require you to lock will not apply.
+Example: Attack an opponent's creature with Kizugui Transmigration, and use its "when attacking" ability to
+Adding a shield to your hand does not break the shield. Therefore,
+You can't use Kirifu Dash at the end of that attack.
+701.14c When multiple shields are broken by an effect, they move to your hand at the same time.
+vinegar. This is different from breaking with the breaker ability.
+701.14d Effect that additionally breaks the shield does not break from attack or break from effect.
+It affects both
+701.15. Evolve
+701.15a To evolve is to have an evolution creature on top of a card, or to advance onto a card.
+It is to stack the cross gears.
+701.16. Generate
+701.16a To generate is to remove a cross gear from your current zone (usually your hand)
+Pay to put it in the battle zone. Players normally pay mana cost only on the main step.
+You can pay to generate Cross Gear.
+701.17. Cross.
+701.17a To cross means to stack a cross gear under a creature with the card part visible.
+That's it.
+701.18. Link
+701.18a To link is to connect two or more cards next to each other. God and Psychic
+Linking Super Creatures, some Dragheart Creatures, Zero Dragon Cards, etc.
+can do.
+701.18b A creature linked by two or more cards cannot combine all linked cards with one
+Treat it as a creature.
+701.19. Fortify
+701.19a To fortify is to designate a castle from its current zone (usually your hand) for a cost.
+It is best to place it on top of a shield. Players usually pay mana costs only on the main step.
+You can fortify your shield with castles.
+701.20. Awaken
+701.20a To awaken means to flip a psychic creature that is a double-faced card and turn the other side
+is to be visible.
+701.21. Judge hard
+701.21a Gachinko Judge means that each player reveals his first card from the top of his deck and
+Put it on the bottom of the deck.
+701.21b A player who uses the Gachinko Judge ability may
+If you show a card with a mana cost equal to or above, you have won the Gachinko Judge.
+701.21c The Gachinko Judge ability makes his two-cost cards like Twinpact
+If shown, the player who shows it decides which cost to refer to.
+701.22. Solve
+701.22a To flip a dragheart is to turn a double-faced card over so that the other side is visible.
+is to
+701.23. Remove (seal)
+701.23a To remove a seal is to move a seal from the battle zone to another zone.
+701.23 b If a state-based action when a command enters the battle zone removes a seal,
+is placed in the graveyard.
+701.24. put (a seal) on
+701.24a To seal is to remove the top card of your deck from the battle zone face down.
+to put on top.
+701.25. Forbidden Release.
+701.25a To Forbidden Release is to flip a Forbidden Heartbeat, which is a double-faced card, to reveal the other side.
+It is to do
+701.26. Swap
+701.26a To swap means to exchange the places of cards in two zones. Get in
+If a creature is put into the battle zone by a swapping effect, the swapped creature is
+Inherits the creature's phase and state before it is replaced. (Enter with Revolution Change or J Change)
+The replaced creature is attacking. )
+701.26b When resolving effects that switch creatures in the battle zone,
+If the card cannot be moved successfully, the replacement will not be performed. each
+The code does not move between zones and does not change state in any way.
+Example: When attacking with Explosive Heat DX Batrai Bujin, Revolutionary Change of Blue Commander Dogiragon Sword
+is used, the card does not leave the battle zone due to dragon evasion, so the replacement is not executed.
+do not have. As a result, Explosive Heat DX Batorai Bujin continues to attack, and Blue Commander Dogiragon
+Swords stays in your hand.
+Example: Use Revolution Change when attacking with 《True Destiny King, Neverend》, and use
+If you use true-escaping with As a result,
+Neverend doesn't move the battle zone, and True Escape doesn't resolve.
+701.26c There are effects that switch entire cards in two zones. These are
+Resolves even if Oen has 0 of his cards. In addition, some cards may be moved due to replacement effects, etc.
+is not successful, the rest of the card swapping is performed.
+Examples: 《Demon Heaven》, 《All Sunrise》
+701.27. Expand
+701.27a To deploy means to move the field from your current zone (usually your hand) to
+Put it in the battle zone. Players typically pay mana costs only for the main step.
+to expand the field.
+701.28. Turn upside down.
+701.28a To turn upside down is to turn the field upside down with respect to its upright position.
+701.29. Forbidden Explosion
+701.29a To Forbidden Explode is to turn over the final Forbidden Field, which consists of five double-faced cards,
+Reveal the other side and reassemble the five cards into one final Forbidden Creature.
+and
+701.30. Summon GR
+701.30a GR summoning means summoning his first card from the top of your Super GR as if you paid the cost.
+and put it into the battle zone.
+701.31. Birth of Zero Dragon Swastika
+701.31a Reiryu Manji is a double-faced card that flips over the Reiryu no Gi and four Reiryu Nebula cards to create another card.
+One side is visible, and the five cards are reassembled into one Zero Dragon creature.
+
+702. Turn-Based Actions
+702.1. Turn-based actions are game actions that occur automatically as the turn progresses.
+No other effects can be resolved before the turn-based action.
+702.1a Abilities that wait for a particular step to begin are triggered abilities and turn-based actions.
+I don't.
+702.2. When a step begins, if that step has a turn-based action, that turn-based action
+Processing is processed first. This is before state-based actions are checked, and triggered abilities wait.
+before.
+702.3. Turn-based actions are as follows.
+702.3a The turn player mixes his cards in the battle zone with the cards in his mana zone.
+Untap at times. Then resolve all triggered abilities at the beginning of the turn.
+702.3b Immediately after the draw step begins, the turn player draws one of his cards.
+702.3c Immediately after the declare attackers step begins, the turn player declares attacking creatures
+specify a char.
+702.3d Immediately after the declare blockers step begins, the non-turn player blocks
+Specify a circuit.
+
+703. State-Based Actions
+703.1. State-based actions are game actions that occur automatically due to a situation. From situational processing
+No other effects can be processed before.
+703.1a Abilities that wait for a specific condition are triggered abilities, not state-based actions.
+703.2. State-based actions are actions that are checked by the game and not owned by any player.
+yeah.
+703.3. The game always checks to see if any of the conditions for a state-based action to occur have been met, and
+Process all state-based processing, if any, at the same time as a single event. situation
+If contributory processing occurs as a result of the check, the check is repeated again after processing.
+703.4. State-based actions include:
+703.4a A player without a shield who is directly attacked and fails to redirect
+– loses the game.
+703.4b A player whose deck is 0 cards loses the game.
+703.4c Creatures with power less than or equal to his 0 are destroyed.
+703.4d A creature that loses a battle is destroyed as a result of the battle.
+703.4e When a linked god's information becomes invalid, the link is broken.
+703.4f When God leaves the battle zone, only one of them leaves the battle zone.
+703.4g A single Psychic Cell and Dragheart Cell in the battle zone
+placed in the
+703.4h When only the card on top of an evolution creature leaves the battle zone, the card on the bottom
+is reconstructed.
+703.4i Face-up cards in the battle zone without a legal type are put into the graveyard.
+703.4j When a command is put into the battle zone, the owner of that command has the same civilization as that command.
+Place 1 seal from the cards you have that have a seal on it into the Graveyard.
+703.4k When a fortified shield leaves the shield zone, the castle is put into its owner's graveyard.
+If you use the "Shield Trigger" ability of that shield, it will be placed in the Graveyard immediately after use.
+703.4l When another D2 Field is put into the battle zone, the D2 Field that was in the battle zone first
+Do is put into its owner's graveyard.
+
+8. Special card
+
+800. General
+800.1. There are cards that require special handling during the game. Evolution for those creatures
+Creatures, Neo Creatures, Gods, Psychic Creatures, Draghearts, etc.
+there is.
+
+801. Evolution Creature
+801.1. An evolution creature is one that stacks on the card it evolves from.
+It is a creature that can be put into the battle zone by
+801.1a Battle evolution creatures if there is no legal evolution source
+It cannot be sent to the zone.
+801.1b Buffing evolution creatures with multiple cards as evolution sources.
+If you put it in the tol zone, in the order you like the evolution source card,
+Stack it under the evolution creature.
+801.2. A card in the battle zone evolves into an evolution creature.
+even if it is the same creature as the pre-evolution card
+handle. Even if the tapped card evolves, it will remain tapped.
+, and the effects that were applied to that card are
+continue to apply even after
+Example: Evolved from a creature modified with -2000 power until end of turn
+Evolution creatures also get a power of –2000. Similarly, each power-
+Evolution GV creatures evolved from 3 creatures modified by 2000
+Receiving Wor-6000 modifications.
+801.2a If an attacking creature evolves, the attack continues.
+801.2b If a creature that evolves from two or more cards
+If Do is the evolution source, the evolution creature is tapped and put into the battle zone.
+801.3. Evolution creatures do not get summoning sickness.
+801.4. When only the top card of an evolution creature leaves the battle zone,
+The code remains in the battle zone in a legal state. This is called rebuilding.
+801.4a When rebuilding, the card immediately below an evolution creature that leaves the battle zone is alone.
+If it is a card that can exist in the battle zone with , leave it in the battle zone as is.
+Otherwise, put it into your graveyard.
+801.4b When rebuilding, there are multiple cards under the evolution creature that left the battle zone
+If so, leave the topmost card that can exist in the battle zone alone in the battle zone, and leave the others in the battle zone.
+card under the . A card whose top card cannot exist in the battle zone
+if put it in the graveyard. The top card can exist alone in the battle zone
+Repeat this process until you have a card, leaving the new top card in the battle zone.
+Masu.
+801.4c A reforged card does not enter the battle zone, it is already in the battle zone.
+treated as if it was in The effect triggered when entering the battle zone does not occur. Also,
+If there are any effects received before the rebuild, they will be carried over after the rebuild. Also, it's a creature
+Yes, and if it existed under the evolution creature from the beginning of the turn, a new summoning sickness
+I will not
+801.4d If rebuilding leaves a creature or tamaseed, its tapped and untapped
+Aspects are no different than evolved creatures leaving the battle zone. Creech, such as field
+If a card that is neither a char nor a Tamashed remains, that card is an evolutionary monster that leaves the battle zone.
+Regardless of the reacher's phase, it will be in the correct position.
+Example: An untapped Star Evolution creature leaves and causes a rebuild, causing the underlying D2
+If the field remains in the battle zone, its D2 field remains sideways.
+
+802. NEO Creature
+802.1. A NEO creature is a normal creature that
+In addition to being able to handle NEO evolution creatures by using NEO evolution ability
+It is a creature that can be put out as -.
+802.2. A NEO creature may use the NEO evolution ability, etc. 802.2.
+while in the battle zone with a card underneath
+Put Reacher into the battle zone as a NEO evolution creature.
+Treat it as a "NEO Evolution Creature" while doing so.
+vinegar. As a non-evolution creature while in any other zone
+be treated as
+Example: When you turn his 6 cards face up from the top of your deck with Evolution Blueprint,
+Even if a NEO creature is involved, this is a normal
+Since it is treated as a creature, it cannot be added to your hand.
+Example: Move a NEO creature from the graveyard to the battle zone with an effect as a NEO evolution creature.
+When you try to put it out as a NEO Evolution Creature by the ability of 《That Child, Pretty》
+- goes into the battle zone tapped
+802.3. A NEO creature is called a "NEO evolution creature" if it has a card underneath it.
+You don't get summoning sickness because it's treated as However, in the same turn that it was issued, it is below in some way
+If the card is removed, it will no longer be a "NEO Evolution Creature", so it will cause "summoning sickness".
+will be unable to attack.
+802.4.Even if a card is put into the battle zone without using its NEO evolution ability, somehow the card is placed below it.
+If there is, it is treated as a "NEO Evolution Creature".
+
+803. God
+803.1. God means other specific gods and
+A creature that can be attacked.
+803.1a Gods enter the battle zone
+Link Rin after entering the battle zone
+Battle in a linked state instead of being linked
+Get out in the zone. This is a state definition effect.
+803.1b A linked god can
+the name of each god that composes it as a char,
+It is treated as having all the traits such as ability, civilization, etc. However, each card that makes it up
+treat him as a single creature as a whole, rather than altering the individual characteristics of
+Please be careful.
+803.1c If a card's ability triggers when a god enters the battle zone, that god
+Even if he becomes a single creature after being killed, he can still refer to the characteristics of the cards actually put into the battle zone.
+illuminate.
+803.1d When God enters the battle zone, replacement effects and state-defining effects other than his G-Link apply.
+If so, even if that god links and he becomes a single creature, the actual battle
+Refers to the characteristics of cards that enter the zone.
+803.2. Appropriate G-link ability is required to link gods.
+803.2a His G-link, which specifies names and locations, refers to the properties of individual cards.
+Example: Linked ``Chōzetsu Kami Zen'' and ``Ultimate Kami Aku'' are linked to each other as a single god.
+, but the individual card of "Chōzetsu God Zen" became "Ultimate God Aku" as a characteristic.
+Linked another 《Chōzetsushin Zen》 to the right of the linked 《Chōzetsushin Zen》.
+cannot be set.
+803.2b G-link capability always checks if it is correct. got into an illegal state
+The link will be removed immediately.
+803.2c When linking gods with the Central G-Link 360 ability, even if they are next to each other,
+In some cases, there may be places that are not directly linked. For example, A-B-C-D and U-shaped
+When linking to , A and D are next to each other but not directly linked. not that link
+When connecting gods to places, it is limited to the area that can be configured in a plane. physically occupied
+New gods cannot be linked to a location.
+803.3. A newly linked god has the same creature as it was already in the battle zone.
+Treat it as a single creature. If the tapped god links, it will remain tapped.
+, and effects that apply to that creature continue to apply after it links.
+Example: If a god with a power modifier of -2000 links until the end of the turn, the linked
+After that, the power-2000 correction remains.
+803.3a If the right and left sides of a three-body linkable god are in different phases of tapping and untapping,
+If you play the central god and he links 3 bodies, it will be tapped.
+803.3b If an attacking god links, the attack continues.
+803.4. Even if a godlinked creature becomes unlinked and becomes an unlinked god,
+Treat that creature as if it were the same creature. suitable for that creature.
+The effect used will continue to apply even after it leaves the link.
+803.4a A god consisting of three or more cards leaves the battle zone and he becomes two or more gods.
+Each god inherits any effects that have been applied to it. it is attacking
+the attacking player chooses one of them and continues the attack.
+803.5. Linked gods do not get summoning sickness.
+803.5a Once a linked god is unlinked, it will become a battle zone from the beginning of the turn.
+If it was on the map, it is no longer affected by summoning sickness.
+803.6 If an effect causes a player to name a card, that player
+You can specify any card name in the linked god, but not all.
+I can't
+803.7 When a God leaves the battle zone, only one of them leaves the battle zone.
+This is a state-based action, not a replacement effect.
+
+804. Psychic Creature
+804.1. A psychic creature is a
+Duel Master on one side like a regular card
+Duel
+Rather than having the back of a Masters card,
+Duel Masters card faces on both sides
+is a card with Each side is
+It may have the ability to change sides.
+804.1a Many psychic creatures
+triggers the query when certain conditions are met.
+It has an awakening ability that "turns over" the reacher.
+vinegar.
+804.1b Some psychic creatures may instead cost less when leaving the battle zone.
+It has a release ability that flips it over to the dice side. This is a replacement effect.
+804.1c Some psychic creatures are capable of controlling multiple psychic creatures at once.
+It has an awakening link ability that flips over and links to a psychic super creature.
+804.1d Each player has both sides of a psychic creature in any zone.
+You can see.
+804.2. Each side of a psychic creature has a separate set of characteristics.
+804.3. Whenever a spell, ability, effect, or rule requires information about psychic creatures.
+then it only refers to the information provided by the faces that are facing up at the time you apply it.
+804.4. Psychic creatures are hyperdimensional at the start of the game.
+is placed in the
+804.4a Psychic creatures can be summoned by paying their mana cost.
+cannot be summoned. by a spell or creature ability
+You can put it into the battle zone.
+804.4b If a psychic creature is in a zone other than the battle zone
+When placed in the zone, it immediately returns to the hyperdimensional zone.
+804.5. Even if a psychic creature is flipped over, its creature
+chars are treated as the same creature. tapped state
+of psychic creatures remain tapped when awakened
+Yes, and effects applied to that creature are
+will continue to apply.
+Example: A psychic with a power modifier of -2000 until end of turn.
+If the creature is flipped over, the power -2000 modifier remains after it is flipped.
+Example: If an attacking psychic creature flips over, the attack continues.
+804.6. Awakened psychic creatures are immune to summoning sickness.
+804.6a If an awakened psychic creature is flipped over again by an effect other than awakening,
+If it was in the battle zone from the beginning of the turn, it will become a new summoning sickness.
+Not affected.
+804.7 If an effect causes a player to name a card, that player
+You can specify the card name for either side of the ikic creature, but not both.
+plug.
+
+805. Psychic Super Creature
+805.1. A psychic super-creature is a creature composed of multiple psychic cells.
+It is a reacher and is also treated as a psychic creature.
+805.1a Psychic cells cannot exist alone in the battle zone. Psychic with some effect
+When Ku-Sell comes into existence in the battle zone, it immediately returns to the hyperdimensional zone.
+vinegar.
+805.1b Some psychic super creatures are configured when they leave the battle zone.
+It has the unlinking ability to return one psychic cell to the hyperdimensional zone and turn the rest over.
+vinegar. This is not a replacement effect.
+805.1c The unlink ability is a component of the psychic super creature, not the psychic super creature itself.
+It also applies when a psychic cell leaving the battle zone.
+805.1d Psychic cells have no cost by themselves and are treated as 0 when referring to costs.
+is.
+805.1e When a psychic cell leaves the battle zone, it is considered a creature to leave.
+not treated as
+805.1f Each psychic cell has a civilization with a psychic super creature.
+I will.
+805.2. A psychic super creature unlinks
+to become multiple psychic creatures, those creatures
+chars are treated as the same creature. tapped
+state psychic super creature unlinked
+, the split psychic creature remains tapped.
+and the effects that were applied to its creatures
+It is inherited by each psychic creature after being killed.
+vinegar.
+805.2a A psychic super creature consisting of three or more cards battle zone
+When leaving , he becomes two or more creatures, each creature has an effect applied to it.
+Inherit all fruits. If it was attacking, the attacking player
+to continue attacking.
+806. Drag Heart
+806.1. Draghearts are like normal cards.
+Duel Masters card on one side
+On one side, on the other side is a Duel Masters card.
+Duet on both sides, instead of having two sides
+A card with a Le Masters card face
+is. Another Dragheart Creature
+The other side is a Dragheart Weapon or a Dragha
+fortress, fortress, or both.
+I will. Each face changes from one face to the other.
+may have the ability to
+806.1a A dragheart creature can be a dragheart weapon or a dragheart fort.
+You can open the dragon from the less and become a table. At this time, the phase does not change.
+806.1b Some Dragheart creatures instead cost
+It has a dragon evasion ability that flips it over to the smaller side. This is a replacement effect.
+806.1c Each player can see both sides of the Dragheart in any zone.
+to come.
+806.2. Each aspect of the Dragheart has its own set of characteristics.
+806.3. If a spell, ability, effect, or rule requires Dragheart information, it
+It only refers to the information provided by the facing faces at the time it is applied.
+806.4. Draghearts are placed in the hyperdimensional zone at the beginning of the game.
+806.4a Draghearts cannot be used for their mana cost. Creature Ability
+It is possible to put it into the battle zone by force.
+806.4b When Dragheart is placed in a zone other than the battle zone, it is immediately returned to the hyperdimensional zone.
+I will.
+806.5. Dragheart creatures get summoning sickness.
+806.5a Dragheart creatures must be in the battle zone from the beginning of the turn.
+cannot attack. However, it does not matter which side is face up at the beginning of the turn.
+Exists in the battle zone in the state of Dragheart Weapon at the beginning of the turn, and then Ryukaisure
+If so, that Dragheart creature is considered to have been in the battle zone since the turn began.
+To do.
+806.6 If any effect causes a player to name a card, that player
+You can specify the card name for either side of Ragheart, but not both.
+
+807. Forbidden Heartbeat
+807.1. Forbidden Heartbeat is a Duel Masters card that has two sides instead of two sides.
+It is a card with the surface of the card of Jewel Masters. The other side of the forbidden heartbeat is the forbidden clitoris
+It's a charter. Forbidden Heartbeat has the ability to turn into the face of a forbidden creature.
+807.1a Forbidden Heartbeats can be flipped inside out with Forbidden Release.
+807.1b Each player can see both sides of Forbidden Heart in any zone.
+Masu.
+807.3. If a spell, ability, effect, or rule requires forbidden information, it
+, it only refers to information provided by faces that are facing up at the time you apply it. that is
+As long as it's in a zone other than the battle zone, it doesn't matter which side it's on.
+807.4. Forbidden Heartbeats are placed in the designated zone at the beginning of the game.
+807.5 If any effect causes a player to name a card one of his, that player is forbidden.
+You can specify the card name for either side of the cut, but not both.
+808. Twinpact
+808.1 The Twinpact Card is a card that allows him to include two card types in one card.
+New card type wrapped. Two different costs, cardta
+type, but when referring to those characteristics as cards
+must always refer to the correct information.
+808.2 Twinpact is a characteristic that a card has.
+808.3. When referred to as a card, any legal card type may be used.
+The owner of the twin impact card can choose which one.
+  808.3a When referring to a specific card type, only that part of the information
+Browse.
+808.4. When referring to the name of a Twinpact card, the two parts are
+Treated as a card with a combined name. Exist as a creature in the battle zone
+When referring to the card name of a Twinpact card with it, only refer to the creature side.
+
+809. GR Creature
+809.1. A GR creature is a Duel Masters card on one side.
+, and the other side has a back side unique to the GR creature card.
+809.2. GR creatures are placed in the Super GR zone at the beginning of the game.
+809.2a GR creatures cannot be summoned by paying their mana cost.
+I can't In the battle zone by the ability of spells, creatures, and auras
+It is possible to put it out.
+809.2b When a GR creature is placed in a zone other than the battle zone,
+and immediately return to the super-GR zone.
+
+810. Zero Dragon Ceremony, Zero Dragon Nebula
+810.1. Reiryu no Gi and Reiryu Nebula do not have the back side of the Duel Masters card, but have both sides.
+It is a card with the surface of the card of Duel Masters. One side is Reiryu no Gi and Reiryu Nebula, and the other is
+The other side is the composition card of the Zero Dragon creature. Reiryu-no-Gi is Reiryu-no-Gi and Reiryu-Nebula in Reiryu-Creech
+It has the ability to turn into the face of a char.
+810.1a Reiryu no Gi and Reiryu Nebula can be flipped over with Reiryu Manjitan.
+810.1b Each player can see both sides of Reiryu no Gi and Reiryu Nebula in any zone.
+You can
+810.2. If a spell, ability, effect, or rule requires Reiryu's information, it is in the battle zone.
+, it only refers to information provided by faces that are facing up at the time it is applied. that's him bat
+Any zone other than the luzone can be treated as the surface.
+810.3. Reiryu no Gi and Reiryu Nebula are placed in the designated zone at the beginning of the game.
+810.4 If a player names a card by any effect, that player
+You can specify the card name for either side, but not both.
+810.4a. Reiryu no Gi has a card name, but Reiryu Nebula does not.
+
+811. Star Evolution Creature
+811.1. A star evolution creature is one that when it leaves the battle zone, only the top card is replaced instead.
+It's an evolution creature that leaves.
+811.1a The "when leaving" effect on Star Evolution creatures is a replacement effect. battle zone
+When leaving, if you apply another replacement effect first, or leave the battle zone due to another replacement effect
+In this case, the effect of "when leaving" cannot be applied.
+811.1b Forbidden star evolution creatures are stars that can be put into the battle zone without requiring an evolution source.
+Evolution creature. Like Star Evolution creatures, when leaving the battle zone,
+Only the top card is released.
+
+812. King Cell
+812.1. A King Cell is a card that cannot be used by itself. key with specified card name
+Can only be used as a melded card if Ng Cell is in your hand or mana zone.
+812.1a A King Cell has no cost and race by itself, and counts as 0 when referring to costs.
+handle.
+812.1b Each King Cell has a civilization of the mana symbol's color. in a coalesced state
+Also, when a single card is referenced, it is treated as having only that civilization.
+812.1c If King Cell is used as a melded card, the
+You have to pay the mana cost. At this time, if part of King Cell is in the mana zone,
+You can tap the pending card to pay its mana cost and civilization. king cell
+will combine after paying the cost.
+Example: If you combine and summon "Volzeos-Balamord", pay 9 mana including mana from 5 civilizations.
+must be
+Example: 《New World King's Authority》 in your hand and 《New World King's Thought》 《New World》 in your mana zone
+When summoning Volzeos-Balamord by combining King's Fighting Spirit, the Mana Zone's New World King's Thought
+You can also pay the mana cost from Imagination and New World King's Fighting Spirit.
+812.1d If some of the king cells that make up a creature leave the battle zone, the rest
+of King Cells cannot be in the battle zone and are immediately put into the graveyard.
+812.1e When a King Cell leaves the battle zone, it counts as a creature leaving.
+I don't handle it. However, the replacement effect applied when the creature leaves is that King Cell
+It also applies when you leave Luzone.
+
+813. S-MAX Evolution Creature
+813.1. S-MAX evolution creatures are evolution creatures that can be put into the battle zone without requiring an evolution source.
+-
+813.1a S-MAX evolution creatures are limited to one per player, and he can only exist in the battle zone.
+plug. If a player has 2 or more of her S-MAX evolution creatures in the battle zone,
+Keep one of them and return all the rest to your hand. This is a static ability.

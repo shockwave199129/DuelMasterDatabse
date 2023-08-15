@@ -20,6 +20,7 @@ class UserResponse(BaseModel):
 class DeckDetailsBuild(BaseModel):
     deck_card_id: int
     deck_card_count: int
+    zone: int
 
 class DeckBuild(BaseModel):
     deck_name: str
