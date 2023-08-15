@@ -96,8 +96,10 @@ export default function DeckDeatail(props) {
                         ></i>
                     </header>
                     <div className="modal-container-subtitle">
-                        <span className="badge bg-primary" style={{ fontWeight: "400" }}>{props.DeckData.user_info}</span>
-                        {props.DeckData.is_private && <i className="bi bi-lock-fill" style={{ color: "burlywood" }}></i>}
+                        <div>
+                            <span className="badge bg-primary" style={{ fontWeight: "400" }}>{props.DeckData.user_info}</span>
+                            {props.DeckData.is_private && <i className="bi bi-lock-fill" style={{ color: "burlywood" }}></i>}
+                        </div>
                         {props.DeckData.is_editable && <button type="button" onClick={toDeckEditPage} className="badge btn-primary btn me-4">Edit</button>}
                     </div>
                     <section className="modal-container-body">

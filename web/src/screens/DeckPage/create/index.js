@@ -446,7 +446,7 @@ export default function CreateDeck() {
                 text: 'Deck created',
                 confirmButtonText: 'OK',
             }).then(() => {
-                push('decklist')
+                push('/decklist')
             });
         }
     }
@@ -503,11 +503,11 @@ export default function CreateDeck() {
                                             <div className="col-12">
                                                 <div className="p-2 d-inline-flex flex-wrap align-items-center">
                                                     <span>Complete:</span>
-                                                    <input type="checkbox" className="ms-2" name="is_complete" onChange={e => { handleChange(e) }} />
+                                                    <input type="checkbox" className="ms-2" name="is_complete" onChange={e => { handleInputChange(e) }} />
                                                 </div>
                                                 <div className="p-2 d-inline-flex flex-wrap align-items-center">
                                                     <span>Private:</span>
-                                                    <input type="checkbox" className="ms-2" name="is_private" onChange={e => { handleChange(e) }} />
+                                                    <input type="checkbox" className="ms-2" name="is_private" onChange={e => { handleInputChange(e) }} />
                                                 </div>
                                                 <input type="submit" value="Save" className="btn btn-sm btn-primary float-end" />
                                             </div>

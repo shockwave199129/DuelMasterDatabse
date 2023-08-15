@@ -62,7 +62,7 @@ def get_deck_details(
     if deck == None:
         return {'No deck found'}
 
-    if (user_id != deck.user_id) and (deck.is_private):
+    if (int(user_id) != deck.user_id) and (deck.is_private):
         raise HTTPException(status_code=422, detail="You can not view others private deck")
     
     def serialize_deck_details(details):
@@ -72,6 +72,7 @@ def get_deck_details(
             serialized_detail = {
                 "deck_card_count": detail.deck_card_count,
                 "deck_card_id": detail.deck_card_id,
+                "zone": detail.zone,
                 "deck_card_details": detail.deck_card_details.to_dict(),
                 "deck_card_category": card_category.to_dict()
             }
