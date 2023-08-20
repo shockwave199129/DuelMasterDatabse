@@ -514,7 +514,15 @@ export default function CreateDeck() {
                                         </form>
                                         <div className="border-top border-secondary col">
                                             <div className="list-group">
-                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Deck</h6>
+                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Deck ({(() => {
+                                                    let totCnt = 0
+                                                    Object.values(DeckDetails).map(val => {
+                                                        totCnt += val
+                                                    })
+                                                    return totCnt
+                                                })
+                                                ()
+                                                })</h6>
                                                 {Object.values(DeckDisplay).map((card, index) => (
                                                     <div key={index} className="list-group-item px-0 d-flex">
                                                         <div className="col-10"
@@ -549,7 +557,15 @@ export default function CreateDeck() {
                                                 ))}
                                             </div>
                                             <div className="list-group">
-                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Hyperspatial Zone</h6>
+                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Hyperspatial Zone ({(() => {
+                                                    let totCnt = 0
+                                                    Object.values(PsychicDetails).map(val => {
+                                                        totCnt += val
+                                                    })
+                                                    return totCnt
+                                                })
+                                                ()
+                                                })</h6>
                                                 {Object.values(PsychicDisplay).map((card, index) => (
                                                     <div key={index} className="list-group-item px-0 d-flex">
                                                         <div className="col-10"
@@ -584,7 +600,15 @@ export default function CreateDeck() {
                                                 ))}
                                             </div>
                                             <div className="list-group">
-                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Gacharange Zone</h6>
+                                                <h6 className="card-subtitle mt-1 text-muted border-bottom border-secondary p-2">Gacharange Zone ({(() => {
+                                                    let totCnt = 0
+                                                    Object.values(GachaDetails).map(val => {
+                                                        totCnt += val
+                                                    })
+                                                    return totCnt
+                                                })
+                                                ()
+                                                })</h6>
                                                 {Object.values(GachaDisplay).map((card, index) => (
                                                     <div key={index} className="list-group-item px-0 d-flex">
                                                         <div className="col-10"

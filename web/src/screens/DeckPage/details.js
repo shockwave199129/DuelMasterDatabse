@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import DataTable from "react-data-table-component";
 import { Tooltip } from 'react-tooltip'
+import Swal from "sweetalert2";
+import Api from "@/shared/api";
 
 import 'react-tooltip/dist/react-tooltip.css'
 import './modal.css';
@@ -77,6 +79,33 @@ export default function DeckDeatail(props) {
         push('createdeck/' + props.DeckData.id)
     }
 
+    function deleteDeck() {
+        async function deleteDeckData() {
+            try {
+                const decksDetailResponse = await Api().validateGet('delete-deck/' + props.DeckData.id);
+                return Promise.resolve();
+            } catch (error) {
+                console.error(error);
+                return Promise.reject(error);
+            }
+        }
+        debugger
+        Swal.fire({
+            title: "Deleting...",
+            text: "Please wait while we delete Deck Deatils",
+            showConfirmButton: false,
+            allowOutsideClick: false
+        });
+        deleteDeckData().then(() => {
+            props.eventHandeler(false)
+            props.update(true)
+            Swal.close();
+        }).catch((error) => {
+            console.error(error);
+            Swal.close();
+        })
+    }
+
     return (
         <>
             <div className="modal">
@@ -100,7 +129,14 @@ export default function DeckDeatail(props) {
                             <span className="badge bg-primary" style={{ fontWeight: "400" }}>{props.DeckData.user_info}</span>
                             {props.DeckData.is_private && <i className="bi bi-lock-fill" style={{ color: "burlywood" }}></i>}
                         </div>
-                        {props.DeckData.is_editable && <button type="button" onClick={toDeckEditPage} className="badge btn-primary btn me-4">Edit</button>}
+                        {props.DeckData.is_editable &&
+                            <>
+                                <div>
+                                    <button type="button" onClick={toDeckEditPage} className="badge btn-primary btn me-2">Edit</button>
+                                    <button type="button" onClick={deleteDeck} className="badge btn-danger btn me-4">Delete</button>
+                                </div>
+                            </>
+                        }
                     </div>
                     <section className="modal-container-body">
                         <Tooltip id="card-tooltip" className="col-10 col-md-4" style={{ zIndex: "99999" }} />

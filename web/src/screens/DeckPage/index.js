@@ -19,8 +19,10 @@ export default function Decklist() {
     const [showDeckDeatils, setShowDeckDeatils] = useState(false);
     const [deckDeatails, setDeckDeatails] = useState({});
 
+    var [isLoad, setIsload] = useState(false)
+
     const cookies = new Cookies()
-    var { push } = new useRouter()
+    var { push, refresh} = new useRouter()
 
     function showCardDeatils(row) {
         Swal.fire({
@@ -115,7 +117,7 @@ export default function Decklist() {
                     Swal.close();
                 })
         }
-    }, [])
+    }, [isLoad])
 
     return (
         <>
@@ -164,7 +166,7 @@ export default function Decklist() {
                     </div>
                 </div>
             </section>
-            {showDeckDeatils && <DeckDeatail DeckData={deckDeatails} eventHandeler={setShowDeckDeatils} />}
+            {showDeckDeatils && <DeckDeatail DeckData={deckDeatails} eventHandeler={setShowDeckDeatils} update={setIsload} />}
             <Footers />
         </>
     )

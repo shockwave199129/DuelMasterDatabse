@@ -214,7 +214,7 @@ export default function SearchPage() {
     return (
         <>
             <TopNav />
-            <section className="inner-page" onKeyDown={e => handleKeyDown(e)}>
+            <section className="inner-page" style={{ paddingTop: "89px", minHeight: "calc(100vh - 81px)" }} onKeyDown={e => handleKeyDown(e)}>
                 <div className="container">
                     <div className="card">
                         <div className="card-body">

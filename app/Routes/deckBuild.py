@@ -193,6 +193,35 @@ def update_deck(
 
     return {'Deck update successfully'}
 
+@router.get("/delete-deck/{deck_id}")
+def delete_deck(
+    *,
+    deck_id: int,
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(security.authenticate_token),
+)->Any:
+    """
+    delete a deck
+    """
+    user_id = current_user.get("sub")
+
+    # Retrieve the existing deck
+    deck = db.query(Deck).filter(Deck.id == deck_id).first()
+    if deck is None:
+        return {'No deck found'}
+    # Check if the current user is the owner of the deck
+    if (int(user_id) != deck.user_id):
+        raise HTTPException(status_code=403, detail="You can not delete others deck")
+    
+    # Delete associated deck details
+    deck_details = db.query(DeckDetails).filter(DeckDetails.deck_id == deck_id).all()
+    for detail in deck_details:
+        db.delete(detail)
+
+    # Delete the deck
+    db.delete(deck)
+    db.commit()
+    return {"message": "Deck deleted successfully"}
 
 @router.get("/zones")
 def get_zones(db: Session = Depends(get_db))->Any:
