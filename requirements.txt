@@ -18,3 +18,8 @@ datetime
 apscheduler
 traceback2
 sockets
+numpy
+scipy
+pandas
+matplotlib
+seaborn

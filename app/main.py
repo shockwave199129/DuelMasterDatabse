@@ -8,7 +8,7 @@ from apscheduler.triggers.cron import CronTrigger
 
 from .Database.db import Base, engine
 from .Crawler.setCrawler import run_set_crawler
-from .Routes import cardSearch, webSearch, userLogin, deckBuild
+from .Routes import cardSearch, webSearch, userLogin, deckBuild, learning
 
 app = FastAPI()
 #background_task = BackgroundTasks()
@@ -44,6 +44,7 @@ app.include_router(userLogin.router, tags=['User'])
 app.include_router(cardSearch.router, tags=['Swagger Search'])
 app.include_router(webSearch.router, tags=['Web Search'])
 app.include_router(deckBuild.router, tags=['Decks'])
+app.include_router(learning.router, tags=['ml'])
 
 @app.get("/run-task/", tags=["for backend"])
 async def run_task(background_task: BackgroundTasks):

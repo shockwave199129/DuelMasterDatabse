@@ -71,6 +71,14 @@ class User(Base):
     hashed_password = Column(String, nullable=False)
     is_active = Column(Boolean(), default=True)
 
+class Zones(Base):
+    __tablename__ = "duel_master_zone"
+
+    id = Column(Integer, primary_key=True, index=True)
+    zone_name = Column(String)
+    card_type_like = Column(Text)
+    type_regex = Column(String)
+
 class Deck(Base):
     __tablename__ = "deck"
 
@@ -91,17 +99,10 @@ class DeckDetails(Base):
     deck_id = Column(Integer, ForeignKey(Deck.id))
     deck_card_id = Column(Integer, ForeignKey(Card.id))
     deck_card_count = Column(Integer)
-    zone = Column(Integer)
+    zone = Column(Integer, ForeignKey(Zones.id))
 
     deck_card_details = relationship("Card", lazy="joined")
-
-class Zones(Base):
-    __tablename__ = "duel_master_zone"
-
-    id = Column(Integer, primary_key=True, index=True)
-    zone_name = Column(String)
-    card_type_like = Column(Text)
-    type_regex = Column(String)
+    zone_data = relationship("Zones", innerjoin=True, lazy="joined")
 
 
 class DmRules(Base):
