@@ -120,7 +120,7 @@ class Player(Choices):
             serialized_details.append(serialized_detail)
         return serialized_details
     
-    def setTable(self) -> None:
+    def _setTable(self) -> None:
         for _ in range(5):
             self.put_top_card_shield()
         for _ in range(5):
@@ -129,7 +129,7 @@ class Player(Choices):
     @register('setup')
     def reset_and_setup(self) -> None:
         self._initializeDeck()
-        self.setTable()
+        self._setTable()
 
     @register('start_turn')
     def untap_all_mana_cards(self):
@@ -209,6 +209,8 @@ if __name__ == "__main__":
     player1 = Player('riki', 4)
     player1.reset_and_setup()
     player1.setTable()
+
+    #start turn steps
     player1.untap_all_mana_cards()
     if not turn == 1:
         player1.draw_card()
