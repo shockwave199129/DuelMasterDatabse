@@ -155,9 +155,21 @@ class Player(Choices):
             self.mana_zone.append(removed_card)
             self.current_mana_number += int(removed_card.mananumber)
             self.current_mana_civi_distribution.append(removed_card.civilization)
+
+    def is_summon_possible(self):
+        if not self.hand:
+            return False
+
+        min_manacost = min(card.manacost for card in self.hand)
+        return self.current_mana_number >= min_manacost
     
     @register('summon')
-    def put_card_from_hand(self) -> bool|Card:
+    def take_summon_action(self):
+
+        while self.is_summon_possible() and random.choice([True, False]):
+            self.put_card_from_hand()
+
+    def put_card_from_hand(self) -> bool:
         if len(self.hand) == 0:
             return False
         else:
@@ -189,7 +201,11 @@ class Player(Choices):
                             tapped_mana = random.choice(untapped_mana)
                             tapped_mana.is_taped = True
                             self.current_mana_number -= 1
-                    return chosen_card
+                    index_of_chosen_card = self.hand.index(chosen_card)
+                    summon_card = self.hand.pop(index_of_chosen_card)
+                    self.battle_zone.append(summon_card)
+                    self.execute_card_put_effect(summon_card)
+                    return True
 
                 else:
                     return False
@@ -208,7 +224,6 @@ if __name__ == "__main__":
 
     player1 = Player('riki', 4)
     player1.reset_and_setup()
-    player1.setTable()
 
     #start turn steps
     player1.untap_all_mana_cards()
@@ -216,7 +231,4 @@ if __name__ == "__main__":
         player1.draw_card()
     player1.charge_mana_from_hand()
 
-    summon_card = player1.put_card_from_hand()
-
-    if summon_card:
-        player1.execute_card_put_effect(summon_card)
+    player1.take_summon_action()

@@ -24,7 +24,7 @@ def run_set_crawler() -> None:
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
-    log_directory = 'log'
+    log_directory = 'app/log'
     if not os.path.exists(log_directory):
         os.makedirs(log_directory)
 
