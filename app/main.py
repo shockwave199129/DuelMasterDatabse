@@ -1,4 +1,4 @@
-from threading import Thread
+from threading import Thread, enumerate
 import uvicorn
 from fastapi import FastAPI, BackgroundTasks
 from fastapi.middleware.cors import CORSMiddleware
@@ -11,7 +11,7 @@ from .Crawler.setCrawler import run_set_crawler
 from .Routes import cardSearch, webSearch, userLogin, deckBuild, learning
 
 app = FastAPI()
-#background_task = BackgroundTasks()
+# background_task = BackgroundTasks()
 
 origins = [
     "*",
@@ -31,6 +31,19 @@ scheduler = BackgroundScheduler()
 scheduler.add_job(run_set_crawler, CronTrigger(day='1', hour='0', minute='0'))
 scheduler.start()
 
+thread_name = 'crawler task'
+
+
+def is_thread_alive(thread_name):
+    """
+    Check if a thread with the given name is alive.
+    """
+    for thread in enumerate():
+        if thread.name == thread_name:
+            return True
+    return False
+
+
 @app.get("/")
 async def read_root():
     return {"Hello": "World"}
@@ -46,17 +59,20 @@ app.include_router(webSearch.router, tags=['Web Search'])
 app.include_router(deckBuild.router, tags=['Decks'])
 app.include_router(learning.router, tags=['ml'])
 
+
 @app.get("/run-task/", tags=["for backend"])
 async def run_task(background_task: BackgroundTasks):
     def run_task_in_background():
         # Run the background task
         run_set_crawler()
-    
-    # Start the task in a new thread
-    thread = Thread(target=run_task_in_background)
-    thread.start()
-    return {"message": "Background task added to the scheduler"}
 
+    # Start the task in a new thread
+    if not is_thread_alive(thread_name):
+        thread = Thread(target=run_task_in_background)
+        thread.start()
+        return {"message": "Background task added to the scheduler"}
+    else:
+        return {"message": "Background task already running"}
 
 
 if __name__ == "__main__":
